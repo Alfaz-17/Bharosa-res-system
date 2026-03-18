@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Edit Restaurant Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6933",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23140f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 py-4 lg:px-40 bg-white dark:bg-background-dark/50 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Edit Restaurant Profile</h2>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-primary/10 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="hidden md:flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white font-bold text-sm hover:bg-primary/90 transition-colors shadow-sm">
+                        Save Changes
+                    </button>
+</div>
+</header>
+<main class="px-6 lg:px-40 flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-8">
+<!-- Visual Assets Section -->
+<section>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-[-0.015em] mb-6">Visuals</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Cover Image Upload -->
+<div class="flex flex-col gap-3 group">
+<div class="relative w-full aspect-video bg-slate-200 dark:bg-slate-800 rounded-xl overflow-hidden border-2 border-dashed border-slate-300 dark:border-slate-700 hover:border-primary transition-colors cursor-pointer flex flex-col items-center justify-center gap-2">
+<div class="absolute inset-0 bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity" data-alt="High resolution gourmet food photography cover image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAIQ0z65_lIZAo-ZMLYndY8PXdcsAA8K4gKhoC1gbnFTRUfuyUK1WgQuSwcoknjIgarrsQ64GpfbginYZQLaRIEKuHfv8C4CwouiyY2TDn05xYZRHloziSSg7a-LZgPCFc9Sr1LhBWroy1Yjva56smmc35La6IDRQ-lcYnOZegOTGyCViuyHPItZdMDYDY51iHOrCLnDDePQPzOJuYF8GdYM1jJw7VM7UEPJWWNKatHyNdKM0LqmSsOAE89ifWdo6C84CtMEJOXZ4');"></div>
+<div class="relative z-10 flex flex-col items-center text-slate-700 dark:text-slate-200">
+<span class="material-symbols-outlined text-3xl">upload_file</span>
+<span class="text-sm font-semibold">Change Cover Photo</span>
+</div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-semibold">Cover Image</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Upload a high-resolution landscape photo of your restaurant (16:9 recommended).</p>
+</div>
+</div>
+<!-- Logo Upload -->
+<div class="flex flex-col gap-3 group">
+<div class="relative w-40 aspect-square bg-slate-200 dark:bg-slate-800 rounded-xl overflow-hidden border-2 border-dashed border-slate-300 dark:border-slate-700 hover:border-primary transition-colors cursor-pointer flex flex-col items-center justify-center gap-2">
+<div class="absolute inset-0 bg-cover bg-center p-4" data-alt="Restaurant minimalist circular logo design" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBD8mXZ9aGdg51eAWWSUfMLemh2VXBi8rcIvcJs_3jXCfY0Iq53QP5xnVoyhTLkGvPOql5CVMdIGQHURajzEmKddonB1MRDsYts7kcJt7fRubIxG4i3zZnoycmQgHCGhk1zOxw2WAJ3B2t48LqzC8WyIrJqsdThqq2u_PysvpgtEJX-d0AazRT-VH0zG21zldjOpWD_V6fQR1mGsuqoOjyhfshN-_Hx1CV7LotdgbLPPgqD04_ULTVPylth_cdX0pQDDE-vKIjubOw');"></div>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">add_a_photo</span>
+</div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-semibold">Restaurant Logo</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Upload your brand logo. PNG or SVG preferred.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- General Info Form Section -->
+<section class="flex flex-col gap-6 bg-white dark:bg-slate-900/50 p-6 lg:p-8 rounded-xl border border-primary/10 shadow-sm">
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-[-0.015em]">General Information</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Restaurant Name</label>
+<input class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-transparent focus:border-primary focus:ring-primary dark:text-white transition-all" placeholder="e.g. The Golden Bistro" type="text" value="The Golden Bistro"/>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Contact Email</label>
+<input class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-transparent focus:border-primary focus:ring-primary dark:text-white transition-all" placeholder="contact@restaurant.com" type="email" value="hello@goldenbistro.com"/>
+</div>
+<!-- Phone -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Phone Number</label>
+<input class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-transparent focus:border-primary focus:ring-primary dark:text-white transition-all" placeholder="+1 (555) 000-0000" type="tel" value="+1 (234) 567-8901"/>
+</div>
+<!-- Opening Hours -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Opening Hours</label>
+<div class="relative">
+<input class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-transparent focus:border-primary focus:ring-primary dark:text-white transition-all" placeholder="Mon-Sun: 9:00 AM - 10:00 PM" type="text" value="Mon-Fri: 11:00 AM - 11:00 PM"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">schedule</span>
+</div>
+</div>
+<!-- Description -->
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Description</label>
+<textarea class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-transparent focus:border-primary focus:ring-primary dark:text-white transition-all" placeholder="Describe your restaurant's unique flavors and ambiance..." rows="4">Experience fine dining at its best. The Golden Bistro offers a fusion of traditional flavors with modern culinary techniques, sourcing only the freshest local ingredients.</textarea>
+</div>
+<!-- Address -->
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Physical Address</label>
+<div class="relative">
+<input class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-transparent focus:border-primary focus:ring-primary dark:text-white transition-all" placeholder="123 Culinary Ave, Foodie City, FC 12345" type="text" value="456 Gourmet Street, Downtown Metro"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">location_on</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Preview (Bonus Contextual Component) -->
+<section class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="text-slate-900 dark:text-slate-100 text-md font-bold">Location Preview</h3>
+<button class="text-primary text-sm font-semibold hover:underline">Edit pin location</button>
+</div>
+<div class="h-48 w-full bg-slate-200 dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700">
+<div class="w-full h-full bg-cover bg-center grayscale contrast-75 opacity-80" data-alt="Stylized map showing restaurant location in city center" data-location="New York City" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB419BDuMxqJW7EzqKY_0TGHq_ze0BJMmAB9nVUwgZWCrK-Wa9CLsoujMci7TXfPGIUOpJt-oPFlOHoxFEFQ2ET3c4icXTzf1l50NNCFOgtwZgHijR4MpFmvuDNFHmLaHwqFPu4IyOAipYkvXFl9R3oSai6lvqqYLoWi5smxEd-Uke2EmedFLW1K3DCm8vWU2ULOvGvRuUT1UapwkixSfpiN0syLDUTdBJMquGLbzBW2VnMlwfJx3E7FnigdYarAlnNZiWRRpgleiw');"></div>
+</div>
+</section>
+<!-- Mobile-only Save Button -->
+<div class="flex md:hidden mt-4">
+<button class="w-full flex items-center justify-center rounded-lg h-12 bg-primary text-white font-bold text-base shadow-lg shadow-primary/20">
+                            Save Changes
+                        </button>
+</div>
+<footer class="mt-12 pt-8 border-t border-primary/10 text-center text-slate-400 dark:text-slate-500 text-xs pb-10">
+                        © 2024 Restaurant Manager Dashboard. All rights reserved.
+                    </footer>
+</div>
+</main>
+</div>
+</div>
+</body></html>

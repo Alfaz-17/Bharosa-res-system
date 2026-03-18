@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ff6933",
+              "background-light": "#f8f6f5",
+              "background-dark": "#23140f",
+            },
+            fontFamily: {
+              "display": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<title>Order Details | Admin Panel</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/10 bg-background-light dark:bg-background-dark px-6 md:px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">restaurant_menu</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight">Kitchen Display System</h2>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center overflow-hidden border border-primary/30">
+<img class="h-full w-full object-cover" data-alt="Professional male chef avatar profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeFF-3xhlUsyXjt3RK_1yiowJZSo3wM5FGKObTaitrGZWfifChbvCAH4eqQmQvMlLE2c1EmjLglIj1oOFXzMX6ZxX-tuZ-QN0J2dBClOBFRniNSlUvHSPDzkP87AShOlaXm_dAGplXS-ioydrSnUjR21iRcXazs5IgPm3EdNUdZhJGlk7PCGDrKDTYBrXmXsyKif345uultDA1fBh4uGSJaPhVZE9iKedD4KynO4m6Nuk3BNoLgJGsm9b5yzkGk3TmIt6ztp__mOk"/>
+</div>
+</div>
+</header>
+<div class="flex flex-1 flex-col lg:flex-row">
+<!-- Sidebar Navigation -->
+<aside class="w-full lg:w-64 border-r border-primary/10 bg-background-light dark:bg-background-dark p-4 flex flex-col gap-2">
+<div class="mb-6 px-3">
+<h1 class="text-base font-bold text-primary">Admin Panel</h1>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Grill &amp; Chill Restaurant</p>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-primary/10 text-slate-600 dark:text-slate-300 transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-white shadow-md shadow-primary/20" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-sm font-medium">Live Orders</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-primary/10 text-slate-600 dark:text-slate-300 transition-all" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-sm font-medium">Menu Manager</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-primary/10 text-slate-600 dark:text-slate-300 transition-all" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="text-sm font-medium">Reports</span>
+</a>
+<div class="my-4 border-t border-primary/10"></div>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-primary/10 text-slate-600 dark:text-slate-300 transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-sm font-medium">Settings</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 p-6 md:p-8 max-w-6xl mx-auto w-full">
+<!-- Order Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-1 rounded bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider">New Order</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm">Placed 4 mins ago</span>
+</div>
+<h2 class="text-3xl font-bold tracking-tight">Order #8492</h2>
+<div class="flex items-center gap-4 mt-2 text-slate-600 dark:text-slate-300">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">table_restaurant</span>
+<span class="text-sm font-medium">Table 12</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">person</span>
+<span class="text-sm font-medium">Walk-in: John D.</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="text-sm font-medium">12:45 PM</span>
+</div>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 md:flex-none px-6 py-2.5 rounded-lg border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">
+                        Accept Order
+                    </button>
+<button class="flex-1 md:flex-none px-6 py-2.5 rounded-lg bg-primary text-white font-bold shadow-lg shadow-primary/30 hover:brightness-110 transition-all">
+                        Start Preparing
+                    </button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Left Column: Items -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<div class="bg-white dark:bg-primary/5 rounded-xl border border-primary/10 overflow-hidden">
+<div class="px-6 py-4 border-b border-primary/10 bg-primary/5">
+<h3 class="font-bold text-lg">Items Ordered</h3>
+</div>
+<div class="divide-y divide-primary/5">
+<!-- Item 1 -->
+<div class="p-6 flex items-start gap-4">
+<div class="h-20 w-20 rounded-lg overflow-hidden flex-shrink-0 border border-primary/10">
+<img class="h-full w-full object-cover" data-alt="Gourmet double cheeseburger with fresh ingredients" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfILuRBvUdxskUZYT5mGe3MWrMiUQHbheXSBXx9ivZWohAFe3ZZcv2euHjHHgaAbNt20honYjlePJ4DDhtvz4ZBiz_yK-7qxsna9ZRmh6A470lr5JzE2DOpGiEwzIUB54w0nYGEhLImaOzFvXnx4gc06UJ5GNHsEjfeXi_BfQ54xtMZ8ZLyW1xPxKr1NU3kdghTQdhX3TmsVL_S2JF3uxkbvk4qgSh4js-A4Hj1xYok5AH2N04Xbh04DP3e2naw4z5IubPS1h5wgU"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100 uppercase tracking-tight">Double Smash Burger</h4>
+<p class="text-xs text-slate-500 mt-1">Medium Rare, No Onions, Extra Pickle</p>
+</div>
+<div class="text-right">
+<span class="font-bold text-primary">$18.50</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="text-sm font-semibold px-3 py-1 rounded-full bg-slate-100 dark:bg-primary/20">Qty: 2</span>
+<span class="text-sm font-bold">$37.00</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-6 flex items-start gap-4">
+<div class="h-20 w-20 rounded-lg overflow-hidden flex-shrink-0 border border-primary/10">
+<img class="h-full w-full object-cover" data-alt="Crispy golden sweet potato fries on a plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE1IdFQVsYc0Y1qJluiFye9cgvsmp6ffhOjFW45LPbn0JRBSrbmVPwtzLlcLkZzPnDv_besB6sftdGNA2W62mwPBNIIIgVHBFDz82iyrtYTTHvVkQuOg7T0zyDYo8LMeZXirgZDal5M1IK6DTOUNaZagjBOW_NPkNQHavYI72tEr1Y_tcb54Pt9sP316hEencTqYnWAcKA5wKwseQuObXiKHsXH-ZfFdR0ot5BcqQ7CYI4vcveRqtEQ23iXhaWlKAcmw1XA685LRo"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100 uppercase tracking-tight">Sweet Potato Fries</h4>
+<p class="text-xs text-slate-500 mt-1">Side of Truffle Mayo</p>
+</div>
+<div class="text-right">
+<span class="font-bold text-primary">$6.50</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="text-sm font-semibold px-3 py-1 rounded-full bg-slate-100 dark:bg-primary/20">Qty: 1</span>
+<span class="text-sm font-bold">$6.50</span>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-6 flex items-start gap-4">
+<div class="h-20 w-20 rounded-lg overflow-hidden flex-shrink-0 border border-primary/10">
+<img class="h-full w-full object-cover" data-alt="Cold craft beer in a tall glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkuqy2u832OtXRdFkMO831fwh4ndtUmpzSzCT_2MPQ4FN4BtVsIYNrK4lxju49nQxggf9_7p1WcB7pmztfYsunXBqWzMIwFV1VPauxrYDrxSek4gFjSWYnNttKDtaZIwUwBZuz0bLihOAZ0yEoWlX91fcb9UHETXtxbUto78uDKez4O0PXXDysDC91fJrWW5h2YGx8TSO8vS7Jh7SN8-P0eUNpaBqY_5-RfsF25Vr7b5KPBMuDlrSgeI3LpQBk5sqDjcrVfTVdnjc"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100 uppercase tracking-tight">Local Craft IPA</h4>
+<p class="text-xs text-slate-500 mt-1">16oz Pint</p>
+</div>
+<div class="text-right">
+<span class="font-bold text-primary">$8.00</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="text-sm font-semibold px-3 py-1 rounded-full bg-slate-100 dark:bg-primary/20">Qty: 2</span>
+<span class="text-sm font-bold">$16.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Customer Notes -->
+<div class="bg-primary/5 border-l-4 border-primary p-5 rounded-r-xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary">priority_high</span>
+<h4 class="font-bold text-sm uppercase">Kitchen Note</h4>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic font-medium leading-relaxed text-sm">
+                            "Customer has a severe peanut allergy. Please ensure no cross-contamination in the fryer for the sweet potato fries. Thank you!"
+                        </p>
+</div>
+</div>
+<!-- Right Column: Summary -->
+<div class="flex flex-col gap-6">
+<!-- Status Card -->
+<div class="bg-white dark:bg-primary/5 rounded-xl border border-primary/10 p-6">
+<h3 class="font-bold text-lg mb-4">Order Progress</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div>
+<p class="text-sm font-bold leading-none">Order Received</p>
+<p class="text-xs text-slate-500 mt-1">12:45 PM</p>
+</div>
+</div>
+<div class="flex items-center gap-3 relative">
+<div class="absolute left-4 -top-4 w-0.5 h-4 bg-primary/20"></div>
+<div class="w-8 h-8 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-primary animate-pulse">
+<span class="material-symbols-outlined text-sm">restaurant</span>
+</div>
+<div>
+<p class="text-sm font-bold leading-none">Preparing</p>
+<p class="text-xs text-slate-500 mt-1 italic">Pending action...</p>
+</div>
+</div>
+<div class="flex items-center gap-3 relative">
+<div class="absolute left-4 -top-4 w-0.5 h-4 bg-primary/20"></div>
+<div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-background-dark flex items-center justify-center text-slate-400">
+<span class="material-symbols-outlined text-sm">done_all</span>
+</div>
+<div>
+<p class="text-sm font-medium leading-none text-slate-400">Ready to Serve</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Price Breakdown -->
+<div class="bg-white dark:bg-primary/5 rounded-xl border border-primary/10 p-6">
+<h3 class="font-bold text-lg mb-4">Price Breakdown</h3>
+<div class="space-y-3">
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Subtotal</span>
+<span class="font-medium">$59.50</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Tax (8.5%)</span>
+<span class="font-medium">$5.06</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Service Fee</span>
+<span class="font-medium">$2.50</span>
+</div>
+<div class="pt-3 mt-3 border-t border-primary/10 flex justify-between items-center">
+<span class="font-bold text-lg">Total</span>
+<span class="font-bold text-2xl text-primary">$67.06</span>
+</div>
+</div>
+<div class="mt-6">
+<div class="bg-green-500/10 text-green-600 dark:text-green-400 p-3 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined">payments</span>
+<span class="text-sm font-bold uppercase tracking-wide">Paid via Terminal</span>
+</div>
+</div>
+</div>
+<!-- Secondary Actions -->
+<div class="flex flex-col gap-3">
+<button class="w-full py-3 rounded-lg bg-slate-100 dark:bg-primary/10 text-slate-700 dark:text-slate-200 font-bold flex items-center justify-center gap-2 hover:bg-primary/20 transition-all">
+<span class="material-symbols-outlined text-lg">print</span>
+                            Print Ticket
+                        </button>
+<button class="w-full py-3 rounded-lg bg-slate-100 dark:bg-primary/10 text-slate-700 dark:text-slate-200 font-bold flex items-center justify-center gap-2 hover:bg-red-500/10 hover:text-red-500 transition-all">
+<span class="material-symbols-outlined text-lg">cancel</span>
+                            Cancel Order
+                        </button>
+</div>
+<button class="w-full py-4 rounded-xl bg-primary text-white font-black text-lg shadow-xl shadow-primary/40 hover:scale-[1.02] transition-transform flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">check_circle</span>
+                        MARK AS COMPLETED
+                    </button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

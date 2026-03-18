@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Admin Dashboard - Restaurant Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6933",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23140f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="flex h-screen overflow-hidden">
+<!-- Sidebar Navigation -->
+<aside class="w-64 flex-shrink-0 border-r border-primary/10 bg-white dark:bg-background-dark/50 overflow-y-auto">
+<div class="flex flex-col h-full p-4 gap-6">
+<div class="flex items-center gap-3 px-2 py-4">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-primary">Admin Panel</h1>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary text-white font-medium" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span>Menu</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span>Orders</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span>Analytics</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">image</span>
+<span>Media</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+<span>Users</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">credit_card</span>
+<span>Billing</span>
+</a>
+<div class="mt-4 pt-4 border-t border-primary/10">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</div>
+</nav>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col overflow-hidden">
+<!-- Top Navbar -->
+<header class="h-16 flex items-center justify-between px-8 bg-white dark:bg-background-dark/80 border-b border-primary/10">
+<div class="flex items-center gap-6 flex-1">
+<h2 class="text-lg font-bold text-slate-900 dark:text-slate-100">Gourmet Haven</h2>
+<div class="relative w-full max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full bg-primary/5 border-none focus:ring-2 focus:ring-primary rounded-lg pl-10 pr-4 py-2 text-sm" placeholder="Search orders, menus, or customers..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="relative p-2 text-slate-600 dark:text-slate-400 hover:bg-primary/10 rounded-lg transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-primary rounded-full"></span>
+</button>
+<div class="h-8 w-px bg-primary/10 mx-2"></div>
+<div class="flex items-center gap-3">
+<div class="text-right hidden sm:block">
+<p class="text-sm font-semibold leading-tight">Alex Rivera</p>
+<p class="text-xs text-slate-500">Manager</p>
+</div>
+<div class="size-10 rounded-full bg-cover bg-center border-2 border-primary/20" data-alt="User profile avatar portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUgiPw4FpNInPctEi5MpJBYz1sIam_bocQh4Trrkgat5F8xesB-edEdNOiLz4ozu8CH_QIvOadesowwL5Remr5v1CzXLmN2ykMvWoeBb-yfMfXOCrjMiWTCYbkHWysprbYOi7TMq3k9Db6xqMLVXGt18oYT6XxN4RuU2H6pDM7RhrPILqZc4nDqWCUfW1M_A19fxyhnAK-exO3cm-DB5FUt_wtaV7t0QLSp07KbAB0wy2Yl3OySiIlzBa6OBqdRw7Y9-UNqo6VRBM')"></div>
+</div>
+</div>
+</header>
+<!-- Dashboard Content -->
+<div class="flex-1 overflow-y-auto p-8 space-y-8">
+<!-- Summary Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-background-dark/40 p-6 rounded-xl border border-primary/5 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<p class="text-sm font-medium text-slate-500">Total Orders</p>
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">shopping_cart</span>
+</div>
+<p class="text-2xl font-bold">1,284</p>
+<p class="text-sm mt-2 text-emerald-600 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> +12% from last month
+                        </p>
+</div>
+<div class="bg-white dark:bg-background-dark/40 p-6 rounded-xl border border-primary/5 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<p class="text-sm font-medium text-slate-500">Today's Orders</p>
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">today</span>
+</div>
+<p class="text-2xl font-bold">42</p>
+<p class="text-sm mt-2 text-emerald-600 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> +5% vs yesterday
+                        </p>
+</div>
+<div class="bg-white dark:bg-background-dark/40 p-6 rounded-xl border border-primary/5 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<p class="text-sm font-medium text-slate-500">Revenue Today</p>
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">payments</span>
+</div>
+<p class="text-2xl font-bold">$1,850.00</p>
+<p class="text-sm mt-2 text-emerald-600 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> +8% vs yesterday
+                        </p>
+</div>
+<div class="bg-white dark:bg-background-dark/40 p-6 rounded-xl border border-primary/5 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<p class="text-sm font-medium text-slate-500">Total Menu Items</p>
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">restaurant_menu</span>
+</div>
+<p class="text-2xl font-bold">156</p>
+<p class="text-sm mt-2 text-slate-400 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">horizontal_rule</span> Steady this week
+                        </p>
+</div>
+</div>
+<!-- Charts Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="bg-white dark:bg-background-dark/40 p-6 rounded-xl border border-primary/5 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-bold">Orders per day</h3>
+<select class="bg-primary/5 border-none text-xs rounded-lg focus:ring-primary py-1 px-2">
+<option>Last 7 days</option>
+<option>Last 30 days</option>
+</select>
+</div>
+<div class="h-64 flex flex-col justify-between">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 400 150">
+<path d="M0 120 Q 40 80, 80 100 T 160 60 T 240 90 T 320 40 T 400 70" fill="none" stroke="#ff6933" stroke-linecap="round" stroke-width="4"></path>
+<path d="M0 120 Q 40 80, 80 100 T 160 60 T 240 90 T 320 40 T 400 70 V 150 H 0 Z" fill="url(#grad1)" opacity="0.1"></path>
+<defs>
+<lineargradient id="grad1" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:#ff6933;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#ff6933;stop-opacity:0"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="flex justify-between text-[10px] text-slate-400 font-bold uppercase pt-4">
+<span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/40 p-6 rounded-xl border border-primary/5 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-bold">Revenue Distribution</h3>
+<div class="flex gap-4 items-center">
+<div class="flex items-center gap-1">
+<span class="size-2 bg-primary rounded-full"></span>
+<span class="text-[10px] text-slate-400">Target</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="size-2 bg-primary/30 rounded-full"></span>
+<span class="text-[10px] text-slate-400">Actual</span>
+</div>
+</div>
+</div>
+<div class="h-64 flex items-end justify-between gap-4 px-2">
+<div class="flex-1 bg-primary/10 rounded-t-lg relative group h-[40%]">
+<div class="absolute bottom-0 left-0 right-0 bg-primary rounded-t-lg h-[80%]"></div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-lg relative group h-[60%]">
+<div class="absolute bottom-0 left-0 right-0 bg-primary rounded-t-lg h-[90%]"></div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-lg relative group h-[30%]">
+<div class="absolute bottom-0 left-0 right-0 bg-primary rounded-t-lg h-[40%]"></div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-lg relative group h-[80%]">
+<div class="absolute bottom-0 left-0 right-0 bg-primary rounded-t-lg h-[60%]"></div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-lg relative group h-[90%]">
+<div class="absolute bottom-0 left-0 right-0 bg-primary rounded-t-lg h-[85%]"></div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-lg relative group h-[100%]">
+<div class="absolute bottom-0 left-0 right-0 bg-primary rounded-t-lg h-[95%]"></div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-lg relative group h-[70%]">
+<div class="absolute bottom-0 left-0 right-0 bg-primary rounded-t-lg h-[50%]"></div>
+</div>
+</div>
+<div class="flex justify-between text-[10px] text-slate-400 font-bold uppercase pt-4">
+<span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+</div>
+</div>
+</div>
+<!-- Recent Orders Table -->
+<div class="bg-white dark:bg-background-dark/40 rounded-xl border border-primary/5 shadow-sm overflow-hidden">
+<div class="p-6 border-b border-primary/5 flex items-center justify-between">
+<h3 class="font-bold text-lg">Recent Orders</h3>
+<button class="text-primary text-sm font-semibold hover:underline">View All Orders</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-primary/5 text-slate-500 uppercase text-[10px] font-bold tracking-wider">
+<tr>
+<th class="px-6 py-4">Order ID</th>
+<th class="px-6 py-4">Table / Delivery</th>
+<th class="px-6 py-4">Amount</th>
+<th class="px-6 py-4">Status</th>
+<th class="px-6 py-4">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-primary/5">
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4 font-medium">#ORD-7294</td>
+<td class="px-6 py-4">Table 12</td>
+<td class="px-6 py-4 font-semibold">$84.50</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded-full text-[10px] font-bold bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">PREPARING</span>
+</td>
+<td class="px-6 py-4">
+<button class="material-symbols-outlined text-slate-400 hover:text-primary">more_horiz</button>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4 font-medium">#ORD-7293</td>
+<td class="px-6 py-4">Delivery - UberEats</td>
+<td class="px-6 py-4 font-semibold">$32.00</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded-full text-[10px] font-bold bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">DISPATCHED</span>
+</td>
+<td class="px-6 py-4">
+<button class="material-symbols-outlined text-slate-400 hover:text-primary">more_horiz</button>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4 font-medium">#ORD-7292</td>
+<td class="px-6 py-4">Table 04</td>
+<td class="px-6 py-4 font-semibold">$124.20</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">SERVED</span>
+</td>
+<td class="px-6 py-4">
+<button class="material-symbols-outlined text-slate-400 hover:text-primary">more_horiz</button>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4 font-medium">#ORD-7291</td>
+<td class="px-6 py-4">Table 08</td>
+<td class="px-6 py-4 font-semibold">$45.10</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">SERVED</span>
+</td>
+<td class="px-6 py-4">
+<button class="material-symbols-outlined text-slate-400 hover:text-primary">more_horiz</button>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4 font-medium">#ORD-7290</td>
+<td class="px-6 py-4">Table 15</td>
+<td class="px-6 py-4 font-semibold">$210.00</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded-full text-[10px] font-bold bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-400">PENDING</span>
+</td>
+<td class="px-6 py-4">
+<button class="material-symbols-outlined text-slate-400 hover:text-primary">more_horiz</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

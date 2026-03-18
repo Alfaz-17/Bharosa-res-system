@@ -1,0 +1,457 @@
+I have a fully working Node.js + PostgreSQL + Prisma backend for a 
+Restaurant Management System with QR Scan Order flow. Build me a 
+complete, PRODUCTION-GRADE Next.js 14 frontend inspired by PetPooja's 
+professional restaurant POS/management UI.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ DESIGN PHILOSOPHY — READ THIS FIRST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Take design inspiration from PetPooja — India's leading restaurant POS. 
+Key visual traits to replicate:
+
+LAYOUT:
+- Compact, information-dense layouts (not lots of empty space)
+- Left sidebar navigation — always visible on desktop, collapsible icon 
+  mode on smaller screens
+- Top header bar: restaurant name, current user chip, notifications bell, 
+  logout
+- Content area uses full width — no narrow centered containers in staff UI
+- Dashboard uses a grid of KPI stat cards + charts filling the whole screen
+
+COLORS — Light Theme (default, also support dark):
+- Sidebar bg: #1A1D2E (deep navy/charcoal like PetPooja)
+- Sidebar text: #A0AEC0, active item: white text + #F97316 left border accent
+- Main bg: #F5F6FA (light grey, not pure white)
+- Card bg: #FFFFFF with box-shadow: 0 1px 4px rgba(0,0,0,0.08)
+- Primary accent: #F97316 (orange — PetPooja's brand color)
+- Secondary accent: #3B82F6 (blue for info states)
+- Success: #10B981, Warning: #F59E0B, Danger: #EF4444
+- Text primary: #1A202C, Text secondary: #718096
+- Border: #E2E8F0
+
+TYPOGRAPHY:
+- Font: "Inter" (Google Fonts)
+- Page titles: 20px/700
+- Section headers: 14px/600 uppercase tracking-wide text-gray-500
+- Body: 14px/400
+- Table cells: 13px
+- Stat numbers on KPI cards: 28px/700
+
+COMPONENTS (PetPooja-style):
+- KPI cards: left colored border-l-4, icon on right in colored circle, 
+  big number + label + % change chip
+- Status badges: pill shape, colored bg at 15% opacity + matching text
+  CREATED=gray, CONFIRMED=blue, IN_KITCHEN=yellow, READY=green, 
+  SERVED=teal, PAID=emerald, CANCELLED=red
+- Tables: compact row height (40px), alternating very subtle row bg, 
+  sticky header, action buttons appear on row hover only
+- Sidebar items: 40px height, 14px, icon (20px) + label, 
+  active = orange left border + white text + slightly lighter bg
+- Modals: white, rounded-lg, 480px wide max, header with title + X, 
+  footer with Cancel + Primary action
+- Forms: label above input, input border #E2E8F0, focus ring orange, 
+  helper text below in gray-500
+- Buttons: primary = orange bg white text, secondary = white bg gray border,
+  danger = red bg white text, all rounded-md h-9 px-4 text-sm font-medium
+- Tabs: underline style, active = orange underline + dark text
+- Search bars: icon inside, gray bg, no border until focused
+
+KITCHEN DISPLAY:
+- Dark background #0F172A
+- Order ticket cards: dark gray bg #1E293B, white text
+- Color urgency: <5min = normal, 5-10min = yellow border, >10min = red border
+- Large readable font for item names
+
+CUSTOMER MENU (QR Scan):
+- Completely different vibe: warm, food-focused like Zomato/Swiggy
+- White bg, food images prominent, card style menu items
+- Sticky bottom cart bar with orange CTA button
+- Clean category pills at top
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TECH STACK:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Next.js 14 (App Router)
+- TypeScript (strict mode)
+- Tailwind CSS (extend theme with above color tokens)
+- shadcn/ui (base only — heavily restyled)
+- Framer Motion (page transitions, order card animations)
+- TanStack Query v5
+- Axios (with interceptors)
+- Zustand (auth + cart)
+- React Hook Form + Zod
+- Recharts (analytics charts)
+- Sonner (toasts — bottom right)
+- qrcode npm package
+- Native WebSocket for real-time
+- date-fns
+- next-themes (dark mode)
+- @radix-ui/react-tooltip, @radix-ui/react-dropdown-menu
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BACKEND API — EXACT ENDPOINTS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Base URL: process.env.NEXT_PUBLIC_API_URL
+
+AUTH:
+  POST /api/auth/login    → { email, password } → { accessToken, user }
+  POST /api/auth/refresh  → (refreshToken cookie) → { accessToken }
+  POST /api/auth/logout
+
+MENU:
+  GET/POST          /api/menu/categories
+  GET/PUT/DELETE    /api/menu/categories/:id
+  GET/POST          /api/menu/items
+  GET/PUT/DELETE    /api/menu/items/:id
+
+ORDERS:
+  POST  /api/orders              → { table_number, notes, items: 
+                                    [{menu_item_id, quantity, notes}] }
+  GET   /api/orders              → ?status=&waiter_id=
+  GET   /api/orders/:id
+  PUT   /api/orders/:id/status   → { status }
+
+BILLING:
+  POST  /api/billing/:orderId/invoice
+  GET   /api/billing/:orderId/invoice
+  POST  /api/billing/:orderId/payments  → { method, amount, reference? }
+
+ANALYTICS (ADMIN/MANAGER):
+  GET /api/analytics/revenue
+  GET /api/analytics/top-items
+  GET /api/analytics/order-trends
+
+USERS:
+  GET    /api/users
+  POST   /api/users
+  PATCH  /api/users/:id
+  DELETE /api/users/:id
+
+MEDIA:
+  POST /api/media/upload  (multipart)
+
+RESTAURANT:
+  GET /api/restaurant/settings
+  PUT /api/restaurant/settings
+
+WEBSOCKET:
+  ws://[host]?token=ACCESS_TOKEN
+  → broadcasts order events from Redis in real-time
+
+AUTH HEADERS on every request:
+  Authorization: Bearer <accessToken>
+  X-Restaurant-Id: <user.restaurant_id>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ROLES + ACCESS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SUPER_ADMIN  → settings, delete users
+ADMIN        → all staff features
+MANAGER      → menu, orders, billing, analytics, users
+WAITER       → create orders, update status, billing
+KITCHEN      → view orders, mark IN_KITCHEN → READY only
+
+ORDER STATUS FLOW:
+CREATED → CONFIRMED → IN_KITCHEN → READY → SERVED → PAID
+CANCEL allowed from CREATED or CONFIRMED
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FOLDER STRUCTURE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+src/
+├── app/
+│   ├── (auth)/
+│   │   └── login/page.tsx
+│   ├── (customer)/
+│   │   ├── menu/[tableNumber]/page.tsx
+│   │   ├── cart/page.tsx
+│   │   └── order-status/[orderId]/page.tsx
+│   └── (staff)/
+│       ├── layout.tsx              ← Sidebar + Header shell
+│       ├── dashboard/page.tsx
+│       ├── orders/
+│       │   ├── page.tsx            ← list + live filter
+│       │   └── [id]/page.tsx       ← detail + status actions
+│       ├── kitchen/page.tsx        ← KDS full-screen dark board
+│       ├── menu/
+│       │   ├── page.tsx            ← items table
+│       │   └── categories/page.tsx
+│       ├── billing/[orderId]/page.tsx
+│       ├── users/page.tsx
+│       ├── analytics/page.tsx
+│       ├── qr-codes/page.tsx
+│       └── settings/page.tsx
+├── components/
+│   ├── ui/                         ← restyled shadcn
+│   ├── layout/
+│   │   ├── Sidebar.tsx             ← nav with icons + labels + collapse
+│   │   ├── Header.tsx
+│   │   └── MobileBottomNav.tsx
+│   ├── dashboard/
+│   │   ├── StatCard.tsx            ← KPI card with border-l-4 accent
+│   │   ├── RevenueChart.tsx        ← Recharts LineChart
+│   │   ├── TopItemsChart.tsx       ← Recharts BarChart
+│   │   └── RecentOrdersTable.tsx
+│   ├── orders/
+│   │   ├── OrdersTable.tsx
+│   │   ├── OrderDetailPanel.tsx
+│   │   ├── StatusBadge.tsx
+│   │   └── StatusUpdateButtons.tsx ← role-aware
+│   ├── kitchen/
+│   │   ├── KitchenTicket.tsx
+│   │   └── TimerBadge.tsx          ← counting up, color changes urgency
+│   ├── menu/
+│   │   ├── MenuItemsTable.tsx
+│   │   ├── ItemFormModal.tsx
+│   │   ├── CategoryList.tsx
+│   │   └── ImageUploader.tsx
+│   ├── billing/
+│   │   ├── InvoiceView.tsx
+│   │   └── PaymentModal.tsx
+│   ├── customer/
+│   │   ├── MenuItemCard.tsx
+│   │   ├── CategoryTabs.tsx
+│   │   ├── CartDrawer.tsx
+│   │   └── OrderTracker.tsx
+│   └── shared/
+│       ├── PageHeader.tsx          ← title + breadcrumb + action button
+│       ├── DataTable.tsx           ← reusable table component
+│       ├── ConfirmDialog.tsx
+│       ├── SkeletonTable.tsx
+│       └── EmptyState.tsx
+├── lib/
+│   ├── api.ts                      ← axios instance + interceptors
+│   ├── auth.ts
+│   └── websocket.ts
+├── hooks/
+│   ├── useAuth.ts
+│   ├── useCart.ts
+│   ├── useWebSocket.ts
+│   └── useOrderTimer.ts            ← elapsed time for kitchen
+├── store/
+│   ├── authStore.ts
+│   └── cartStore.ts
+├── types/
+│   └── index.ts
+└── providers/
+    ├── QueryProvider.tsx
+    └── ThemeProvider.tsx
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE-BY-PAGE SPECS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[LOGIN PAGE]
+- Full screen split: left = deep navy bg with restaurant branding/tagline, 
+  right = white login card
+- Logo placeholder at top of form
+- Email + Password with show/hide toggle
+- "Login" button full width, orange, shows spinner when loading
+- Error message in red banner below button
+- On success: decode role from JWT/user object, redirect:
+  KITCHEN → /staff/kitchen
+  WAITER  → /staff/orders
+  default → /staff/dashboard
+
+[STAFF SIDEBAR — always visible]
+Sections and nav items:
+  OVERVIEW:    Dashboard
+  OPERATIONS:  Orders, Kitchen Display, Tables (QR Codes)
+  MENU:        Menu Items, Categories
+  BILLING:     Invoices (link to last active order billing)
+  REPORTS:     Analytics
+  SETTINGS:    Users, Restaurant Settings
+Bottom: current user avatar chip + logout button
+Active item: orange left border 3px, white text, bg slightly lighter
+
+[DASHBOARD PAGE]
+Row 1 — 4 KPI stat cards:
+  Today's Revenue (₹) | Total Orders Today | Active Orders | Tables Occupied
+  Each card: icon in colored circle (right), big number, label, trend chip
+Row 2 — 2 charts side by side:
+  Left: Revenue last 30 days (line chart) from /api/analytics/revenue
+  Right: Top 5 Menu Items (horizontal bar chart) from /api/analytics/top-items
+Row 3 — Recent Orders table (last 10)
+  Columns: Order#, Table, Items, Amount, Status badge, Time, Actions
+
+[ORDERS PAGE]
+- Top bar: search input + status filter tabs (All/Active/Completed/Cancelled)
+  + "New Order" button (WAITER, ADMIN, MANAGER only)
+- Main: full-width table
+  Columns: Order#, Table, Waiter, Items count, Total, Status, Created, 
+  Time elapsed, Actions (View, Update Status)
+- Clicking a row opens a right slide-over panel (400px) with full order detail
+- Order detail panel: 
+  header: order number + status badge + close X
+  body: table number, items list with qty + price, notes
+  footer: status update buttons (role-aware) + "Generate Invoice" if SERVED
+
+[NEW ORDER MODAL]
+- Table number input
+- Search + select menu items (search from loaded items)
+- For each selected item: quantity stepper + optional notes
+- Running total shown at bottom
+- "Place Order" button
+
+[KITCHEN DISPLAY PAGE — /staff/kitchen]
+- Full screen, dark bg #0F172A
+- Fixed header: "Kitchen Display" + restaurant name + live clock
+- Grid of ticket cards (3 cols desktop, 2 tablet, 1 mobile)
+- Only shows CONFIRMED + IN_KITCHEN orders
+- Each ticket:
+  top: Order# (large) + Table number + elapsed timer (counting up)
+  body: item list (large text — easy to read from distance)
+  footer: "Start Cooking" (CONFIRMED→IN_KITCHEN) or "Mark Ready" 
+  (IN_KITCHEN→READY) button
+- Timer color: white <5min, yellow 5-10min, red >10min
+- New order appears with slide-down animation via WebSocket
+- Completed (READY) tickets fade out after 3 seconds
+
+[MENU ITEMS PAGE]
+- PageHeader: "Menu Management" + "Add Item" button
+- Filter row: search + category dropdown + availability toggle filter
+- Table: Image thumbnail (40x40 rounded), Name, Category, Price, 
+  Available toggle switch (inline, calls PUT immediately), Actions
+- Edit modal: 
+  fields: name, description, price, category select, image upload
+  Image upload: drag-drop zone, calls POST /api/media/upload, 
+  previews image, stores returned URL
+- Delete: ConfirmDialog before calling DELETE
+
+[CATEGORIES PAGE]
+- Simple list with drag handle, category name, item count, edit/delete
+- "Add Category" inline form at bottom
+
+[BILLING PAGE — /staff/billing/:orderId]
+- Fetch order + invoice
+- Left panel: order summary (items, qty, unit price, line total)
+- Right panel: 
+  Subtotal, Tax (tax_rate from settings), Discount input, Total
+  Payment method selector: 3 big toggle buttons CASH / CARD / UPI
+  UPI selected → show reference number input
+  "Collect Payment" button → POST /api/billing/:orderId/payments
+  then PUT order status to PAID
+
+[ANALYTICS PAGE]
+- Date range picker at top (last 7 / 30 / 90 days)
+- 3 charts:
+  1. Revenue over time — area chart
+  2. Orders over time — bar chart  
+  3. Top items — horizontal bar chart
+- Summary stats row: Total Revenue, Avg Order Value, Total Orders, 
+  Best Selling Item
+
+[USERS PAGE]
+- Table: Avatar initials circle, Name, Email, Role badge, Status, 
+  Last active, Actions
+- "Add Staff" button → modal with name, email, temp password, role select
+- Role badge colors:
+  SUPER_ADMIN=purple, ADMIN=red, MANAGER=blue, WAITER=green, KITCHEN=orange
+- Edit: role change + activate/deactivate toggle
+
+[QR CODES PAGE]
+- Input: enter table number + "Generate" button
+- QR encodes URL: [NEXT_PUBLIC_CUSTOMER_URL]/menu/[tableNumber]
+- Generated QRs displayed in a grid of cards
+- Each card: QR image, "Table X" label, Download PNG button
+- Previously generated QRs persisted in localStorage
+
+[SETTINGS PAGE — SUPER_ADMIN only]
+- Form: Restaurant Name, Address, Phone, Email
+- Currency selector, Timezone selector
+- Tax Rate (%) number input
+- "Save Changes" button with optimistic update
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CUSTOMER MENU (QR SIDE):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+/menu/:tableNumber
+
+Header: Restaurant name + "Table X" chip (orange bg)
+Sticky category tabs: horizontal scroll pills
+Menu items: 2-col grid on mobile, 3-col on desktop
+Each item card:
+  - Image (16:9 aspect ratio, object-cover, rounded-t)
+  - Name (font-semibold), description (2 lines truncate), Price
+  - "Add +" button bottom right, when in cart shows qty stepper
+Sticky bottom bar:
+  - "X items · ₹XX.XX  →  View Cart" orange button full width
+
+Cart page:
+  - Items list with qty +/-, item notes input, remove button
+  - Order notes textarea
+  - Total breakdown
+  - "Place Order" → POST /api/orders → redirect to /order-status/:orderId
+
+Order status page:
+  - Stepper: CREATED → CONFIRMED → IN_KITCHEN → READY → SERVED
+  - Polls every 5s (or WebSocket)
+  - Animated fill as status advances
+  - Fun status messages: "Hang tight! Your order is being prepared 🍳"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AXIOS SETUP (lib/api.ts):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- baseURL from NEXT_PUBLIC_API_URL
+- withCredentials: true (for refresh cookie)
+- Request interceptor:
+    attach Authorization: Bearer <token> from Zustand authStore
+    attach X-Restaurant-Id from Zustand authStore user.restaurant_id
+- Response interceptor:
+    on 401: call /api/auth/refresh, update token in store, retry once
+    on second 401: clear store, redirect to /login
+    on 403: show "Access denied" toast
+    on 5xx: show "Server error, try again" toast
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TYPES (types/index.ts):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Generate full TypeScript interfaces for:
+User, Restaurant, MenuCategory, MenuItem, Order, OrderItem,
+Invoice, Payment, OrderEvent, Analytics types
+All enums: Role, OrderStatus, PaymentMethod, OrderEventType
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TAILWIND CONFIG — extend with these tokens:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+colors:
+  sidebar: '#1A1D2E'
+  brand: { DEFAULT: '#F97316', hover: '#EA6C0A' }
+  surface: '#F5F6FA'
+  card: '#FFFFFF'
+  border: '#E2E8F0'
+  muted: '#718096'
+fontFamily:
+  sans: ['Inter', 'sans-serif']
+boxShadow:
+  card: '0 1px 4px rgba(0,0,0,0.08)'
+  modal: '0 20px 60px rgba(0,0,0,0.15)'
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BUILD ORDER — DO IN THIS SEQUENCE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1.  tailwind.config.ts + globals.css + fonts
+2.  types/index.ts
+3.  lib/api.ts + lib/websocket.ts
+4.  store/authStore.ts + store/cartStore.ts
+5.  providers/ (Query + Theme)
+6.  Shared components (PageHeader, DataTable, StatusBadge, 
+    SkeletonTable, EmptyState, ConfirmDialog)
+7.  Login page
+8.  Staff layout (Sidebar + Header) with route guard
+9.  Dashboard page
+10. Orders page (table + slide-over detail + WebSocket)
+11. Kitchen display page
+12. Menu items + categories pages
+13. Billing page
+14. Analytics page
+15. Users page
+16. QR Codes page
+17. Settings page
+18. Customer menu page
+19. Customer cart page
+20. Customer order status page
+
+Every file = production-complete. No TODOs. No placeholder text.
+Real loading skeletons. Real error states. Real empty states.
+All role guards enforced. All forms validated with Zod.

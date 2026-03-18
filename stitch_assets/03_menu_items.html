@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu Management - Restaurant Pro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6933",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23140f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Header Section -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-10 py-3 bg-white dark:bg-slate-900/50">
+<div class="flex items-center gap-4">
+<div class="text-primary size-8 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">restaurant_menu</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Menu Management</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-8 items-center">
+<label class="hidden md:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden">
+<div class="text-primary flex border-none bg-primary/10 items-center justify-center pl-4" data-icon="search">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-primary/10 focus:ring-0 focus:outline-none placeholder:text-primary/60 px-4 pl-2 text-base font-normal" placeholder="Search menu..." value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-10 bg-primary/10 text-primary px-3 hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-10 bg-primary/10 text-primary px-3 hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary" data-alt="User profile avatar circle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3jL7jD-LGaHcd0a42egqJYYLv8YMAkqzhY-ONyaOxjxP2Uoa5_NFPSvApN38zifo_3pjecFwff4d82rMmI2jpYHDdW47FP2O20rs5ruLe3WSWp4sZwEGj8OJKpu74FckssX4Vv3FvrGCgNBzZgF7lnQ21lf6TuFElLw0aLEowxYT04Uqn_kGGGgBD9_pK5QSzly4jXKZmHvSaEtylEWzv_NtlVcxSpEIzDYFxGhX0L2yOPicWqbfIjun4hjEiMj38twjmoum5K_Q");'></div>
+</div>
+</header>
+<div class="flex h-full grow">
+<!-- Sidebar -->
+<aside class="hidden lg:flex w-64 flex-col gap-4 border-r border-primary/10 p-4 bg-white dark:bg-slate-900/20">
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/5 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-sm font-medium">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary text-white shadow-lg shadow-primary/20" href="#">
+<span class="material-symbols-outlined">format_list_bulleted</span>
+<p class="text-sm font-medium">Menu Management</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/5 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<p class="text-sm font-medium">Orders</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/5 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<p class="text-sm font-medium">Analytics</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/5 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">group</span>
+<p class="text-sm font-medium">Staff</p>
+</a>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col min-w-0">
+<!-- Title and Action -->
+<div class="flex flex-wrap justify-between items-end gap-4 p-6 md:p-8">
+<div class="flex flex-col gap-1">
+<h1 class="text-slate-900 dark:text-slate-100 text-3xl font-black leading-tight tracking-tight">Menu Items</h1>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal">Manage your restaurant's digital menu and availability in real-time.</p>
+</div>
+<button class="flex min-w-[120px] items-center justify-center gap-2 overflow-hidden rounded-lg h-12 px-6 bg-primary text-white font-bold tracking-wide hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-primary/30">
+<span class="material-symbols-outlined">add</span>
+<span>Add Item</span>
+</button>
+</div>
+<!-- Category Tabs -->
+<div class="px-6 md:px-8">
+<div class="flex border-b border-primary/10 gap-8 overflow-x-auto no-scrollbar">
+<a class="flex flex-col items-center justify-center border-b-2 border-primary text-primary pb-3 pt-4 whitespace-nowrap" href="#">
+<p class="text-sm font-bold">All Items</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 hover:text-primary transition-colors pb-3 pt-4 whitespace-nowrap" href="#">
+<p class="text-sm font-bold">Appetizers</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 hover:text-primary transition-colors pb-3 pt-4 whitespace-nowrap" href="#">
+<p class="text-sm font-bold">Main Course</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 hover:text-primary transition-colors pb-3 pt-4 whitespace-nowrap" href="#">
+<p class="text-sm font-bold">Desserts</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 hover:text-primary transition-colors pb-3 pt-4 whitespace-nowrap" href="#">
+<p class="text-sm font-bold">Beverages</p>
+</a>
+</div>
+</div>
+<!-- Table Container -->
+<div class="p-6 md:p-8 flex-1">
+<div class="overflow-hidden rounded-xl border border-primary/10 bg-white dark:bg-slate-900/40 shadow-sm">
+<div class="overflow-x-auto @container">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-primary/5 text-slate-700 dark:text-slate-300">
+<th class="px-6 py-4 text-sm font-semibold uppercase tracking-wider">Item Name</th>
+<th class="px-6 py-4 text-sm font-semibold uppercase tracking-wider">Category</th>
+<th class="px-6 py-4 text-sm font-semibold uppercase tracking-wider">Price</th>
+<th class="px-6 py-4 text-sm font-semibold uppercase tracking-wider text-center">Availability</th>
+<th class="px-6 py-4 text-sm font-semibold uppercase tracking-wider text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-primary/5">
+<!-- Row 1 -->
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden" data-alt="Classic Burger food icon thumbnail">
+<span class="material-symbols-outlined text-primary">lunch_dining</span>
+</div>
+<span class="text-slate-900 dark:text-slate-100 font-medium">Classic Burger</span>
+</div>
+</td>
+<td class="px-6 py-5">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary">Main Course</span>
+</td>
+<td class="px-6 py-5">
+<span class="text-primary font-bold">$12.99</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex justify-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</td>
+<td class="px-6 py-5 text-right">
+<div class="flex justify-end gap-2">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+<button class="p-2 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden" data-alt="Caesar Salad food icon thumbnail">
+<span class="material-symbols-outlined text-primary">eco</span>
+</div>
+<span class="text-slate-900 dark:text-slate-100 font-medium">Caesar Salad</span>
+</div>
+</td>
+<td class="px-6 py-5">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary">Appetizers</span>
+</td>
+<td class="px-6 py-5">
+<span class="text-primary font-bold">$8.50</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex justify-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</td>
+<td class="px-6 py-5 text-right">
+<div class="flex justify-end gap-2">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+<button class="p-2 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden" data-alt="Chocolate Cake icon thumbnail">
+<span class="material-symbols-outlined text-primary">cake</span>
+</div>
+<span class="text-slate-900 dark:text-slate-100 font-medium">Lava Cake</span>
+</div>
+</td>
+<td class="px-6 py-5">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary">Desserts</span>
+</td>
+<td class="px-6 py-5">
+<span class="text-primary font-bold">$6.00</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex justify-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</td>
+<td class="px-6 py-5 text-right">
+<div class="flex justify-end gap-2">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+<button class="p-2 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden" data-alt="Iced Tea beverage icon thumbnail">
+<span class="material-symbols-outlined text-primary">local_bar</span>
+</div>
+<span class="text-slate-900 dark:text-slate-100 font-medium">Iced Tea</span>
+</div>
+</td>
+<td class="px-6 py-5">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary">Beverages</span>
+</td>
+<td class="px-6 py-5">
+<span class="text-primary font-bold">$2.50</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex justify-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</td>
+<td class="px-6 py-5 text-right">
+<div class="flex justify-end gap-2">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+<button class="p-2 text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="bg-primary/5 px-6 py-4 flex items-center justify-between border-t border-primary/10">
+<p class="text-xs text-slate-500 font-medium">Showing 4 of 24 items</p>
+<div class="flex gap-2">
+<button class="p-1 px-3 rounded bg-white dark:bg-slate-800 border border-primary/20 text-xs font-bold text-primary hover:bg-primary/5 disabled:opacity-50" disabled="">Prev</button>
+<button class="p-1 px-3 rounded bg-white dark:bg-slate-800 border border-primary/20 text-xs font-bold text-primary hover:bg-primary/5">Next</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body></html>

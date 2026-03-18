@@ -1,0 +1,1914 @@
+2026-03-12 18:29:22 [info]: Database connected successfully
+2026-03-12 18:29:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:22 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:23 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:23 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:23 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:23 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:23 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:23 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:24 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:26 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:26 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:28 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:28 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:30 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:30 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:32 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:34 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:34 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:37 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:37 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:39 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:39 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:42 [info]: Database connected successfully
+2026-03-12 18:29:42 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:42 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:42 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:42 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:42 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:42 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:42 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:43 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:44 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:44 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:45 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:45 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:47 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:49 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:52 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:52 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:54 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:56 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:56 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:29:58 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:29:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:00 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:00 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:02 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:02 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:04 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:06 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:06 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:07 [info]: Shutting down...
+2026-03-12 18:30:11 [info]: Database connected successfully
+2026-03-12 18:30:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:11 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:11 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:11 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:12 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:12 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:13 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:14 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:14 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:17 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:17 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:19 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:19 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:21 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:21 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:23 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:23 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:25 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:25 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:27 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:29 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:29 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:31 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:31 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:33 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:33 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:35 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:30:35 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:30:37 [info]: Shutting down...
+2026-03-12 18:31:58 [info]: Database connected successfully
+2026-03-12 18:31:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:31:58 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:31:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:31:58 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:31:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:31:58 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:31:58 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 18:31:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:31:58 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 18:31:58 [info]: WebSocket Server attached
+2026-03-12 18:31:58 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 18:32:32 [info]: Database connected successfully
+2026-03-12 18:32:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:32:32 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:32:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:32:32 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:32:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:32:33 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:32:33 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 18:33:49 [info]: Database connected successfully
+2026-03-12 18:33:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:33:49 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:33:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:33:49 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:33:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:33:49 [warn]: Redis [publisher] reconnecting
+2026-03-12 18:33:49 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 18:33:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 18:33:49 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 18:33:49 [info]: WebSocket Server attached
+2026-03-12 18:33:49 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 20:25:27 [info]: Shutting down...
+2026-03-12 20:25:32 [info]: Database connected successfully
+2026-03-12 20:25:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:25:32 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:25:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:25:32 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:25:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:25:32 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:25:32 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 20:25:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:25:32 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 20:25:32 [info]: WebSocket Server attached
+2026-03-12 20:25:32 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 20:31:53 [info]: Database connected successfully
+2026-03-12 20:31:53 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:31:53 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:31:53 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:31:54 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:31:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:31:54 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:31:54 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 20:31:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:31:54 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 20:31:54 [info]: WebSocket Server attached
+2026-03-12 20:31:54 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 20:32:34 [info]: Database connected successfully
+2026-03-12 20:32:34 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:32:34 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:32:34 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:32:34 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:32:34 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:32:34 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:32:34 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 20:32:34 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:32:34 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 20:32:34 [info]: WebSocket Server attached
+2026-03-12 20:32:34 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 20:42:30 [info]: Shutting down...
+2026-03-12 20:44:34 [info]: Database connected successfully
+2026-03-12 20:44:34 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:44:34 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:44:34 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:44:34 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:44:34 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:44:34 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:44:34 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 20:44:34 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:44:34 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 20:44:34 [info]: WebSocket Server attached
+2026-03-12 20:44:34 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 20:44:42 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/auth.service.js:18:17)
+    at async login (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-12 20:52:55 [info]: Database connected successfully
+2026-03-12 20:52:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:52:55 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:52:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:52:55 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:52:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:52:55 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:52:55 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 20:52:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:52:55 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 20:52:55 [info]: WebSocket Server attached
+2026-03-12 20:52:55 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 20:52:58 [info]: Shutting down...
+2026-03-12 20:54:21 [info]: Database connected successfully
+2026-03-12 20:54:21 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:54:21 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:54:21 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:54:22 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:54:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:54:22 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:54:22 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 20:54:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:54:22 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 20:54:22 [info]: WebSocket Server attached
+2026-03-12 20:54:22 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 20:55:40 [info]: Database connected successfully
+2026-03-12 20:55:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:55:40 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:55:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:55:40 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:55:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:55:40 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:55:40 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 20:55:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:55:40 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 20:55:40 [info]: WebSocket Server attached
+2026-03-12 20:55:40 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 20:55:44 [info]: Shutting down...
+2026-03-12 20:56:13 [info]: Database connected successfully
+2026-03-12 20:56:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:56:13 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:56:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:56:13 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:56:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:56:13 [warn]: Redis [publisher] reconnecting
+2026-03-12 20:56:13 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 20:56:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 20:56:13 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 20:56:13 [info]: WebSocket Server attached
+2026-03-12 20:56:13 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 21:02:32 [info]: Database connected successfully
+2026-03-12 21:02:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:02:32 [warn]: Redis [publisher] reconnecting
+2026-03-12 21:02:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:02:33 [warn]: Redis [publisher] reconnecting
+2026-03-12 21:02:33 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:02:33 [warn]: Redis [publisher] reconnecting
+2026-03-12 21:02:33 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 21:02:33 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:02:33 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 21:02:33 [info]: WebSocket Server attached
+2026-03-12 21:02:33 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 21:07:13 [info]: Database connected successfully
+2026-03-12 21:07:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:07:13 [warn]: Redis [publisher] reconnecting
+2026-03-12 21:07:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:07:13 [warn]: Redis [publisher] reconnecting
+2026-03-12 21:07:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:07:14 [warn]: Redis [publisher] reconnecting
+2026-03-12 21:07:14 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 21:07:14 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:07:14 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 21:07:14 [info]: WebSocket Server attached
+2026-03-12 21:07:14 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 21:08:29 [info]: Shutting down...
+2026-03-12 21:08:40 [info]: Database connected successfully
+2026-03-12 21:08:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:08:40 [warn]: Redis [publisher] reconnecting
+2026-03-12 21:08:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:08:40 [warn]: Redis [publisher] reconnecting
+2026-03-12 21:08:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:08:40 [warn]: Redis [publisher] reconnecting
+2026-03-12 21:08:40 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 21:08:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 21:08:40 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 21:08:40 [info]: WebSocket Server attached
+2026-03-12 21:08:40 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 23:50:26 [info]: Database connected successfully
+2026-03-12 23:50:26 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:50:26 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:50:26 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:50:27 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:50:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:50:27 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:50:27 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 23:50:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:50:27 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 23:50:27 [info]: WebSocket Server attached
+2026-03-12 23:50:27 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 23:57:43 [info]: Database connected successfully
+2026-03-12 23:57:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:43 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:57:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:43 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:57:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:43 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:57:43 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 23:57:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:43 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 23:57:43 [info]: WebSocket Server attached
+2026-03-12 23:57:43 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 23:57:47 [info]: Database connected successfully
+2026-03-12 23:57:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:47 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:57:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:47 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:57:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:47 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:57:47 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 23:57:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:47 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 23:57:47 [info]: WebSocket Server attached
+2026-03-12 23:57:47 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 23:57:49 [info]: Database connected successfully
+2026-03-12 23:57:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:49 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:57:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:49 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:57:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:49 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:57:49 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 23:57:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:57:49 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 23:57:49 [info]: WebSocket Server attached
+2026-03-12 23:57:49 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 23:58:01 [info]: Database connected successfully
+2026-03-12 23:58:01 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:01 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:58:01 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:01 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:58:01 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:01 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:58:01 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 23:58:01 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:01 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 23:58:01 [info]: WebSocket Server attached
+2026-03-12 23:58:01 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 23:58:05 [info]: Database connected successfully
+2026-03-12 23:58:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:05 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:58:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:05 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:58:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:05 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:58:05 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 23:58:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:05 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 23:58:05 [info]: WebSocket Server attached
+2026-03-12 23:58:05 [info]: Server running on http://localhost:3000 in development mode
+2026-03-12 23:58:32 [info]: Database connected successfully
+2026-03-12 23:58:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:32 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:58:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:32 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:58:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:32 [warn]: Redis [publisher] reconnecting
+2026-03-12 23:58:32 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-12 23:58:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-12 23:58:32 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-12 23:58:32 [info]: WebSocket Server attached
+2026-03-12 23:58:32 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 00:57:37 [error]: PrismaClientValidationError: 
+Invalid `prisma.restaurant.findUnique()` invocation:
+
+{
+  where: {
+    id: undefined,
+?   AND?: RestaurantWhereInput | RestaurantWhereInput[],
+?   OR?: RestaurantWhereInput[],
+?   NOT?: RestaurantWhereInput | RestaurantWhereInput[],
+?   name?: StringFilter | String,
+?   address?: StringNullableFilter | String | Null,
+?   phone?: StringNullableFilter | String | Null,
+?   email?: StringNullableFilter | String | Null,
+?   currency?: StringNullableFilter | String | Null,
+?   timezone?: StringNullableFilter | String | Null,
+?   tax_rate?: DecimalFilter | Decimal,
+?   created_at?: DateTimeFilter | DateTime,
+?   updated_at?: DateTimeFilter | DateTime,
+?   users?: UsersListRelationFilter,
+?   menu_categories?: MenuCategoriesListRelationFilter,
+?   orders?: OrdersListRelationFilter,
+?   menuItems?: MenuItemsListRelationFilter
+  }
+}
+
+Argument `where` of type RestaurantWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?.
+    at Nn (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.updateSettings (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/restaurant.service.js:14:22)
+    at async updateSettings (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/restaurant.controller.js:34:20) {"method":"PUT","url":"/api/restaurant/settings","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 00:57:51 [error]: PrismaClientValidationError: 
+Invalid `prisma.restaurant.findUnique()` invocation:
+
+{
+  where: {
+    id: undefined,
+?   AND?: RestaurantWhereInput | RestaurantWhereInput[],
+?   OR?: RestaurantWhereInput[],
+?   NOT?: RestaurantWhereInput | RestaurantWhereInput[],
+?   name?: StringFilter | String,
+?   address?: StringNullableFilter | String | Null,
+?   phone?: StringNullableFilter | String | Null,
+?   email?: StringNullableFilter | String | Null,
+?   currency?: StringNullableFilter | String | Null,
+?   timezone?: StringNullableFilter | String | Null,
+?   tax_rate?: DecimalFilter | Decimal,
+?   created_at?: DateTimeFilter | DateTime,
+?   updated_at?: DateTimeFilter | DateTime,
+?   users?: UsersListRelationFilter,
+?   menu_categories?: MenuCategoriesListRelationFilter,
+?   orders?: OrdersListRelationFilter,
+?   menuItems?: MenuItemsListRelationFilter
+  }
+}
+
+Argument `where` of type RestaurantWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?.
+    at Nn (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.updateSettings (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/restaurant.service.js:14:22)
+    at async updateSettings (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/restaurant.controller.js:34:20) {"method":"PUT","url":"/api/restaurant/settings","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 00:58:02 [info]: Database connected successfully
+2026-03-13 00:58:02 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 00:58:02 [warn]: Redis [publisher] reconnecting
+2026-03-13 00:58:02 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 00:58:02 [warn]: Redis [publisher] reconnecting
+2026-03-13 00:58:02 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 00:58:02 [warn]: Redis [publisher] reconnecting
+2026-03-13 00:58:02 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 00:58:02 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 00:58:02 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 00:58:02 [info]: WebSocket Server attached
+2026-03-13 00:58:02 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 00:58:07 [error]: PrismaClientValidationError: 
+Invalid `prisma.restaurant.findUnique()` invocation:
+
+{
+  where: {
+    id: undefined,
+?   AND?: RestaurantWhereInput | RestaurantWhereInput[],
+?   OR?: RestaurantWhereInput[],
+?   NOT?: RestaurantWhereInput | RestaurantWhereInput[],
+?   name?: StringFilter | String,
+?   address?: StringNullableFilter | String | Null,
+?   phone?: StringNullableFilter | String | Null,
+?   email?: StringNullableFilter | String | Null,
+?   currency?: StringNullableFilter | String | Null,
+?   timezone?: StringNullableFilter | String | Null,
+?   tax_rate?: DecimalFilter | Decimal,
+?   created_at?: DateTimeFilter | DateTime,
+?   updated_at?: DateTimeFilter | DateTime,
+?   users?: UsersListRelationFilter,
+?   menu_categories?: MenuCategoriesListRelationFilter,
+?   orders?: OrdersListRelationFilter,
+?   menuItems?: MenuItemsListRelationFilter
+  }
+}
+
+Argument `where` of type RestaurantWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?.
+    at Nn (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.updateSettings (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/restaurant.service.js:14:22)
+    at async updateSettings (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/restaurant.controller.js:34:20) {"method":"PUT","url":"/api/restaurant/settings","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 00:58:33 [info]: Database connected successfully
+2026-03-13 00:58:33 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 00:58:33 [warn]: Redis [publisher] reconnecting
+2026-03-13 00:58:33 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 00:58:33 [warn]: Redis [publisher] reconnecting
+2026-03-13 00:58:33 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 00:58:33 [warn]: Redis [publisher] reconnecting
+2026-03-13 00:58:33 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 00:58:33 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 00:58:33 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 00:58:33 [info]: WebSocket Server attached
+2026-03-13 00:58:33 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 00:59:55 [error]: PrismaClientValidationError: 
+Invalid `prisma.menuCategories.create()` invocation:
+
+{
+  data: {
+    name: "Snacks",
+    description: "Quick bites",
+    display_order: 0,
+    ~~~~~~~~~~~~~
+    is_active: true,
+    restaurant_id: "8eeea0a0-8ab1-4783-99c4-765b9c58fff6",
+?   id?: String,
+?   position?: Int,
+?   is_deleted?: Boolean,
+?   created_at?: DateTime,
+?   updated_at?: DateTime,
+?   menu_items?: MenuItemsUncheckedCreateNestedManyWithoutCategoryInput
+  }
+}
+
+Unknown argument `display_order`. Available options are marked with ?.
+    at Nn (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async createCategory (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/menu.controller.js:26:18) {"method":"POST","url":"/api/menu/categories","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:00:13 [info]: Database connected successfully
+2026-03-13 01:00:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:00:13 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:00:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:00:13 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:00:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:00:14 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:00:14 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:00:14 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:00:14 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:00:14 [info]: WebSocket Server attached
+2026-03-13 01:00:14 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:01:21 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:01:21 [error]: PrismaClientValidationError: 
+Invalid `prisma.menuCategories.create()` invocation:
+
+{
+  data: {
+    name: "Snacks",
+    description: "Quick bites",
+    display_order: 0,
+    ~~~~~~~~~~~~~
+    is_active: true,
+    restaurant_id: "8eeea0a0-8ab1-4783-99c4-765b9c58fff6",
+?   id?: String,
+?   position?: Int,
+?   is_deleted?: Boolean,
+?   created_at?: DateTime,
+?   updated_at?: DateTime,
+?   menu_items?: MenuItemsUncheckedCreateNestedManyWithoutCategoryInput
+  }
+}
+
+Unknown argument `display_order`. Available options are marked with ?.
+    at Nn (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async createCategory (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/menu.controller.js:26:18) {"method":"POST","url":"/api/menu/categories","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:01:35 [info]: Database connected successfully
+2026-03-13 01:01:35 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:01:35 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:01:35 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:01:35 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:01:35 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:01:35 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:01:35 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:01:35 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:01:35 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:01:35 [info]: WebSocket Server attached
+2026-03-13 01:01:35 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:01:37 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:01:37 [error]: PrismaClientValidationError: 
+Invalid `prisma.menuItems.create()` invocation:
+
+{
+  data: {
+    category_id: "a22edd67-b8a7-4b8c-a853-cb16651f317d",
+    name: "Samosa",
+    description: "Crispy potato pastry",
+    price: 20,
+    is_available: true,
+    is_deleted: false,
++   restaurant: {
++     create: RestaurantCreateWithoutMenuItemsInput | RestaurantUncheckedCreateWithoutMenuItemsInput,
++     connectOrCreate: RestaurantCreateOrConnectWithoutMenuItemsInput,
++     connect: RestaurantWhereUniqueInput
++   }
+  }
+}
+
+Argument `restaurant` is missing.
+    at Nn (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async createItem (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/menu.controller.js:70:18) {"method":"POST","url":"/api/menu/items","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:02:01 [info]: Database connected successfully
+2026-03-13 01:02:01 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:01 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:01 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:01 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:01 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:01 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:01 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:02:01 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:01 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:02:01 [info]: WebSocket Server attached
+2026-03-13 01:02:01 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:02:03 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:02:06 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"ebdd8d6e-a62f-4763-a8d7-48f8e5b995c0","order_number":"ORD-R0OL54","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:02:21 [info]: Database connected successfully
+2026-03-13 01:02:21 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:21 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:21 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:21 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:21 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:21 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:21 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:02:21 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:21 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:02:21 [info]: WebSocket Server attached
+2026-03-13 01:02:21 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:02:23 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:02:25 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"5186a756-4f6a-41d3-8267-37810e085af4","order_number":"ORD-O8WU7H","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:02:25 [error]: PrismaClientValidationError: 
+Invalid `prisma.orders.findFirst()` invocation:
+
+{
+  where: {
+    id: "5186a756-4f6a-41d3-8267-37810e085af4",
+    restaurant_id: "8eeea0a0-8ab1-4783-99c4-765b9c58fff6"
+  },
+  include: {
+    waiter: {
+      select: {
+        id: true,
+        name: true,
+        role: true
+      }
+    },
+    order_items: {
+      include: {
+        menu_item: {
+          select: {
+            id: true,
+            name: true
+          }
+        }
+      }
+    },
+    order_events: {
+      orderBy: {
+        created_at: "asc",
+        ~~~~~~~~~~
+?       id?: SortOrder,
+?       order_id?: SortOrder,
+?       event_type?: SortOrder,
+?       user_id?: SortOrder | SortOrderInput,
+?       notes?: SortOrder | SortOrderInput,
+?       timestamp?: SortOrder,
+?       order?: OrdersOrderByWithRelationInput,
+?       user?: UsersOrderByWithRelationInput
+      },
+      include: {
+        user: {
+          select: {
+            id: true,
+            name: true
+          }
+        }
+      }
+    }
+  }
+}
+
+Unknown argument `created_at`. Available options are marked with ?.
+    at Nn (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.updateOrderStatus (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/order.service.js:75:17)
+    at async updateOrderStatus (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/5186a756-4f6a-41d3-8267-37810e085af4/status","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:02:36 [info]: Database connected successfully
+2026-03-13 01:02:36 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:36 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:36 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:36 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:36 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:37 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:37 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:02:37 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:37 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:02:37 [info]: WebSocket Server attached
+2026-03-13 01:02:37 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:02:46 [info]: Database connected successfully
+2026-03-13 01:02:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:46 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:46 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:46 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:02:46 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:02:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:02:46 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:02:46 [info]: WebSocket Server attached
+2026-03-13 01:02:46 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:03:07 [info]: Database connected successfully
+2026-03-13 01:03:07 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:03:07 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:03:07 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:03:07 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:03:07 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:03:07 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:03:07 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:03:07 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:03:07 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:03:07 [info]: WebSocket Server attached
+2026-03-13 01:03:07 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:03:09 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:03:12 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"6484ceb3-cbfa-45f6-a6d2-b08b73d6fe3a","order_number":"ORD-9VCTB8","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:03:12 [error]: TypeError: Cannot read properties of undefined (reading 'map')
+    at file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/middleware/validate.middleware.js:13:40
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:157:13)
+    at file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/middleware/auth.middleware.js:37:12
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\index.js:295:15 {"method":"PUT","url":"/api/orders/6484ceb3-cbfa-45f6-a6d2-b08b73d6fe3a/status","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:03:49 [info]: Database connected successfully
+2026-03-13 01:03:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:03:49 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:03:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:03:50 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:03:50 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:03:50 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:03:50 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:03:50 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:03:50 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:03:50 [info]: WebSocket Server attached
+2026-03-13 01:03:50 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:03:52 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:03:54 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"43a4f2d4-6d98-44fb-a819-480af3a4dcc2","order_number":"ORD-8KZJYJ","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:03:54 [error]: TypeError: Cannot read properties of undefined (reading 'map')
+    at file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/middleware/validate.middleware.js:13:40
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:157:13)
+    at file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/middleware/auth.middleware.js:37:12
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\index.js:295:15 {"method":"PUT","url":"/api/orders/43a4f2d4-6d98-44fb-a819-480af3a4dcc2/status","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:04:20 [info]: Database connected successfully
+2026-03-13 01:04:20 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:20 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:04:20 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:20 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:04:20 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:20 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:04:20 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:04:20 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:20 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:04:20 [info]: WebSocket Server attached
+2026-03-13 01:04:20 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:04:22 [info]: Database connected successfully
+2026-03-13 01:04:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:22 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:04:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:22 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:04:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:22 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:04:22 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:04:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:22 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:04:22 [info]: WebSocket Server attached
+2026-03-13 01:04:22 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:04:39 [info]: Database connected successfully
+2026-03-13 01:04:39 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:39 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:04:39 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:39 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:04:39 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:40 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:04:40 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:04:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:04:40 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:04:40 [info]: WebSocket Server attached
+2026-03-13 01:04:40 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:04:41 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:04:44 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"b8dccc38-98c2-42f8-8815-3f0e93d5756c","order_number":"ORD-3VE7PI","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:04:44 [error]: TypeError: Cannot read properties of undefined (reading 'map')
+    at file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/middleware/validate.middleware.js:13:40
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:157:13)
+    at file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/middleware/auth.middleware.js:37:12
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\index.js:295:15 {"method":"PUT","url":"/api/orders/b8dccc38-98c2-42f8-8815-3f0e93d5756c/status","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:05:08 [info]: Database connected successfully
+2026-03-13 01:05:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:08 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:05:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:08 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:05:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:08 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:05:08 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:05:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:08 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:05:08 [info]: WebSocket Server attached
+2026-03-13 01:05:08 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:05:10 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:05:13 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"fedb8deb-2b8e-4027-bdcb-83731ab7b958","order_number":"ORD-TA8IO2","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:05:13 [error]: TypeError: Cannot read properties of undefined (reading 'map')
+    at file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/middleware/validate.middleware.js:16:40
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:157:13)
+    at file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/middleware/auth.middleware.js:37:12
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\router\index.js:295:15 {"method":"PUT","url":"/api/orders/fedb8deb-2b8e-4027-bdcb-83731ab7b958/status","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:05:24 [info]: Database connected successfully
+2026-03-13 01:05:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:24 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:05:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:24 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:05:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:24 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:05:24 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:05:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:24 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:05:24 [info]: WebSocket Server attached
+2026-03-13 01:05:24 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:05:26 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:05:29 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"20bc2099-016e-4220-ba9d-0b7a2840d0d8","order_number":"ORD-GV5MBO","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:05:54 [info]: Database connected successfully
+2026-03-13 01:05:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:54 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:05:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:54 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:05:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:54 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:05:54 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:05:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:05:54 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:05:54 [info]: WebSocket Server attached
+2026-03-13 01:05:54 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:05:56 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:05:59 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"783353f3-8b23-4bdc-b7c2-9e50eccbb986","order_number":"ORD-AU65M0","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:06:20 [info]: Database connected successfully
+2026-03-13 01:06:20 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:06:20 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:06:20 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:06:20 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:06:20 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:06:21 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:06:21 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:06:21 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:06:21 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:06:21 [info]: WebSocket Server attached
+2026-03-13 01:06:21 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:06:22 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:06:25 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"bbb61279-395e-4c71-a4cc-df2a481428a1","order_number":"ORD-HJI7K5","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:06:47 [info]: Database connected successfully
+2026-03-13 01:06:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:06:47 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:06:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:06:47 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:06:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:06:47 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:06:47 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:06:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:06:47 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:06:47 [info]: WebSocket Server attached
+2026-03-13 01:06:47 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:06:49 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:06:52 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"95879ac1-55cd-410b-820f-f188cc8a896f","order_number":"ORD-HK1MW3","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:07:09 [info]: Database connected successfully
+2026-03-13 01:07:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:07:09 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:07:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:07:09 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:07:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:07:10 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:07:10 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:07:10 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:07:10 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:07:10 [info]: WebSocket Server attached
+2026-03-13 01:07:10 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:07:11 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:07:14 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"62bc314c-d2ac-45b7-bd5e-5d315156c6df","order_number":"ORD-8SVFRC","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:07:27 [info]: Database connected successfully
+2026-03-13 01:07:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:07:27 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:07:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:07:27 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:07:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:07:27 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:07:27 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:07:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:07:27 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:07:27 [info]: WebSocket Server attached
+2026-03-13 01:07:27 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:07:29 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:07:32 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"e4aa833a-0826-4560-8895-05d0b5fe7850","order_number":"ORD-3E3ING","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:07:33 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"e4aa833a-0826-4560-8895-05d0b5fe7850","status":"CONFIRMED","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:07:34 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"e4aa833a-0826-4560-8895-05d0b5fe7850","status":"IN_KITCHEN","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:07:35 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"e4aa833a-0826-4560-8895-05d0b5fe7850","status":"READY","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:07:35 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"e4aa833a-0826-4560-8895-05d0b5fe7850","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:07:36 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"e4aa833a-0826-4560-8895-05d0b5fe7850","status":"SERVED","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:06 [info]: Database connected successfully
+2026-03-13 01:08:06 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:06 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:08:06 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:06 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:08:06 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:06 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:08:06 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:08:06 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:06 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:08:06 [info]: WebSocket Server attached
+2026-03-13 01:08:06 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:08:08 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:08:11 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"57bfeec4-917e-4bb5-bc33-c7c346c8370a","order_number":"ORD-CSPIO9","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:12 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"57bfeec4-917e-4bb5-bc33-c7c346c8370a","status":"CONFIRMED","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:13 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"57bfeec4-917e-4bb5-bc33-c7c346c8370a","status":"IN_KITCHEN","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:14 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"57bfeec4-917e-4bb5-bc33-c7c346c8370a","status":"READY","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:14 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"57bfeec4-917e-4bb5-bc33-c7c346c8370a","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:15 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"57bfeec4-917e-4bb5-bc33-c7c346c8370a","status":"SERVED","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:16 [error]: PrismaClientValidationError: 
+Invalid `prisma.invoices.create()` invocation:
+
+{
+  data: {
+    order_id: "57bfeec4-917e-4bb5-bc33-c7c346c8370a",
+    subtotal_amount: 40,
+    tax_amount: 7.2,
+    total_amount: 47.2,
++   subtotal: Decimal
+  }
+}
+
+Argument `subtotal` is missing.
+    at Nn (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\PRENEEL\Desktop\MM Deliveribles\Bharosa Cafe\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async generateInvoice (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/billing.controller.js:13:21) {"method":"POST","url":"/api/billing/57bfeec4-917e-4bb5-bc33-c7c346c8370a/invoice","user":"f5aefa1b-0b1f-4f44-837e-4a33c8e0cc1a"}
+2026-03-13 01:08:39 [info]: Database connected successfully
+2026-03-13 01:08:39 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:39 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:08:39 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:39 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:08:39 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:39 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:08:39 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:08:39 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:39 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:08:39 [info]: WebSocket Server attached
+2026-03-13 01:08:39 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:08:42 [info]: Database connected successfully
+2026-03-13 01:08:42 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:42 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:08:42 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:42 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:08:42 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:42 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:08:42 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:08:42 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:08:42 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:08:42 [info]: WebSocket Server attached
+2026-03-13 01:08:42 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:08:49 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:08:51 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"f9e4ec1e-ff78-48fa-8a34-1d03a6d31863","order_number":"ORD-Y3KAQ4","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:53 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"f9e4ec1e-ff78-48fa-8a34-1d03a6d31863","status":"CONFIRMED","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:54 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"f9e4ec1e-ff78-48fa-8a34-1d03a6d31863","status":"IN_KITCHEN","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:55 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"f9e4ec1e-ff78-48fa-8a34-1d03a6d31863","status":"READY","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:55 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"f9e4ec1e-ff78-48fa-8a34-1d03a6d31863","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:08:56 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"f9e4ec1e-ff78-48fa-8a34-1d03a6d31863","status":"SERVED","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:09:08 [info]: Database connected successfully
+2026-03-13 01:09:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:09:08 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:09:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:09:08 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:09:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:09:08 [warn]: Redis [publisher] reconnecting
+2026-03-13 01:09:08 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-13 01:09:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-13 01:09:08 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-13 01:09:08 [info]: WebSocket Server attached
+2026-03-13 01:09:08 [info]: Server running on http://localhost:3000 in development mode
+2026-03-13 01:09:10 [error]: Error: User with this email already exists.
+    at Module.create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/services/user.service.js:11:11)
+    at async create (file:///C:/Users/PRENEEL/Desktop/MM%20Deliveribles/Bharosa%20Cafe/backend/src/controllers/user.controller.js:26:18) {"method":"POST","url":"/api/users","user":"69347962-5235-4692-94bd-f5d78dd099a4"}
+2026-03-13 01:09:12 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"46edb76c-6fd8-4031-951a-7b3feb9c4116","order_number":"ORD-KGGRXL","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:09:14 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"46edb76c-6fd8-4031-951a-7b3feb9c4116","status":"CONFIRMED","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:09:15 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"46edb76c-6fd8-4031-951a-7b3feb9c4116","status":"IN_KITCHEN","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:09:16 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"46edb76c-6fd8-4031-951a-7b3feb9c4116","status":"READY","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:09:16 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"46edb76c-6fd8-4031-951a-7b3feb9c4116","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-13 01:09:17 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"46edb76c-6fd8-4031-951a-7b3feb9c4116","status":"SERVED","restaurant_id":"8eeea0a0-8ab1-4783-99c4-765b9c58fff6"}}
+2026-03-14 18:24:09 [info]: Database connected successfully
+2026-03-14 18:24:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:24:09 [warn]: Redis [publisher] reconnecting
+2026-03-14 18:24:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:24:09 [warn]: Redis [publisher] reconnecting
+2026-03-14 18:24:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:24:09 [warn]: Redis [publisher] reconnecting
+2026-03-14 18:24:09 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-14 18:24:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:24:09 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-14 18:24:09 [info]: WebSocket Server attached
+2026-03-14 18:24:09 [info]: Server running on http://localhost:5000 in development mode
+2026-03-14 18:29:08 [info]: Database connected successfully
+2026-03-14 18:29:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:29:08 [warn]: Redis [publisher] reconnecting
+2026-03-14 18:29:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:29:08 [warn]: Redis [publisher] reconnecting
+2026-03-14 18:29:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:29:08 [warn]: Redis [publisher] reconnecting
+2026-03-14 18:29:08 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-14 18:29:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:29:08 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-14 18:29:08 [info]: WebSocket Server attached
+2026-03-14 18:29:08 [info]: Server running on http://localhost:5000 in development mode
+2026-03-14 18:29:08 [info]: Database connected successfully
+2026-03-14 18:29:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:29:08 [warn]: Redis [publisher] reconnecting
+2026-03-14 18:29:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:29:08 [warn]: Redis [publisher] reconnecting
+2026-03-14 18:29:08 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-14 18:29:08 [warn]: Redis [publisher] reconnecting
+2026-03-14 18:29:08 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-15 12:54:14 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-16 11:41:58 [info]: Database connected successfully
+2026-03-16 11:41:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 11:41:58 [warn]: Redis [publisher] reconnecting
+2026-03-16 11:41:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 11:41:58 [warn]: Redis [publisher] reconnecting
+2026-03-16 11:41:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 11:41:58 [warn]: Redis [publisher] reconnecting
+2026-03-16 11:41:58 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 11:41:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 11:41:58 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 11:41:58 [info]: WebSocket Server attached
+2026-03-16 11:41:58 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 13:26:17 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-16 13:35:43 [info]: Database connected successfully
+2026-03-16 13:35:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:35:43 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:35:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:35:44 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:35:44 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:35:44 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:35:44 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 13:35:44 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:35:44 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 13:35:44 [info]: WebSocket Server attached
+2026-03-16 13:35:44 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 13:43:11 [info]: Database connected successfully
+2026-03-16 13:43:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:43:11 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:43:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:43:11 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:43:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:43:12 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:43:12 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 13:43:12 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:43:12 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 13:43:12 [info]: WebSocket Server attached
+2026-03-16 13:43:12 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 13:43:28 [info]: Database connected successfully
+2026-03-16 13:43:28 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:43:28 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:43:28 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:43:28 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:43:28 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:43:28 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:43:28 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 13:43:28 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:43:28 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 13:43:28 [info]: WebSocket Server attached
+2026-03-16 13:43:28 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 13:45:11 [info]: Database connected successfully
+2026-03-16 13:45:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:45:11 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:45:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:45:11 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:45:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:45:11 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:45:11 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 13:45:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:45:11 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 13:45:11 [info]: WebSocket Server attached
+2026-03-16 13:45:11 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 13:55:36 [info]: Shutting down...
+2026-03-16 13:55:49 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-16 13:57:32 [info]: Database connected successfully
+2026-03-16 13:57:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:57:32 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:57:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:57:32 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:57:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:57:32 [warn]: Redis [publisher] reconnecting
+2026-03-16 13:57:32 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 13:57:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 13:57:32 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 13:57:32 [info]: WebSocket Server attached
+2026-03-16 13:57:32 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 13:59:47 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:02:12 [info]: Database connected successfully
+2026-03-16 14:02:12 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:02:12 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:02:12 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:02:12 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:02:12 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:02:12 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:02:12 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:02:32 [info]: Shutting down...
+2026-03-16 14:03:05 [info]: Database connected successfully
+2026-03-16 14:03:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:03:05 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:03:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:03:05 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:03:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:03:05 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:03:05 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:03:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:03:05 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 14:03:05 [info]: WebSocket Server attached
+2026-03-16 14:03:05 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 14:05:04 [info]: Database connected successfully
+2026-03-16 14:05:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:05:04 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:05:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:05:04 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:05:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:05:04 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:05:04 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:05:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:05:04 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 14:05:04 [info]: WebSocket Server attached
+2026-03-16 14:05:04 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 14:08:25 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:08:35 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:08:56 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:09:04 [error]: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\body-parser\lib\types\json.js:72:19)
+    at C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\body-parser\lib\read.js:162:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:09:14 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:11:24 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:14:03 [info]: Database connected successfully
+2026-03-16 14:14:03 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:03 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:03 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:04 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:04 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:04 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:14:47 [info]: Database connected successfully
+2026-03-16 14:14:47 [info]: Database connected successfully
+2026-03-16 14:14:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:47 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:47 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:47 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:47 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:47 [info]: Database connected successfully
+2026-03-16 14:14:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:47 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:48 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:48 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:48 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:48 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:14:48 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:14:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:14:48 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 14:14:48 [info]: WebSocket Server attached
+2026-03-16 14:14:48 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 14:14:48 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:14:48 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:17:18 [info]: Database connected successfully
+2026-03-16 14:17:18 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:17:18 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:17:18 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:17:18 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:17:18 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:17:19 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:17:19 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:17:19 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:17:19 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 14:17:19 [info]: WebSocket Server attached
+2026-03-16 14:17:19 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 14:48:13 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.users.findUnique()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:8:16)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:48:38 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.users.findUnique()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:8:16)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:49:30 [info]: Shutting down...
+2026-03-16 14:49:43 [info]: Database connected successfully
+2026-03-16 14:49:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:49:43 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:49:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:49:43 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:49:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:49:43 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:49:43 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:49:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:49:43 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 14:49:43 [info]: WebSocket Server attached
+2026-03-16 14:49:43 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 14:49:45 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:49:48 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:50:31 [info]: Database connected successfully
+2026-03-16 14:50:31 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:50:31 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:50:31 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:50:31 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:50:31 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:50:32 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:50:32 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:50:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:50:32 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 14:50:32 [info]: WebSocket Server attached
+2026-03-16 14:50:32 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 14:56:31 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:56:34 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:56:37 [info]: Shutting down...
+2026-03-16 14:56:44 [info]: Database connected successfully
+2026-03-16 14:56:45 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:56:45 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:56:45 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:56:45 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:56:45 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:56:45 [warn]: Redis [publisher] reconnecting
+2026-03-16 14:56:45 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 14:56:45 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 14:56:45 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 14:56:45 [info]: WebSocket Server attached
+2026-03-16 14:56:45 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 14:56:59 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 14:57:03 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 15:07:55 [info]: Database connected successfully
+2026-03-16 15:07:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 15:07:55 [warn]: Redis [publisher] reconnecting
+2026-03-16 15:07:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 15:07:55 [info]: Database connected successfully
+2026-03-16 15:07:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 15:07:55 [warn]: Redis [publisher] reconnecting
+2026-03-16 15:07:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 15:07:55 [warn]: Redis [publisher] reconnecting
+2026-03-16 15:07:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 15:07:55 [warn]: Redis [publisher] reconnecting
+2026-03-16 15:07:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 15:07:55 [warn]: Redis [publisher] reconnecting
+2026-03-16 15:07:55 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 15:07:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 15:07:55 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 15:07:55 [info]: WebSocket Server attached
+2026-03-16 15:07:55 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 15:07:55 [warn]: Redis [publisher] reconnecting
+2026-03-16 15:07:55 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 15:15:13 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-16 15:15:13 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-16 15:15:13 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-16 15:15:13 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-16 16:02:26 [info]: Database connected successfully
+2026-03-16 16:02:26 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:02:26 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:02:26 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:02:26 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:02:26 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:02:26 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:02:26 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 16:02:26 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:02:26 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 16:02:26 [info]: WebSocket Server attached
+2026-03-16 16:02:26 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 16:09:05 [info]: Database connected successfully
+2026-03-16 16:09:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:09:05 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:09:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:09:05 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:09:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:09:05 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:09:05 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 16:09:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:09:05 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 16:09:05 [info]: WebSocket Server attached
+2026-03-16 16:09:05 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 16:28:25 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 16:28:27 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 16:28:53 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:18:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 16:28:55 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:18:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-16 16:33:50 [info]: Shutting down...
+2026-03-16 16:34:01 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-16 16:34:24 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-16 16:34:54 [info]: Database connected successfully
+2026-03-16 16:34:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:34:54 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:34:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:34:54 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:34:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:34:54 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:34:54 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 16:34:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:34:54 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 16:34:54 [info]: WebSocket Server attached
+2026-03-16 16:34:54 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 16:35:04 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.menuItems.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getItems (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/menu.controller.js:77:18) {"method":"GET","url":"/api/menu/items","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-16 16:35:08 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.menuItems.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getItems (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/menu.controller.js:77:18) {"method":"GET","url":"/api/menu/items","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-16 16:35:08 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.orders.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrders (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:36:20) {"method":"GET","url":"/api/orders?","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-16 16:35:14 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.menuItems.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getItems (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/menu.controller.js:77:18) {"method":"GET","url":"/api/menu/items","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-16 16:35:14 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.orders.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrders (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:36:20) {"method":"GET","url":"/api/orders?","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-16 16:35:32 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.orders.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrders (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:36:20) {"method":"GET","url":"/api/orders?","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-16 16:35:32 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.menuItems.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getItems (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/menu.controller.js:77:18) {"method":"GET","url":"/api/menu/items","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-16 16:35:38 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.orders.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrders (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:36:20) {"method":"GET","url":"/api/orders?","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-16 16:35:50 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.menuItems.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getItems (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/menu.controller.js:77:18) {"method":"GET","url":"/api/menu/items","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-16 16:35:50 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.orders.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrders (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:36:20) {"method":"GET","url":"/api/orders?","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-16 16:36:14 [info]: Database connected successfully
+2026-03-16 16:36:14 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:36:14 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:36:14 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:36:14 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:36:14 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:36:15 [warn]: Redis [publisher] reconnecting
+2026-03-16 16:36:15 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-16 16:36:15 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-16 16:36:15 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-16 16:36:15 [info]: WebSocket Server attached
+2026-03-16 16:36:15 [info]: Server running on http://localhost:5000 in development mode
+2026-03-16 16:40:07 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-16 16:40:47 [info]: Shutting down...
+2026-03-17 12:06:32 [info]: Database connected successfully
+2026-03-17 12:06:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:06:32 [warn]: Redis [publisher] reconnecting
+2026-03-17 12:06:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:06:32 [warn]: Redis [publisher] reconnecting
+2026-03-17 12:06:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:06:32 [warn]: Redis [publisher] reconnecting
+2026-03-17 12:06:32 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-17 12:06:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:06:32 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-17 12:06:32 [info]: WebSocket Server attached
+2026-03-17 12:06:32 [info]: Server running on http://localhost:5000 in development mode
+2026-03-17 12:07:27 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 12:07:27 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 12:07:27 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 12:07:27 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 12:07:30 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 12:07:30 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 12:07:30 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 12:07:30 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 12:07:52 [info]: Shutting down...
+2026-03-17 12:07:59 [info]: Database connected successfully
+2026-03-17 12:07:59 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:07:59 [warn]: Redis [publisher] reconnecting
+2026-03-17 12:07:59 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:07:59 [warn]: Redis [publisher] reconnecting
+2026-03-17 12:07:59 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:08:00 [warn]: Redis [publisher] reconnecting
+2026-03-17 12:08:00 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-17 12:08:00 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:08:00 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-17 12:08:00 [info]: WebSocket Server attached
+2026-03-17 12:08:00 [info]: Server running on http://localhost:5000 in development mode
+2026-03-17 12:59:58 [info]: Database connected successfully
+2026-03-17 12:59:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:59:58 [warn]: Redis [publisher] reconnecting
+2026-03-17 12:59:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:59:58 [warn]: Redis [publisher] reconnecting
+2026-03-17 12:59:58 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:59:59 [warn]: Redis [publisher] reconnecting
+2026-03-17 12:59:59 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-17 12:59:59 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 12:59:59 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-17 12:59:59 [info]: WebSocket Server attached
+2026-03-17 12:59:59 [info]: Server running on http://localhost:5000 in development mode
+2026-03-17 13:04:54 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 13:04:54 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 13:04:54 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 13:04:55 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 13:05:01 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 13:05:01 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 13:05:29 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.users.findUnique()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:8:16)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-17 13:59:43 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"087f3b4e-2435-4ffc-a618-07bd30955e64","order_number":"ORD-SUGRIA","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 14:09:52 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 14:22:15 [info]: Database connected successfully
+2026-03-17 14:22:15 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 14:22:15 [warn]: Redis [publisher] reconnecting
+2026-03-17 14:22:15 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 14:22:15 [warn]: Redis [publisher] reconnecting
+2026-03-17 14:22:15 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 14:22:15 [warn]: Redis [publisher] reconnecting
+2026-03-17 14:22:15 [warn]: Redis [publisher] max retries reached. Giving up.
+2026-03-17 14:22:15 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 14:22:15 [warn]: Failed to connect to Redis. Proceeding without WebSocket pub/sub features.
+2026-03-17 14:22:15 [info]: WebSocket Server attached
+2026-03-17 14:22:15 [info]: Server running on http://localhost:5000 in development mode
+2026-03-17 14:32:13 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.users.findUnique()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:8:16)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-17 14:33:17 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 14:35:07 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.menuItems.findMany()` invocation:
+
+
+Server has closed the connection.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getItems (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/menu.controller.js:77:18) {"method":"GET","url":"/api/menu/items","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 14:35:07 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Server has closed the connection.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrderTrends (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/analytics.controller.js:43:18) {"method":"GET","url":"/api/analytics/order-trends?from=2026-03-09T18:30:00.000Z&to=2026-03-17T18:29:59.999Z","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 14:35:14 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrderTrends (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/analytics.controller.js:43:18) {"method":"GET","url":"/api/analytics/order-trends?from=2026-03-09T18:30:00.000Z&to=2026-03-17T18:29:59.999Z","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 14:35:19 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.menuItems.findMany()` invocation:
+
+
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 17)
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getItems (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/menu.controller.js:77:18) {"method":"GET","url":"/api/menu/items","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 14:36:30 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.menuItems.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getItems (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/menu.controller.js:77:18) {"method":"GET","url":"/api/menu/items","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 14:41:53 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"cbd3c6f1-0fd5-4d2d-b399-afaf577b97e3","order_number":"ORD-6J86IB","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}

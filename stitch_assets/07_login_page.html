@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6933",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23140f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Gourmet Express - Admin Login</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="flex min-h-screen">
+<!-- Left Side: Branding & Illustration -->
+<div class="hidden lg:flex lg:w-1/2 flex-col justify-between bg-primary/10 dark:bg-primary/5 p-12 relative overflow-hidden">
+<div class="z-10">
+<div class="flex items-center gap-3 text-primary mb-12">
+<div class="size-10 bg-primary text-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">restaurant_menu</span>
+</div>
+<h2 class="text-2xl font-black tracking-tight">Gourmet Express</h2>
+</div>
+<div class="max-w-md">
+<h1 class="text-5xl font-black leading-tight mb-6">
+                        The heartbeat of your <span class="text-primary">kitchen.</span>
+</h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Streamline your restaurant operations with the ultimate management toolkit. Manage orders, staff, and inventory in one place.
+                    </p>
+</div>
+</div>
+<div class="mt-auto z-10">
+<div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl flex items-center gap-4 border border-primary/20 max-w-sm">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100">Performance Tracking</p>
+<p class="text-sm text-slate-500">Real-time analytics for your business</p>
+</div>
+</div>
+</div>
+<!-- Abstract Decoration -->
+<div class="absolute -bottom-20 -left-20 size-80 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute top-40 right-10 size-60 bg-primary/5 rounded-full blur-2xl"></div>
+<div class="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
+<img class="w-3/4 grayscale" data-alt="Stylized modern illustration of food and cooking utensils" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXYCnu_U2M_gS24LzaAnY8tGdQnIBsS2-D_IGW6r1BnqVY0H-wpBWz0Pmk5pQo-wMN-m6M1oMk34YBUc7BFClc3yVybu3--CL34SgRQtSAYjqZw6_cJNidcxOyB4IUhrMGqlmwChJLyJysRY6XVFzUtRcrLBRyBthtPiAep8SmCgqcbBOtVW6CylU7FoQMPdtmmWTHgaF2lt6-QVmzKN0c_bLR1R1EYKROaLBpO7fOAFKDelHhl9Oe-xdlNWavG5RpLPtJeFzaFwE"/>
+</div>
+</div>
+<!-- Right Side: Login Form -->
+<div class="w-full lg:w-1/2 flex flex-col justify-center items-center px-6 py-12 bg-background-light dark:bg-background-dark">
+<div class="w-full max-w-[440px]">
+<!-- Mobile Logo -->
+<div class="flex items-center gap-3 text-primary mb-10 lg:hidden">
+<span class="material-symbols-outlined text-3xl font-bold">restaurant_menu</span>
+<h2 class="text-xl font-bold">Gourmet Express</h2>
+</div>
+<div class="mb-10">
+<h2 class="text-3xl font-extrabold text-slate-900 dark:text-slate-100 mb-2">Admin Login</h2>
+<p class="text-slate-500 dark:text-slate-400">Welcome back! Please enter your details.</p>
+</div>
+<form class="space-y-6">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Email Address</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary transition-colors">mail</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-slate-900 dark:text-slate-100" placeholder="admin@gourmetexpress.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Password</label>
+<a class="text-sm font-bold text-primary hover:underline" href="#">Forgot Password?</a>
+</div>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary transition-colors">lock</span>
+<input class="w-full pl-12 pr-12 py-3.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-slate-900 dark:text-slate-100" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200" type="button">
+<span class="material-symbols-outlined text-xl">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-3 py-2">
+<input class="size-4 rounded border-slate-300 text-primary focus:ring-primary" id="remember" type="checkbox"/>
+<label class="text-sm text-slate-600 dark:text-slate-400" for="remember">Remember me for 30 days</label>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-lg shadow-lg shadow-primary/20 transition-all active:scale-[0.98]" type="submit">
+                        Sign In
+                    </button>
+</form>
+<div class="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800 text-center">
+<p class="text-slate-600 dark:text-slate-400">
+                        New to the platform? 
+                        <a class="text-primary font-bold hover:underline ml-1" href="#">Register your restaurant</a>
+</p>
+</div>
+<div class="mt-12 flex flex-col gap-4">
+<p class="text-xs text-center text-slate-400 dark:text-slate-500 uppercase tracking-widest font-bold">Or continue with</p>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 py-2.5 px-4 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<img class="size-5" data-alt="Google logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBWYiA8nzwW8c4Q_OtUFQI47dpQHAriXl8R8Q4fW6j_V5-HOhyFckhvFWMk0AUXss_SEHyvUD2INBa1g3dI6g8ngAWkvZWgTTxvM0jp9o44oAkI_Cn2oHn0kSssptTvgghIxbl1dPAYJznLk-RSL7TtEWgESYYDO_Cw-yp0TEGe0yrymnqgGOiokb1QpebosMpBOtqB39i3kzwx6_yJnRUAm8Ycnw1b_eqFjc7yHfL7btVUhEFa2jp0g3OMl5fTw6yqJgMGmEgZec"/>
+<span class="text-sm font-semibold">Google</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-2.5 px-4 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<img class="size-5" data-alt="Apple logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbQmVPPxbAACKpd1NIgrme1QiFZXWpUMd-eVyq48AYPGrZph8nG4pM3yMNEmXkO0PRnZQMOFz7xip1AUCaa1UjuTk3p8c0lw7xO0whFDIMusm2BA9-A4TIn5INixy-KysU3of0-b8V53lANJUdesjai8_OUdmj3TchucsyrnK_sPkn7bJ4qXCwYHKgejMQ8jHgOK9uQKWYn1V5smkSLMq6mrcwlabFucBU1oyj2BziK720YwmfKvzirIGAqALRDJejDZyjQvUyuqY"/>
+<span class="text-sm font-semibold">Apple</span>
+</button>
+</div>
+</div>
+</div>
+<footer class="mt-auto pt-8 text-center text-xs text-slate-400">
+                © 2024 Gourmet Express Inc. All rights reserved.
+            </footer>
+</div>
+</div>
+</body></html>

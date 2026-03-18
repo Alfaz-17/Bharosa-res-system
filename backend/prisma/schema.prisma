@@ -1,0 +1,222 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────
+// Enums
+// ─────────────────────────────────────────────
+
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+  MANAGER
+  WAITER
+  KITCHEN
+}
+
+enum OrderStatus {
+  CREATED
+  CONFIRMED
+  IN_KITCHEN
+  READY
+  SERVED
+  PAID
+  CANCELLED
+}
+
+enum PaymentMethod {
+  CASH
+  CARD
+  UPI
+}
+
+enum OrderEventType {
+  ORDER_CREATED
+  ORDER_CONFIRMED
+  ORDER_IN_KITCHEN
+  ORDER_READY
+  ORDER_SERVED
+  ORDER_PAID
+}
+
+// ─────────────────────────────────────────────
+// Restaurant
+// ─────────────────────────────────────────────
+
+model Restaurant {
+  id         String   @id @default(uuid())
+  name       String
+  address    String?
+  phone      String?
+  email      String?
+  currency   String?  @default("INR")
+  timezone   String?  @default("Asia/Kolkata")
+  tax_rate   Decimal  @default(0.00) @db.Decimal(10, 2)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  users           Users[]
+  menu_categories MenuCategories[]
+  orders          Orders[]
+  menuItems       MenuItems[]
+}
+
+// ─────────────────────────────────────────────
+// Users & Sessions
+// ─────────────────────────────────────────────
+
+model Users {
+  id            String   @id @default(uuid())
+  restaurant_id String
+  name          String
+  email         String   @unique
+  password_hash String
+  role          Role
+  is_active     Boolean  @default(true)
+  created_at    DateTime @default(now())
+  updated_at    DateTime @updatedAt
+
+  restaurant   Restaurant     @relation(fields: [restaurant_id], references: [id])
+  sessions     UserSessions[]
+  orders       Orders[]       @relation("WaiterOrders")
+  order_events OrderEvents[]
+}
+
+model UserSessions {
+  id                 String   @id @default(uuid())
+  user_id            String
+  refresh_token_hash String
+  device_info        String?
+  ip_address         String?
+  expires_at         DateTime
+  created_at         DateTime @default(now())
+  updated_at         DateTime @updatedAt
+
+  user Users @relation(fields: [user_id], references: [id])
+}
+
+// ─────────────────────────────────────────────
+// Menu
+// ─────────────────────────────────────────────
+
+model MenuCategories {
+  id            String   @id @default(uuid())
+  restaurant_id String
+  name          String
+  description   String?
+  position      Int      @default(0)
+  is_deleted    Boolean  @default(false)
+  created_at    DateTime @default(now())
+  updated_at    DateTime @updatedAt
+
+  restaurant Restaurant  @relation(fields: [restaurant_id], references: [id])
+  menu_items MenuItems[]
+}
+
+model MenuItems {
+  id            String   @id @default(uuid())
+  restaurant_id String
+  category_id   String
+  name          String
+  description   String?
+  price         Decimal  @db.Decimal(10, 2)
+  image_url     String?
+  is_available  Boolean  @default(true)
+  is_deleted    Boolean  @default(false)
+  created_at    DateTime @default(now())
+  updated_at    DateTime @updatedAt
+
+  restaurant  Restaurant     @relation(fields: [restaurant_id], references: [id])
+  category    MenuCategories @relation(fields: [category_id], references: [id])
+  order_items OrderItems[]
+}
+
+// ─────────────────────────────────────────────
+// Orders
+// ─────────────────────────────────────────────
+
+model Orders {
+  id            String      @id @default(uuid())
+  restaurant_id String
+  order_number  String      @unique
+  table_number  String?
+  status        OrderStatus @default(CREATED)
+  notes         String?
+  total_amount  Decimal     @default(0.00) @db.Decimal(10, 2)
+  created_at    DateTime    @default(now())
+  updated_at    DateTime    @updatedAt
+
+  restaurant   Restaurant    @relation(fields: [restaurant_id], references: [id])
+  waiter_id    String?
+  waiter       Users?        @relation("WaiterOrders", fields: [waiter_id], references: [id])
+  order_items  OrderItems[]
+  invoices     Invoices[]
+  order_events OrderEvents[]
+
+  @@index([restaurant_id, status])
+}
+
+model OrderItems {
+  id             String   @id @default(uuid())
+  order_id       String
+  menu_item_id   String
+  quantity       Int
+  price_snapshot Decimal  @db.Decimal(10, 2)
+  notes          String?
+  updated_at     DateTime @default(now()) @updatedAt // Added updated_at
+
+  order     Orders    @relation(fields: [order_id], references: [id])
+  menu_item MenuItems @relation(fields: [menu_item_id], references: [id])
+}
+
+// ─────────────────────────────────────────────
+// Invoices & Payments
+// ─────────────────────────────────────────────
+
+model Invoices {
+  id         String   @id @default(uuid())
+  order_id   String   @unique
+  subtotal   Decimal  @db.Decimal(10, 2)
+  tax        Decimal  @db.Decimal(10, 2)
+  discount   Decimal  @default(0) @db.Decimal(10, 2)
+  total      Decimal  @db.Decimal(10, 2)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  order    Orders     @relation(fields: [order_id], references: [id])
+  payments Payments[]
+}
+
+model Payments {
+  id         String        @id @default(uuid())
+  invoice_id String
+  method     PaymentMethod
+  amount     Decimal       @db.Decimal(10, 2)
+  reference  String?
+  status     String        @default("COMPLETED")
+  created_at DateTime      @default(now())
+  paid_at    DateTime      @default(now())
+
+  invoice Invoices @relation(fields: [invoice_id], references: [id])
+}
+
+// ─────────────────────────────────────────────
+// Order Events (Audit Log)
+// ─────────────────────────────────────────────
+
+model OrderEvents {
+  id         String         @id @default(uuid())
+  order_id   String
+  event_type OrderEventType
+  user_id    String?
+  notes      String?
+  timestamp  DateTime       @default(now())
+
+  order Orders @relation(fields: [order_id], references: [id])
+  user  Users? @relation(fields: [user_id], references: [id])
+}

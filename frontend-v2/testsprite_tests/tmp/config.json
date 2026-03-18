@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3001",
+  "executionArgs": {
+    "projectName": "frontend-v2",
+    "projectPath": "c:\\Users\\alfaz\\OneDrive\\Desktop\\Media-masala projects\\Menu-System-main\\frontend-v2",
+    "testIds": [],
+    "additionalInstruction": "Test the complete order flow: login as admin, navigate to a table menu, place an order, see it in kitchen display, and finally generate an invoice and collect payment. Use Table 15 for the test.",
+    "serverMode": "development",
+    "envs": {
+      "API_KEY": "sk-user-NUAWf2qZuNrLrhPRErfXOrCYR7DfRYkycgslTSZgNyFV6TpIyTgUMxJrmZdvWSs4M8M22l9nBcHivkoYrD3PFmiAO5PpwBlUgZyQpk67d-MP_JKpikmFhT8BnYkqMRtBbCU"
+    }
+  }
+}

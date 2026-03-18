@@ -1,0 +1,129 @@
+version: "2"
+type: frontend
+tech_stack:
+  - TypeScript
+  - Next.js 14
+  - Tailwind CSS
+  - Zustand
+  - TanStack Query
+  - Lucide React
+  - Axios
+routes:
+  - path: /login
+    file: src/app/(auth)/login/page.tsx
+    auth_required: false
+    description: User login page
+  - path: /menu/[tableNumber]
+    file: src/app/(customer)/menu/[tableNumber]/page.tsx
+    auth_required: false
+    description: Customer menu browsing and ordering
+  - path: /cart
+    file: src/app/(customer)/cart/page.tsx
+    auth_required: false
+    description: Customer shopping cart and checkout
+  - path: /order-status/[orderId]
+    file: src/app/(customer)/order-status/[orderId]/page.tsx
+    auth_required: false
+    description: Real-time customer order tracking
+  - path: /staff/dashboard
+    file: src/app/staff/dashboard/page.tsx
+    auth_required: true
+    description: Staff administrative dashboard
+  - path: /staff/kitchen
+    file: src/app/staff/kitchen/page.tsx
+    auth_required: true
+    description: Kitchen Display System (KDS) for tracking active orders
+  - path: /staff/orders
+    file: src/app/staff/orders/page.tsx
+    auth_required: true
+    description: Order listing and management
+  - path: /staff/billing/[orderId]
+    file: src/app/staff/billing/[orderId]/page.tsx
+    auth_required: true
+    description: Billing and payment collection
+  - path: /staff/analytics
+    file: src/app/staff/analytics/page.tsx
+    auth_required: true
+    description: Revenue and order volume analytics
+  - path: /staff/users
+    file: src/app/staff/users/page.tsx
+    auth_required: true
+    description: Staff member management
+  - path: /staff/qr-codes
+    file: src/app/staff/qr-codes/page.tsx
+    auth_required: true
+    description: QR code generation for tables
+  - path: /staff/settings
+    file: src/app/staff/settings/page.tsx
+    auth_required: true
+    description: Restaurant profile and tax settings
+features:
+  - name: User Authentication
+    description: Login with email and password to access staff portal
+    files:
+      - src/app/(auth)/login/page.tsx
+      - src/store/authStore.ts
+      - src/lib/api.ts
+    entry_route: /login
+    user_interactions:
+      - Fill email address
+      - Fill password
+      - Click "Sign In"
+    api_calls:
+      - method: POST
+        endpoint: /api/auth/login
+    auth_required: false
+  - name: Customer Ordering Flow
+    description: Customer scans QR, adds items to cart, and places order
+    files:
+      - src/app/(customer)/menu/[tableNumber]/page.tsx
+      - src/app/(customer)/cart/page.tsx
+      - src/store/cartStore.ts
+      - src/hooks/useOrders.ts
+    entry_route: /menu/1
+    user_interactions:
+      - Browse menu categories
+      - Add "Spring Rolls" to cart
+      - View cart
+      - Click "Place Order"
+    api_calls:
+      - method: GET
+        endpoint: /api/menu/items
+      - method: POST
+        endpoint: /api/orders
+    auth_required: false
+  - name: Kitchen Display System (KDS)
+    description: Real-time tracking and status updates of kitchen orders
+    files:
+      - src/app/staff/kitchen/page.tsx
+      - src/lib/websocket.ts
+      - src/hooks/useOrders.ts
+    entry_route: /staff/kitchen
+    user_interactions:
+      - View active tickets
+      - Update order status to "In Kitchen" or "Ready"
+    api_calls:
+      - method: GET
+        endpoint: /api/orders
+      - method: PUT
+        endpoint: /api/orders/:id/status
+    auth_required: true
+  - name: Billing & Payments
+    description: Generate invoices and record payments for served orders
+    files:
+      - src/app/staff/billing/[orderId]/page.tsx
+      - src/hooks/useBilling.ts
+      - src/components/billing/InvoiceView.tsx
+    entry_route: /staff/orders
+    user_interactions:
+      - Click "Proceed to Billing" on a served order
+      - Click "Generate Invoice"
+      - Select payment method (Cash/Card/UPI)
+      - Click "Collect Payment"
+    api_calls:
+      - method: POST
+        endpoint: /api/billing/:orderId/invoice
+      - method: POST
+        endpoint: /api/billing/:orderId/payments
+    auth_required: true
+known_limitations: []

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#ff6933",
+                "background-light": "#f8f6f5",
+                "background-dark": "#23140f",
+              },
+              fontFamily: {
+                "display": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Main Content Area (Scrollable) -->
+<div class="flex flex-col flex-1 pb-32">
+<!-- Hero Image with Close Button -->
+<div class="relative w-full aspect-[4/3] @[480px]:px-4 @[480px]:py-3">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover bg-slate-200 @[480px]:rounded-lg" data-alt="A gourmet juicy beef burger with melted cheese and fresh vegetables" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2jtSIgIH238lh_oMVuxRw3U5kxMAy5oDOjUR4hf77u_NtuSvgsoCh8NOAQDsqqvQfTTl8SGZ8P8qSVzpKfGfgXP-H67DFzFiDtBvG_cHx1bsdguBRN108QbOxdA3LIUn13kCyuBtJi-oz__IICcZbCebK2Fd7BBtM5MqbUmTK8AKS5JckMWjuToLflBNGe6QyvwIcAh3LM9-YLe3VrhswS4m41YrzKy47gmQ0FvLdI2r9r7Updg1DE905X8KOuGhg9Zz44Lq2GhI");'>
+</div>
+<button class="absolute top-4 left-4 h-10 w-10 flex items-center justify-center rounded-full bg-white/90 shadow-lg backdrop-blur text-background-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-white/90 shadow-lg backdrop-blur text-background-dark">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<!-- Bottom Sheet Handle Visual -->
+<div class="flex flex-col items-stretch bg-background-light dark:bg-background-dark -mt-6 rounded-t-3xl relative z-10 shadow-[0_-8px_30px_rgb(0,0,0,0.04)]">
+<div class="flex h-6 w-full items-center justify-center">
+<div class="h-1.5 w-12 rounded-full bg-primary/20"></div>
+</div>
+<!-- Item Info -->
+<div class="px-6 pt-2">
+<div class="flex justify-between items-start">
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-[28px] font-bold leading-tight flex-1">
+                            Double Truffle Smashed Burger
+                        </h1>
+<div class="flex items-center gap-1 bg-primary/10 px-2 py-1 rounded-lg text-primary font-semibold">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="text-sm">4.8</span>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed pt-4">
+                        Signature double wagyu beef smash patties, aged swiss cheese, wild forest truffle aioli, crispy shallots, and organic arugula on a toasted artisan brioche bun. Served with a side of sea salt fries.
+                    </p>
+<div class="mt-6 flex items-center justify-between">
+<h2 class="text-slate-900 dark:text-slate-100 text-[24px] font-bold leading-tight tracking-tight">
+                            $22.50
+                        </h2>
+<!-- Quantity Selector -->
+<div class="flex items-center bg-slate-100 dark:bg-background-dark/50 border border-slate-200 dark:border-slate-800 rounded-xl p-1">
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:bg-white dark:hover:bg-slate-800 rounded-lg transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="px-4 font-bold text-lg text-slate-900 dark:text-slate-100">1</span>
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:bg-white dark:hover:bg-slate-800 rounded-lg transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<!-- Customization Options Preview (Example of additional context) -->
+<div class="mt-8 border-t border-slate-100 dark:border-slate-800 pt-6">
+<h3 class="text-slate-900 dark:text-slate-100 font-bold mb-4">Cooking Preference</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 rounded-full bg-primary text-white text-sm font-medium">Medium Rare</button>
+<button class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-medium">Medium</button>
+<button class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-medium">Well Done</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 border-t border-slate-100 dark:border-slate-800 z-20">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-6 rounded-xl flex items-center justify-between shadow-lg shadow-primary/20 transition-all active:scale-[0.98]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span>Add to Cart</span>
+</div>
+<span class="text-white/90">$22.50</span>
+</button>
+</div>
+</div>
+</body></html>

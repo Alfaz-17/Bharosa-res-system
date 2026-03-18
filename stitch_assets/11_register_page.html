@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6933",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23140f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<title>Restaurant Partner Registration</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 md:px-10 py-3 bg-background-light dark:bg-background-dark">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Restaurant Partner</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Login</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90 transition-all shadow-sm">
+<span>Support</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex items-center justify-center py-12 px-4 md:px-0">
+<div class="w-full max-w-[520px] bg-white dark:bg-slate-900/50 p-8 md:p-12 rounded-xl shadow-xl border border-primary/5">
+<div class="flex flex-col gap-2 mb-8">
+<h1 class="text-slate-900 dark:text-slate-50 text-3xl font-black leading-tight tracking-tight">Create your account</h1>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal">Join our network of top-rated restaurants and grow your business today.</p>
+</div>
+<form class="flex flex-col gap-5">
+<div class="flex flex-col gap-2">
+<label class="text-slate-800 dark:text-slate-200 text-sm font-semibold leading-normal">Owner Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">person</span>
+<input class="form-input flex w-full rounded-lg border border-primary/20 bg-background-light dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 pl-10 pr-4 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-base font-normal" placeholder="Enter your full name" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-slate-800 dark:text-slate-200 text-sm font-semibold leading-normal">Restaurant Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">storefront</span>
+<input class="form-input flex w-full rounded-lg border border-primary/20 bg-background-light dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 pl-10 pr-4 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-base font-normal" placeholder="e.g. The Golden Fork" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-slate-800 dark:text-slate-200 text-sm font-semibold leading-normal">Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">mail</span>
+<input class="form-input flex w-full rounded-lg border border-primary/20 bg-background-light dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 pl-10 pr-4 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-base font-normal" placeholder="name@restaurant.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<label class="text-slate-800 dark:text-slate-200 text-sm font-semibold leading-normal">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">lock</span>
+<input class="form-input flex w-full rounded-lg border border-primary/20 bg-background-light dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 pl-10 pr-4 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-base font-normal" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-slate-800 dark:text-slate-200 text-sm font-semibold leading-normal">Confirm Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">verified_user</span>
+<input class="form-input flex w-full rounded-lg border border-primary/20 bg-background-light dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary h-12 pl-10 pr-4 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-base font-normal" placeholder="••••••••" type="password"/>
+</div>
+</div>
+</div>
+<div class="pt-4">
+<button class="w-full flex items-center justify-center rounded-lg bg-primary h-14 text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-all shadow-md active:scale-[0.98]" type="submit">
+                                Create Account
+                            </button>
+</div>
+<p class="text-center text-slate-500 dark:text-slate-400 text-sm mt-4">
+                            By signing up, you agree to our 
+                            <a class="text-primary hover:underline font-medium" href="#">Terms of Service</a> 
+                            and 
+                            <a class="text-primary hover:underline font-medium" href="#">Privacy Policy</a>.
+                        </p>
+</form>
+</div>
+</main>
+<footer class="py-8 px-10 text-center border-t border-primary/10">
+<p class="text-slate-400 dark:text-slate-500 text-xs font-medium">© 2024 Restaurant Partner Network. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</body></html>

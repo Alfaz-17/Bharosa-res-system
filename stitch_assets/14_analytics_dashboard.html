@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Analytics Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6933",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23140f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .chart-bar { transition: height 0.3s ease; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex h-auto min-screen w-full flex-col">
+<div class="layout-container flex h-full grow">
+<!-- Sidebar Navigation -->
+<aside class="w-64 border-r border-primary/10 flex flex-col bg-white dark:bg-background-dark/50 hidden md:flex">
+<div class="p-6 flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<h1 class="font-bold text-xl tracking-tight">Analytics</h1>
+</div>
+<nav class="flex-1 px-4 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary font-semibold" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                    Dashboard
+                </a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+                    Orders
+                </a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">restaurant_menu</span>
+                    Menu Items
+                </a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+                    Customers
+                </a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+                    Inventory
+                </a>
+<div class="pt-4 mt-4 border-t border-primary/10">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+                        Settings
+                    </a>
+</div>
+</nav>
+<div class="p-4 border-t border-primary/10">
+<div class="flex items-center gap-3 p-2 bg-slate-50 dark:bg-white/5 rounded-xl">
+<div class="size-10 rounded-full bg-primary/20 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of restaurant manager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQhwtKL_tVzal0yLoxI-Uy7gyV8MlZVGKITX3v4cVqtmRq-BuLvgf5a0k8o78XvIwLnqeiMMScqJjUuRwG9YPokj5CbwjVYZ1LYX4C-ax30L30GETR3fzucbDcxrijpYgrbSgB8IcPA4SRHt97q3XQ7DAtTEy2fib9Qrx-5Vexsj6IXjRnYLBWpLx8POZ2jJg0N4NAortFJkNvmNi5jd3boDjdvvkGLgqrAlUmzeciyafk1OOa7jwEVh4AAnKRZhF5kdqMSn7vW3s"/>
+</div>
+<div class="flex-1 overflow-hidden">
+<p class="text-sm font-bold truncate">Marcus Chen</p>
+<p class="text-xs text-slate-500 truncate">General Manager</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col min-w-0 bg-background-light dark:bg-background-dark">
+<!-- Header -->
+<header class="h-16 border-b border-primary/10 bg-white dark:bg-background-dark/50 px-6 flex items-center justify-between sticky top-0 z-10 backdrop-blur-md">
+<div class="flex items-center gap-4 flex-1">
+<div class="relative w-full max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-slate-100 dark:bg-white/5 border-none rounded-lg focus:ring-2 focus:ring-primary text-sm" placeholder="Search analytics, menu items..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">calendar_today</span>
+</button>
+<button class="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-primary/10 transition-colors relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-primary rounded-full border-2 border-white dark:border-background-dark"></span>
+</button>
+<div class="h-6 w-px bg-primary/10 mx-2"></div>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined text-sm">download</span>
+                        Export Report
+                    </button>
+</div>
+</header>
+<!-- Dashboard Content -->
+<div class="p-6 space-y-6 max-w-[1400px] mx-auto w-full">
+<!-- Page Title -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h2 class="text-2xl font-bold tracking-tight">Executive Overview</h2>
+<p class="text-slate-500">Real-time performance metrics for today, Oct 24, 2023</p>
+</div>
+<div class="flex bg-white dark:bg-white/5 p-1 rounded-lg border border-primary/10">
+<button class="px-4 py-1.5 text-sm font-medium rounded-md bg-primary text-white">Daily</button>
+<button class="px-4 py-1.5 text-sm font-medium rounded-md text-slate-500 hover:bg-primary/10">Weekly</button>
+<button class="px-4 py-1.5 text-sm font-medium rounded-md text-slate-500 hover:bg-primary/10">Monthly</button>
+</div>
+</div>
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-white dark:bg-white/5 p-6 rounded-xl border border-primary/10 shadow-sm">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-slate-500">Total Orders</p>
+<p class="text-3xl font-bold mt-1">1,284</p>
+</div>
+<div class="p-2 bg-blue-50 dark:bg-blue-500/10 text-blue-600 rounded-lg">
+<span class="material-symbols-outlined">shopping_cart</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<span class="text-emerald-500 text-sm font-bold flex items-center">
+<span class="material-symbols-outlined text-sm">trending_up</span> 12.5%
+                            </span>
+<span class="text-slate-400 text-xs">vs yesterday</span>
+</div>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-xl border border-primary/10 shadow-sm">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-slate-500">Total Revenue</p>
+<p class="text-3xl font-bold mt-1">$32,450</p>
+</div>
+<div class="p-2 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 rounded-lg">
+<span class="material-symbols-outlined">payments</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<span class="text-emerald-500 text-sm font-bold flex items-center">
+<span class="material-symbols-outlined text-sm">trending_up</span> 8.2%
+                            </span>
+<span class="text-slate-400 text-xs">vs yesterday</span>
+</div>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-xl border border-primary/10 shadow-sm">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-slate-500">Avg. Order Value</p>
+<p class="text-3xl font-bold mt-1">$25.27</p>
+</div>
+<div class="p-2 bg-amber-50 dark:bg-amber-500/10 text-amber-600 rounded-lg">
+<span class="material-symbols-outlined">receipt</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<span class="text-rose-500 text-sm font-bold flex items-center">
+<span class="material-symbols-outlined text-sm">trending_down</span> 2.1%
+                            </span>
+<span class="text-slate-400 text-xs">vs yesterday</span>
+</div>
+</div>
+<div class="bg-white dark:bg-white/5 p-6 rounded-xl border border-primary/10 shadow-sm">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-slate-500">Table Turnover</p>
+<p class="text-3xl font-bold mt-1">4.2</p>
+</div>
+<div class="p-2 bg-primary/10 text-primary rounded-lg">
+<span class="material-symbols-outlined">sync_alt</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<span class="text-emerald-500 text-sm font-bold flex items-center">
+<span class="material-symbols-outlined text-sm">trending_up</span> 5.4%
+                            </span>
+<span class="text-slate-400 text-xs">vs yesterday</span>
+</div>
+</div>
+</div>
+<!-- Charts Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<!-- Daily Revenue Chart (Visual Mockup) -->
+<div class="bg-white dark:bg-white/5 p-6 rounded-xl border border-primary/10 shadow-sm">
+<div class="flex items-center justify-between mb-8">
+<h3 class="font-bold text-lg">Daily Revenue</h3>
+<span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">LIVE</span>
+</div>
+<div class="h-64 flex items-end justify-between gap-2 px-2">
+<div class="flex-1 bg-primary/20 hover:bg-primary transition-colors rounded-t-lg h-[40%]" title="Mon: $4.2k"></div>
+<div class="flex-1 bg-primary/20 hover:bg-primary transition-colors rounded-t-lg h-[55%]" title="Tue: $5.8k"></div>
+<div class="flex-1 bg-primary/20 hover:bg-primary transition-colors rounded-t-lg h-[45%]" title="Wed: $4.9k"></div>
+<div class="flex-1 bg-primary/20 hover:bg-primary transition-colors rounded-t-lg h-[70%]" title="Thu: $7.2k"></div>
+<div class="flex-1 bg-primary/20 hover:bg-primary transition-colors rounded-t-lg h-[85%]" title="Fri: $8.8k"></div>
+<div class="flex-1 bg-primary hover:bg-primary/90 transition-colors rounded-t-lg h-[100%]" title="Sat: $10.2k"></div>
+<div class="flex-1 bg-primary/20 hover:bg-primary transition-colors rounded-t-lg h-[60%]" title="Sun: $6.4k"></div>
+</div>
+<div class="flex justify-between mt-4 text-xs font-medium text-slate-400">
+<span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span>
+</div>
+</div>
+<!-- Top Selling Items (Visual Mockup) -->
+<div class="bg-white dark:bg-white/5 p-6 rounded-xl border border-primary/10 shadow-sm">
+<h3 class="font-bold text-lg mb-6">Sales by Category</h3>
+<div class="flex items-center justify-center h-64 relative">
+<!-- Donut Chart Mockup -->
+<div class="size-48 rounded-full border-[16px] border-primary/10 relative flex items-center justify-center">
+<div class="absolute inset-0 border-[16px] border-primary border-t-transparent border-r-transparent rounded-full rotate-45"></div>
+<div class="absolute inset-0 border-[16px] border-emerald-500 border-b-transparent border-l-transparent rounded-full -rotate-12"></div>
+<div class="text-center">
+<p class="text-2xl font-bold">12k</p>
+<p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Units</p>
+</div>
+</div>
+<!-- Legend -->
+<div class="absolute right-0 space-y-3">
+<div class="flex items-center gap-2">
+<span class="size-3 rounded-full bg-primary"></span>
+<span class="text-sm font-medium">Main Courses (45%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="size-3 rounded-full bg-emerald-500"></span>
+<span class="text-sm font-medium">Beverages (30%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="size-3 rounded-full bg-primary/20"></span>
+<span class="text-sm font-medium">Desserts (25%)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Top 10 Menu Items Table -->
+<div class="bg-white dark:bg-white/5 rounded-xl border border-primary/10 shadow-sm overflow-hidden">
+<div class="p-6 border-b border-primary/10 flex items-center justify-between">
+<div>
+<h3 class="font-bold text-lg">Top 10 Menu Items</h3>
+<p class="text-sm text-slate-500">Ranked by volume and profitability</p>
+</div>
+<button class="text-primary text-sm font-bold hover:underline">View All Menu</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-slate-50 dark:bg-white/5 text-slate-500 text-xs font-bold uppercase tracking-wider">
+<tr>
+<th class="px-6 py-4">Item Name</th>
+<th class="px-6 py-4">Category</th>
+<th class="px-6 py-4 text-center">Orders</th>
+<th class="px-6 py-4 text-right">Revenue</th>
+<th class="px-6 py-4 text-center">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-primary/5">
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-200 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Gourmet avocado toast with egg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD53niulYaokZxqVZOgg9oK136OT9IPWZvaiAAnYE7kfRh-nqbjlsZAV816CVePVqVQRUtdVYq2C_yDYSpQdqu-U0QT5S5zYDezjMZoYpx63B2vS7l-x7nESjAKLW8XYu3d9q7CGoDEYY4-XnFZXtcqMcs4FrkstdauDrVScklJ7_28Wvi0j-Z-fsmG2JWkLLVfhVXIbm2timxShZUsOxQPz-m52Z9DCIrshFRPr8Yp92UNuKc0m5r8fOh9kH7tspbDjtmEujty-KQ"/>
+</div>
+<span class="font-semibold">Signature Avocado Toast</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500">Breakfast</td>
+<td class="px-6 py-4 text-sm font-medium text-center">452</td>
+<td class="px-6 py-4 text-sm font-bold text-right">$6,328.00</td>
+<td class="px-6 py-4 text-center">
+<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400 text-xs font-bold">In Stock</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-200 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Cheeseburger with fries on wooden board" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZWFiVNiutDXGJfTM3eb3n5vEuhJhxXw-6rYGWRVpDZk6lbVwTWZB82iP-C_veEN8Qlb6n7xp5ewli7msnmibefp3exHrcfPZSHnHajfHWEZ-OLHIDizxKim6J9ShXOIfvkFDZgxW-Ryzcv3XpuluQr5ii-Ie-S0P5hGXWKEjtwrBQpxkEgHNRmv9RIuVF8EcG_sKrWYRYTLKcuaAC5ScMeOyGQYUGHKFkiTnF2QqY1mKdiDl5yTfB4bUJfyucglRj0o6MeMAX8Iw"/>
+</div>
+<span class="font-semibold">Truffle Beef Burger</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500">Main Course</td>
+<td class="px-6 py-4 text-sm font-medium text-center">398</td>
+<td class="px-6 py-4 text-sm font-bold text-right">$7,562.00</td>
+<td class="px-6 py-4 text-center">
+<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400 text-xs font-bold">In Stock</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-200 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Plate of smoked BBQ ribs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ktZrGoOQ7__NrOyGMXQOYqxbhoH44KrvKtQeofd-Sqz7BxYkD3h4P3svOmYfxDofGB8nD6eRVlJk-lN9QOfH6Vz54bBI9xGxePzaBgcCYdlrfxOlbxseG611niWq8761wSIQKSGLhPhC2W29OZjFg-Te87NLrvsgudwgZgbTndk8_gYWKh15KDJulz4mxE0Eew9p-xk6Qoy1qIjf9PHApDXyWhI-fLy3CXSzXUzsTA27uPUQNPBp8B8-yog3Opj0GSzCxJAAqnA"/>
+</div>
+<span class="font-semibold">Honey Glazed Ribs</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500">Main Course</td>
+<td class="px-6 py-4 text-sm font-medium text-center">312</td>
+<td class="px-6 py-4 text-sm font-bold text-right">$8,112.00</td>
+<td class="px-6 py-4 text-center">
+<span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-500/20 dark:text-amber-400 text-xs font-bold">Low Stock</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-200 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Scoop of vanilla ice cream" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5rith4pHZaeuI-tTZd-yXjfr4frlh8tEcIIzndLbbU3uyTLUm0gNnJfweWjtbAofQ9ejaPUgMEfE3oY_V_TBX_pTOjgvKhOfmCXMyIswfLhJ4K84QgjVesd0wqyFvfzD-IOo8_Kme15I9ZwBDeUXQRhp-uWfKoHSLoxFqFSaJ8E24neJEFXYlr65pADCErcoFg0Se2E3SbP0kiHkphhjf83KBUIE9VMjA7YYasuz4ixkykCe-r2R5DAGTIFH-JNHKYKHxmijWs38"/>
+</div>
+<span class="font-semibold">Artisan Gelato Scoop</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500">Desserts</td>
+<td class="px-6 py-4 text-sm font-medium text-center">285</td>
+<td class="px-6 py-4 text-sm font-bold text-right">$1,710.00</td>
+<td class="px-6 py-4 text-center">
+<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400 text-xs font-bold">In Stock</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-200 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Caffe latte in a ceramic cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb1VTstlBcGQUQNl8RqlCsSKOLLXis3-YcjheD90b59oeZhaOrnLwaw5rq31GGglzVa89uNBfBalIfrwEaftSVIibYSkqqrEqlr_ed7gWp4okejsINVs5FJgeQyFn0fG64Tc52W8FFRFo_GxUSDr4o0BmD4vrTS8g0Thb7kE0CDoy3cQAAwH8OGbfJsQNOHoGDw_RXhVFTaAtJ58ugdZtyaBC9iabhYR-v3SjrdoRORb76sO9_fGVBZqvjOyR8r1W-6ta1BxjZAvE"/>
+</div>
+<span class="font-semibold">Organic Latte</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500">Beverages</td>
+<td class="px-6 py-4 text-sm font-medium text-center">274</td>
+<td class="px-6 py-4 text-sm font-bold text-right">$1,370.00</td>
+<td class="px-6 py-4 text-center">
+<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400 text-xs font-bold">In Stock</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-200 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Mediterranean salad bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpdhFFzUTwR05wc4CKoNfY-4DttrzBMfVvyTHbT4exwEUlZv_VQLn-RBUH_5EiKkSl7sSBgVJzoTLxLCZK1tBZvu-2Sbtd1tBs5yKIZcOKXuw3yEB-uhSbK7lJc0hnI1yqItGjYXpQr1Nk210pQAESg28enTuCMqASlstfiufzlKPE43o2OIOkXsBggV1CWsZYIGWjWdJtnvyvtaG9Y-HlFVDVPHFIDPemAlRWxgmk4tSUJBqt7ANs1Y-JXnPazTjqAep0Pu886xI"/>
+</div>
+<span class="font-semibold">Quinoa Power Bowl</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500">Lunch</td>
+<td class="px-6 py-4 text-sm font-medium text-center">245</td>
+<td class="px-6 py-4 text-sm font-bold text-right">$3,675.00</td>
+<td class="px-6 py-4 text-center">
+<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400 text-xs font-bold">In Stock</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-200 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Glazed doughnuts on a tray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrJjqJrh86HIftbixkwcEZDxFm8R62y0szt2Eg1ZmuHHKqBwzpttz7pgM0ZszH3KHVohEcLUCnpJdAdmO_pfs2Kke83glyu_T4NFijtGPpfPFHofz6gXLhyqFYZDUXG6CE54WBHJos0AtB_mERIO71OWGO4YWFKW9goSp_-aOydi4L10ez4dN8JykaQ59V9Prj9mhQX19AWeNfyJy5wJWtuTV9D_jISwzksbP0kwC4vQsFfOI7uojrZB4sq9FrOjjzSMxM8Zi50vs"/>
+</div>
+<span class="font-semibold">Classic Glazed Donut</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500">Desserts</td>
+<td class="px-6 py-4 text-sm font-medium text-center">230</td>
+<td class="px-6 py-4 text-sm font-bold text-right">$805.00</td>
+<td class="px-6 py-4 text-center">
+<span class="px-2.5 py-1 rounded-full bg-rose-100 text-rose-700 dark:bg-rose-500/20 dark:text-rose-400 text-xs font-bold">Out of Stock</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-200 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Fresh pasta with tomato sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-qum33E-jZRqIwZ7CFw39dt8ewzV60q0E5-Ij5YMBjwON9KxVc-4cIcMyOyHo_mAaK0BRiNj1gbl9hjTAbFutjcagfvtLaaDI-yz6Vt35YO_PGmYBWp1URctRlhQw81v-dmbyGKI3nnlNiV5yj3wCDsZASLxHj8TQUsmZUFJ0qnLObMAcHohpVSOaVBbzzZ5aKudKS6-vvDPU2vtUr7dMD2svMl5lbnqk_1CCCiGRDJEGcUmwPUePYmBP4mXqAAzB-SoSOddqyaw"/>
+</div>
+<span class="font-semibold">Wild Mushroom Penne</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500">Main Course</td>
+<td class="px-6 py-4 text-sm font-medium text-center">215</td>
+<td class="px-6 py-4 text-sm font-bold text-right">$4,085.00</td>
+<td class="px-6 py-4 text-center">
+<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400 text-xs font-bold">In Stock</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-200 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Glass of fresh orange juice" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD70iYB8Y11oTvY4GDktE3WjIkTpfbPJCpbhDoQ9-M9pAnvGtkXruO7ObQTtgWw-o2C_qcxNZViS1uxyXW1slzcDQjIn-1E1YNC9yfpeNBQXw0DnX4LbLaQRxJEs91dxLi9ZGfs7CgaVIu10W45Fnmg28T2Eoz5Z82HipFv9iCN8vQIVbsX6jLTv9z16hqkUAqQykNtvf56t-h66vEaFWXws2dke12PHBWguHbsYq9OyOs3ZOAskf_1RpvAAYLc9AV7atLYPqu4Vzs"/>
+</div>
+<span class="font-semibold">Cold Pressed Orange</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500">Beverages</td>
+<td class="px-6 py-4 text-sm font-medium text-center">198</td>
+<td class="px-6 py-4 text-sm font-bold text-right">$1,188.00</td>
+<td class="px-6 py-4 text-center">
+<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400 text-xs font-bold">In Stock</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-slate-200 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Wood-fired pepperoni pizza" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB466nC4SsietveMo4R8mtkEqNS5-SlZVi1Avv2qHejybULJc9567khYawsJur9qL_kgVVspjXJCTso8GGJbU8GSh5xh_hpcAhkYq7ni69hlamN1vnvwTwKx5IJeHVDoijHKj-xSCsLjaf3FyD2u15Upt0wJuDbZh3vUHlmhIidIGdrpvGFuaiOAzIzaWPlAQqs2egxRVQs6jcxTI8HkHfsHQnE7zJFyoqAD2U8o1GY-c6y1b_Zm-CSFFL1rHSbX-z3qtCcbkAeoQg"/>
+</div>
+<span class="font-semibold">Margherita Pizza</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500">Main Course</td>
+<td class="px-6 py-4 text-sm font-medium text-center">185</td>
+<td class="px-6 py-4 text-sm font-bold text-right">$3,330.00</td>
+<td class="px-6 py-4 text-center">
+<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400 text-xs font-bold">In Stock</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-4 bg-slate-50 dark:bg-white/5 border-t border-primary/10 text-center">
+<p class="text-xs text-slate-500 font-medium italic">Data updated as of 1 minute ago</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

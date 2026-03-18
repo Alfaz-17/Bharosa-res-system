@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gourmet Express - Digital Menu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6933",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23140f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen font-display">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-md mx-auto px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="bg-primary rounded-lg p-1.5">
+<span class="material-symbols-outlined text-white text-2xl">restaurant_menu</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Gourmet Express</h1>
+</div>
+<button class="relative p-2 text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute top-1 right-1 bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">3</span>
+</button>
+</div>
+</header>
+<main class="max-w-md mx-auto pb-24">
+<div class="px-4 py-6">
+<div class="flex flex-col items-center text-center gap-2 mb-8">
+<div class="w-24 h-24 rounded-full border-4 border-primary/20 p-1">
+<img alt="Restaurant Logo" class="w-full h-full object-cover rounded-full" data-alt="Modern minimalist restaurant logo icon on white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD49dnjB-NsfF6r_2wP-0w0K65n1egc9oypwRqlizVnZ0tLeRfrRGAEfT5UJ4JgDUNoM7jmVssH8mOHa8c2zPjlhB_W1fDYrmxeKyQN5sJFVlOBLlvN6BduCCWpBxnpkDm5wfF4ClEVdauL-dGgKULFB45LXdQPy7G86t2PITW7GjeMuESqFSSVFqkfuo2yarXyBrGJKFEfiYHq2XtbiC7BUwBq2DNk4o17yNKcr4kTQgThHtCM5X02lAE3tTt2iPQ9X4kePTpGL0I"/>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Artisan Kitchen</h2>
+<p class="text-primary font-medium">Fresh • Italian • Organic</p>
+<div class="flex items-center justify-center gap-1 mt-1 text-sm text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+<span class="font-semibold text-slate-700 dark:text-slate-200">4.9</span>
+<span>(1.2k+ reviews)</span>
+</div>
+</div>
+</div>
+<div class="sticky top-[61px] z-40 bg-background-light dark:bg-background-dark -mx-4 px-4 py-2 border-b border-primary/5">
+<div class="flex gap-4 overflow-x-auto no-scrollbar py-2">
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary text-white font-bold text-sm shadow-lg shadow-primary/20">
+                        Pizza
+                    </button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm hover:bg-primary/20">
+                        Pasta
+                    </button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm hover:bg-primary/20">
+                        Salads
+                    </button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm hover:bg-primary/20">
+                        Drinks
+                    </button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm hover:bg-primary/20">
+                        Desserts
+                    </button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-6">
+<div class="flex flex-col bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-sm border border-primary/5">
+<div class="relative aspect-square">
+<img alt="Margherita Pizza" class="w-full h-full object-cover" data-alt="Classic wood-fired margherita pizza with fresh basil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVWYe-iWRno5weNYDxS6izbC-QH3CrpKmgjENSPRfBwoF-l6bvNSjI1JWKWlhWtjuPZVGBIcIgZkCcJcNfwZexHrOPpq9GB6u8HqjIbsHNZSj-rjmJVmRnZU2hc534wniHN3W8MzOwztg59Ab3QtjytAqBjUQX-1co-pNkLLnqPGoflJpqeYfPP_LtlXDQMj5Zy28tRoYEvdxFNhjRWGiwhwwhVlX5dkOp7bZsZYWw6TlvAkjBWc19ZVZm7Q-ygMuLMmMPPzjd5sg"/>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-2 py-1 rounded-lg">
+<span class="text-primary font-bold text-sm">$14.00</span>
+</div>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm leading-tight">Margherita Classica</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">San Marzano tomato, buffalo mozzarella, fresh basil.</p>
+<button class="mt-auto pt-3 w-full flex items-center justify-center gap-1 bg-primary text-white py-2 rounded-lg text-xs font-bold hover:opacity-90 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                            Add
+                        </button>
+</div>
+</div>
+<div class="flex flex-col bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-sm border border-primary/5">
+<div class="relative aspect-square">
+<img alt="Pepperoni Pizza" class="w-full h-full object-cover" data-alt="Spicy pepperoni pizza with melting cheese" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATN9gQid39I6nSsGLgT-vqFULRcmHFuXdSlUTlpbeZatdxA5_SxxAsV3pzb9-5U0Xv-9pHsiOgdd9WUBau-nU5eSqmtNGj-stlzm0qfpNMIHMj3PB_9y8k-rxHm48PKWel4jSSqO51vfhxMXsckbOE01RUjMpNV9UTekHKAKOHOB8iLACJr1bosoUlTDRTgjtIh2YcvlU9IbatxgDMnuXzi3XK7AqTPAYgz04QHODLAJhH8-9vhppiT7E2lkdkFealutWVQn7J7l0"/>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-2 py-1 rounded-lg">
+<span class="text-primary font-bold text-sm">$16.50</span>
+</div>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm leading-tight">Double Pepperoni</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Spicy pepperoni, mozzarella, honey drizzle.</p>
+<button class="mt-auto pt-3 w-full flex items-center justify-center gap-1 bg-primary text-white py-2 rounded-lg text-xs font-bold hover:opacity-90 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                            Add
+                        </button>
+</div>
+</div>
+<div class="flex flex-col bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-sm border border-primary/5">
+<div class="relative aspect-square">
+<img alt="Truffle Mushroom Pizza" class="w-full h-full object-cover" data-alt="Gourmet white pizza with truffle oil and mushrooms" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaUavGOkooN6ZwlI0uviA0AAE9ROo3CE_8s9VXlezGnFPnqA0DBdQFsqhJgNozEVotunyqV-0mXHQFzQT72RKmlSBDyQjI8eG7VAuC9X08GJTJPsWvdnGvX9q2SSHMmAyruXu9610z9KpuUSWob0znzBmsiXHt5Pw-Sw29cTvKJMlRmjooSkcsZep5311kzFT6lp0hkrxEiEQmJEbUb6vV8DwL4xogmKBfDaKD8vGwOH6P7slGAVxpVcDKwHG_77QviQzOYWSsfZ4"/>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-2 py-1 rounded-lg">
+<span class="text-primary font-bold text-sm">$18.00</span>
+</div>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm leading-tight">Truffle &amp; Mushroom</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Wild mushrooms, truffle oil, roasted garlic.</p>
+<button class="mt-auto pt-3 w-full flex items-center justify-center gap-1 bg-primary text-white py-2 rounded-lg text-xs font-bold hover:opacity-90 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                            Add
+                        </button>
+</div>
+</div>
+<div class="flex flex-col bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-sm border border-primary/5">
+<div class="relative aspect-square">
+<img alt="Veggie Supreme" class="w-full h-full object-cover" data-alt="Colorful vegetable supreme pizza with peppers and olives" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9MlBoVegXBkAlVct-f9Zw-eOWMXb5HXTKEhO-xe7Jqt1o8wcy0Jw6xM34lStJqD2XgEA7wdZFC6J35NDW7p7iJN6ZKyhkKqKzQ9E8qGDBm_0Sqow-nZ6EuVDaLcuI6OZtdJTbLqJ1fiJiTtTNnNYtWkb4vKppJUmnTPtkMR3G6i8a2ei0E4XmvZJq5_d6YMdymWt4Ks-zWzR5jMHAj2aZVSHW53GeR3IdV0HsNC0mfsHlSt4VSBM0AeMR1ohmtj4D3Mt3gV2Gznc"/>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-2 py-1 rounded-lg">
+<span class="text-primary font-bold text-sm">$15.00</span>
+</div>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm leading-tight">Garden Supreme</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Bell peppers, olives, red onion, zucchini.</p>
+<button class="mt-auto pt-3 w-full flex items-center justify-center gap-1 bg-primary text-white py-2 rounded-lg text-xs font-bold hover:opacity-90 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                            Add
+                        </button>
+</div>
+</div>
+<div class="flex flex-col bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-sm border border-primary/5">
+<div class="relative aspect-square">
+<img alt="Burrata Pizza" class="w-full h-full object-cover" data-alt="Premium pizza topped with a large burrata cheese ball" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN_Zar5OeqNBH_Eg1gIZBpLto_TebV-0yoOH9RIXKEI7xgrOz--mjB_xtSP1Q4c36j7Vd-YT-8UqXOffxMoJ8OxHs3eTOA7844xNw4WRJZ-X7b0WWiFOwEPhLFT8SmIDPmMjccnVJGgXi_NGtNyiV02TDh4ZfePb4iARMZL_ZxeN5zTk2zLwa6jOJvdwl-9Fv4X6sjqs3ePNmVzxV5o2y8Dl0PH656o4Ttdv44q-PUiKFR6CgM-n7gaiS6dpFJz01jHUgmS8An-7E"/>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-2 py-1 rounded-lg">
+<span class="text-primary font-bold text-sm">$19.00</span>
+</div>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm leading-tight">Creamy Burrata</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Fresh burrata, pesto, cherry tomatoes.</p>
+<button class="mt-auto pt-3 w-full flex items-center justify-center gap-1 bg-primary text-white py-2 rounded-lg text-xs font-bold hover:opacity-90 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                            Add
+                        </button>
+</div>
+</div>
+<div class="flex flex-col bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-sm border border-primary/5">
+<div class="relative aspect-square">
+<img alt="Diavola Pizza" class="w-full h-full object-cover" data-alt="Spicy diavola pizza with chili and salami" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsoUuNVi_2QTPO-1dx-h-luTajSE4mtC2eYrHRHfCkT6pfR7AsypOP25QPznMEmN2EEtlRUaEAtyLahPOttHgqNXTIyjXJ16m8JAY_LppyO5MlVTIbloT89gKsD7PNftPoabpK6dViJql7BfP6_ArBGhJbHZ-svEipLUic4kKl4vNBlB3VmFOnsYwhsKPYi-JmA6nVgvMg91bJ6XzisE5fZRJp3tQojv80cOnNhOSMBPcCn8_SYZDYIKv1-XupQZ8gee29Deg3eOY"/>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-2 py-1 rounded-lg">
+<span class="text-primary font-bold text-sm">$17.00</span>
+</div>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm leading-tight">Spicy Diavola</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Spicy salami, chili flakes, red onion.</p>
+<button class="mt-auto pt-3 w-full flex items-center justify-center gap-1 bg-primary text-white py-2 rounded-lg text-xs font-bold hover:opacity-90 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                            Add
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-background-light dark:bg-background-dark border-t border-primary/10 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+<div class="max-w-md mx-auto flex justify-around items-center h-16 px-4">
+<a class="flex flex-col items-center gap-0.5 text-primary" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Menu</span>
+</a>
+<a class="flex flex-col items-center gap-0.5 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Search</span>
+</a>
+<a class="flex flex-col items-center gap-0.5 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Orders</span>
+</a>
+<a class="flex flex-col items-center gap-0.5 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

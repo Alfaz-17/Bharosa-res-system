@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6933",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23140f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Orders Management</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Header Section -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 py-4 lg:px-40 bg-background-light dark:bg-background-dark">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+<div class="flex items-center justify-center size-10 bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary">restaurant</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tight">Orders Management</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4 lg:gap-8 items-center">
+<label class="hidden md:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-primary/70 flex border-none bg-primary/5 dark:bg-primary/10 items-center justify-center pl-4 rounded-l-lg" data-icon="MagnifyingGlass">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border-none bg-primary/5 dark:bg-primary/10 h-full placeholder:text-primary/50 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search orders..." value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg size-10 bg-primary/5 dark:bg-primary/10 text-slate-900 dark:text-slate-100 hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="flex items-center justify-center rounded-lg size-10 bg-primary/5 dark:bg-primary/10 text-slate-900 dark:text-slate-100 hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="User profile avatar of a manager" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCE6OsBZ2d_lulNykofoXhrelONmn8xAojdy0svRqEyyTGjrvdA2FPfHrdjhE5B7pISFRBjMYe0f8m40bDvCNswK2O7ouVkpORorlUoszDQb7XToMnkN3oFIW8IQyfEN_3vcNTS9Ezxe22vbCpD8H4TkNoXijvpqVadxjzop5pnZPhgYTPFUShOk6VkKMBtRUBiGu33bQTyZsKMy8SIY5YztTSXA3IfnS3AUVH3XcP0BWO4TgVPWgAoYWfnK2xsTyKMYAS4L5Uau_4")'>
+</div>
+</div>
+</header>
+<main class="flex flex-1 flex-col px-6 lg:px-40 py-8">
+<!-- Tabs Section -->
+<div class="mb-6">
+<div class="flex border-b border-primary/10 gap-8 overflow-x-auto no-scrollbar">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-slate-900 dark:text-slate-100 pb-3 pt-2" href="#">
+<p class="text-sm font-bold leading-normal tracking-wide">All Orders</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 dark:text-slate-400 hover:text-primary pb-3 pt-2 transition-colors" href="#">
+<p class="text-sm font-bold leading-normal tracking-wide">Pending</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 dark:text-slate-400 hover:text-primary pb-3 pt-2 transition-colors" href="#">
+<p class="text-sm font-bold leading-normal tracking-wide">Preparing</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 dark:text-slate-400 hover:text-primary pb-3 pt-2 transition-colors" href="#">
+<p class="text-sm font-bold leading-normal tracking-wide">Completed</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 dark:text-slate-400 hover:text-primary pb-3 pt-2 transition-colors" href="#">
+<p class="text-sm font-bold leading-normal tracking-wide">Cancelled</p>
+</a>
+</div>
+</div>
+<!-- Dashboard Stats Summary (Extra Value) -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+<div class="bg-white dark:bg-background-dark/50 border border-primary/10 p-4 rounded-xl shadow-sm">
+<p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Total Sales</p>
+<p class="text-2xl font-bold text-slate-900 dark:text-slate-100">$1,284.50</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 border border-primary/10 p-4 rounded-xl shadow-sm">
+<p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Active Orders</p>
+<p class="text-2xl font-bold text-primary">12</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 border border-primary/10 p-4 rounded-xl shadow-sm">
+<p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Average Time</p>
+<p class="text-2xl font-bold text-slate-900 dark:text-slate-100">18 min</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 border border-primary/10 p-4 rounded-xl shadow-sm">
+<p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Cancelled</p>
+<p class="text-2xl font-bold text-red-500">2</p>
+</div>
+</div>
+<!-- Table Container -->
+<div class="flex flex-col bg-white dark:bg-background-dark/50 rounded-xl border border-primary/10 overflow-hidden shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-primary/5 dark:bg-primary/10">
+<th class="px-6 py-4 text-sm font-semibold text-slate-900 dark:text-slate-100 uppercase tracking-wider">Order ID</th>
+<th class="px-6 py-4 text-sm font-semibold text-slate-900 dark:text-slate-100 uppercase tracking-wider">Table No.</th>
+<th class="px-6 py-4 text-sm font-semibold text-slate-900 dark:text-slate-100 uppercase tracking-wider">Items</th>
+<th class="px-6 py-4 text-sm font-semibold text-slate-900 dark:text-slate-100 uppercase tracking-wider">Total Price</th>
+<th class="px-6 py-4 text-sm font-semibold text-slate-900 dark:text-slate-100 uppercase tracking-wider">Status</th>
+<th class="px-6 py-4 text-sm font-semibold text-slate-900 dark:text-slate-100 uppercase tracking-wider">Time</th>
+<th class="px-6 py-4 text-sm font-semibold text-primary uppercase tracking-wider text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-primary/5 dark:divide-primary/10">
+<!-- Row 1 -->
+<tr class="hover:bg-primary/5 dark:hover:bg-primary/5 transition-colors">
+<td class="px-6 py-5 text-sm font-medium text-slate-900 dark:text-slate-100">#ORD-001</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">Table 4</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">2x Burger, 1x Coke</td>
+<td class="px-6 py-5 text-sm font-bold text-slate-900 dark:text-slate-100">$32.50</td>
+<td class="px-6 py-5">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+                                        Pending
+                                    </span>
+</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">12:45 PM</td>
+<td class="px-6 py-5 text-right">
+<button class="text-sm font-bold text-primary hover:underline transition-all">View Order</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-primary/5 dark:hover:bg-primary/5 transition-colors">
+<td class="px-6 py-5 text-sm font-medium text-slate-900 dark:text-slate-100">#ORD-002</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">Table 2</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">1x Pasta, 1x Wine</td>
+<td class="px-6 py-5 text-sm font-bold text-slate-900 dark:text-slate-100">$45.00</td>
+<td class="px-6 py-5">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+                                        Preparing
+                                    </span>
+</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">12:50 PM</td>
+<td class="px-6 py-5 text-right">
+<button class="text-sm font-bold text-primary hover:underline transition-all">View Order</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-primary/5 dark:hover:bg-primary/5 transition-colors">
+<td class="px-6 py-5 text-sm font-medium text-slate-900 dark:text-slate-100">#ORD-003</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">Table 8</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">3x Pizza</td>
+<td class="px-6 py-5 text-sm font-bold text-slate-900 dark:text-slate-100">$54.00</td>
+<td class="px-6 py-5">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                                        Completed
+                                    </span>
+</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">12:30 PM</td>
+<td class="px-6 py-5 text-right">
+<button class="text-sm font-bold text-primary hover:underline transition-all">View Order</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-primary/5 dark:hover:bg-primary/5 transition-colors">
+<td class="px-6 py-5 text-sm font-medium text-slate-900 dark:text-slate-100">#ORD-004</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">Table 5</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">1x Salad</td>
+<td class="px-6 py-5 text-sm font-bold text-slate-900 dark:text-slate-100">$12.00</td>
+<td class="px-6 py-5">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400">
+                                        Cancelled
+                                    </span>
+</td>
+<td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">12:15 PM</td>
+<td class="px-6 py-5 text-right">
+<button class="text-sm font-bold text-primary hover:underline transition-all">View Order</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-between border-t border-primary/10 p-4 bg-primary/5 dark:bg-primary/10">
+<p class="text-sm text-slate-500 dark:text-slate-400">Showing <span class="font-bold">1 to 4</span> of <span class="font-bold">24</span> results</p>
+<div class="flex items-center gap-1">
+<button class="flex size-8 items-center justify-center rounded-lg hover:bg-primary/20 text-slate-900 dark:text-slate-100 transition-colors">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button class="flex size-8 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold shadow-md">1</button>
+<button class="flex size-8 items-center justify-center rounded-lg hover:bg-primary/20 text-slate-900 dark:text-slate-100 text-sm font-medium transition-colors">2</button>
+<button class="flex size-8 items-center justify-center rounded-lg hover:bg-primary/20 text-slate-900 dark:text-slate-100 text-sm font-medium transition-colors">3</button>
+<button class="flex size-8 items-center justify-center rounded-lg hover:bg-primary/20 text-slate-900 dark:text-slate-100 transition-colors">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Quick Action Floating Button (Mobile Optimization) -->
+<button class="fixed bottom-6 right-6 lg:bottom-12 lg:right-40 size-14 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl">add</span>
+</button>
+</div>
+</div>
+<style>
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+</body></html>

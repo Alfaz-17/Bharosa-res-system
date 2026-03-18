@@ -1,0 +1,2892 @@
+[
+  {
+    "id": "TC001",
+    "title": "Successful staff login redirects into staff portal and shows staff layout",
+    "description": "Verifies that a valid email/password login redirects into the staff area and the staff layout is visible.",
+    "category": "User Authentication",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email address field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Sign In\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Sign In\" loading spinner is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Sidebar\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Header\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Invalid password shows 'Invalid credentials' error and stays on login page",
+    "description": "Verifies that incorrect credentials show a red error banner and the user remains on the login page.",
+    "category": "User Authentication",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"fake.user@example.com\" into the email address field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"WrongPassword123!\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Sign In\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Invalid credentials\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/login\""
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Login button shows loading spinner while signing in",
+    "description": "Verifies that clicking Sign In triggers a visible loading state to prevent duplicate submissions.",
+    "category": "User Authentication",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email address field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Sign In\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Sign In\" loading spinner is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/\""
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Empty submit shows validation and does not leave login page",
+    "description": "Verifies that attempting to sign in with empty fields does not redirect away from the login screen.",
+    "category": "User Authentication",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Sign In\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/login\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Email\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Password\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Whitespace-trimmed credentials can still log in",
+    "description": "Verifies that leading/trailing whitespace in credentials does not block a valid login.",
+    "category": "User Authentication",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"  {{LOGIN_USER}}  \" into the email address field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"  {{LOGIN_PASSWORD}}  \" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Sign In\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Sidebar\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Pressing Enter in password field submits login",
+    "description": "Verifies keyboard submission from the password field signs the user in and redirects into staff area.",
+    "category": "User Authentication",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email address field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Press Enter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Header\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Navigate directly to a staff route after login is allowed (staff area reachable)",
+    "description": "Verifies that after a successful login, the user can access a staff page and sees the staff UI.",
+    "category": "User Authentication",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email address field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Sign In\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/\""
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /staff/orders"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/orders\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Sidebar\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Non-existent user shows 'Invalid credentials' and keeps entered email visible",
+    "description": "Verifies that a failed login for a non-existent account shows the error and preserves the email input for correction.",
+    "category": "User Authentication",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"does.not.exist.999999@example.com\" into the email address field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"AnyPassword123!\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Sign In\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Invalid credentials\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"does.not.exist.999999@example.com\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Browse QR menu header shows restaurant name and table indicator",
+    "description": "Verifies the QR menu page loads and displays the restaurant name and the correct table chip for Table 1.",
+    "category": "Customer Ordering Flow (QR Menu)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu/1"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Table 1\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Restaurant name\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Menu categories\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Browse menu categories via category pills scrolling",
+    "description": "Verifies a customer can scroll through the category pills and see category names update/appear.",
+    "category": "Customer Ordering Flow (QR Menu)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu/1"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Menu categories\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"Menu categories\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Category pill\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to \"End of category pills row\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Category pill\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Add a menu item to cart from item detail/card and see quantity stepper appear",
+    "description": "Verifies adding 'Spring Rolls' shows a quantity stepper on the item card (or detail) indicating it is in the cart.",
+    "category": "Customer Ordering Flow (QR Menu)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu/1"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to text \"Spring Rolls\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Spring Rolls\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Add +\" for \"Spring Rolls\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Quantity stepper for Spring Rolls\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Cart bar\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Sticky bottom cart bar updates item count and total after adding item",
+    "description": "Verifies the sticky cart bar becomes visible and reflects an updated count/total after adding an item.",
+    "category": "Customer Ordering Flow (QR Menu)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu/1"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to text \"Spring Rolls\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Add +\" for \"Spring Rolls\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Sticky bottom cart bar\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Cart item count\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Cart total amount\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "View Cart from sticky cart bar and verify cart page shows items and notes input",
+    "description": "Verifies customer can open the cart from the sticky bar and see cart items list and order notes input.",
+    "category": "Customer Ordering Flow (QR Menu)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu/1"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to text \"Spring Rolls\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Add +\" for \"Spring Rolls\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"View Cart\" in the sticky bottom cart bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/cart\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Cart items list\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Order notes\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "Place order success shows loading state then redirects to order status",
+    "description": "Verifies placing an order shows a loading state on 'Place Order' and then navigates to an order status page.",
+    "category": "Customer Ordering Flow (QR Menu)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu/1"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to text \"Spring Rolls\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Add +\" for \"Spring Rolls\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"View Cart\" in the sticky bottom cart bar"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Place Order\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Place Order loading state\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/order-status/\""
+      }
+    ]
+  },
+  {
+    "id": "TC015",
+    "title": "Order status page shows created/initial stepper state after successful placement",
+    "description": "Verifies the order status page displays an order status stepper starting at CREATED (initial state).",
+    "category": "Customer Ordering Flow (QR Menu)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu/1"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to text \"Spring Rolls\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Add +\" for \"Spring Rolls\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"View Cart\" in the sticky bottom cart bar"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Place Order\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/order-status/\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"CREATED\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC016",
+    "title": "Order status page shows initial CREATED step and stepper UI",
+    "description": "Verifies the order status page loads and displays a visible status stepper with the initial CREATED state.",
+    "category": "Order Status Tracking (Customer)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /order-status/123"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"order status stepper\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"CREATED\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Order Status\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC017",
+    "title": "Status page remains usable while waiting for real-time updates",
+    "description": "Verifies the page does not show an error state during normal waiting periods and keeps the stepper visible.",
+    "category": "Order Status Tracking (Customer)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /order-status/123"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"order status stepper\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Wait for 5 seconds"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"order status stepper\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Unable to fetch order status\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC018",
+    "title": "Staff dashboard loads with sidebar, KPI cards, charts, and recent orders table",
+    "description": "Verifies the dashboard overview renders all primary sections and shows non-empty KPI values, charts, and recent orders.",
+    "category": "Staff Dashboard",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Left sidebar navigation\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Dashboard\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Recent Orders\" table is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC019",
+    "title": "KPI stat cards show loaded numeric values and trend indicators",
+    "description": "Verifies the four KPI cards render and display numbers with trend chips/indicators after loading.",
+    "category": "Staff Dashboard",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"KPI\" stat cards section is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Trend\" chip/indicator on a KPI card is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"KPI value\" (number) is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC020",
+    "title": "Revenue line chart renders on the dashboard",
+    "description": "Verifies the revenue chart section appears and renders a revenue line chart after loading completes.",
+    "category": "Staff Dashboard",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Revenue\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Revenue\" line chart is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Revenue\" chart legend or axis labels are visible"
+      }
+    ]
+  },
+  {
+    "id": "TC021",
+    "title": "Top Items bar chart renders on the dashboard",
+    "description": "Verifies the top-items chart section appears and renders a bar chart with item labels.",
+    "category": "Staff Dashboard",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Top Items\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Top Items\" bar chart is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Top Items\" chart item labels are visible"
+      }
+    ]
+  },
+  {
+    "id": "TC022",
+    "title": "Recent Orders table is populated with at least one row and key columns",
+    "description": "Verifies the recent orders section loads and displays rows with recognizable order fields.",
+    "category": "Staff Dashboard",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Recent Orders\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Recent Orders\" table header row is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Recent Orders\" table contains at least one visible row"
+      }
+    ]
+  },
+  {
+    "id": "TC023",
+    "title": "Filter orders by search and open order details",
+    "description": "Verifies the staff can search for an order from the orders list and open its slide-over details panel.",
+    "category": "Orders Management",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the main navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Orders\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Search\" input is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC024",
+    "title": "Search for a specific order number shows filtered results",
+    "description": "Verifies typing an order number in search filters the orders table results.",
+    "category": "Orders Management",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the main navigation"
+      },
+      {
+        "type": "action",
+        "description": "Type \"123\" into the search input"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"123\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC025",
+    "title": "Open slide-over order detail panel from an order row",
+    "description": "Verifies clicking an order row opens the slide-over panel with order details.",
+    "category": "Orders Management",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the main navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click on the order row for \"Order#123\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Order#123\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC026",
+    "title": "Update order status successfully from slide-over panel",
+    "description": "Verifies a role-appropriate status action (e.g., Confirm) updates the status shown in the slide-over and list.",
+    "category": "Orders Management",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the main navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click on the order row for \"Order#123\""
+      },
+      {
+        "type": "action",
+        "description": "Click the role-appropriate \"Confirm\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Confirmed\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC027",
+    "title": "Status filter tabs are visible and can be switched",
+    "description": "Verifies the orders page shows status filter tabs and the user can switch filters to change visible results.",
+    "category": "Orders Management",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the main navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Status\" filter tabs are visible"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Pending\" status tab"
+      }
+    ]
+  },
+  {
+    "id": "TC028",
+    "title": "Clearing the search restores the unfiltered order list",
+    "description": "Verifies removing the search term returns the table to showing the broader list again.",
+    "category": "Orders Management",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the main navigation"
+      },
+      {
+        "type": "action",
+        "description": "Type \"123\" into the search input"
+      },
+      {
+        "type": "action",
+        "description": "Press \"Escape\" key"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Orders\" table is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC029",
+    "title": "Role-aware status controls are visible in the slide-over panel",
+    "description": "Verifies the slide-over panel shows status actions appropriate to the logged-in user role (buttons present or absent).",
+    "category": "Orders Management",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the main navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click on the order row for \"Order#123\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Update Status\" controls section is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC030",
+    "title": "KDS loads and shows header elements (restaurant name + live clock)",
+    "description": "Verifies the Kitchen Display System page loads for an authenticated user and the fixed header shows key information.",
+    "category": "Kitchen Display System (KDS)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /staff/kitchen"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Kitchen\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Restaurant name\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Live clock\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC031",
+    "title": "KDS shows a grid of active tickets with CONFIRMED and IN_KITCHEN statuses",
+    "description": "Verifies the main board renders ticket cards and includes both CONFIRMED and IN_KITCHEN orders when present.",
+    "category": "Kitchen Display System (KDS)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /staff/kitchen"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Ticket grid\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"CONFIRMED\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"IN_KITCHEN\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC032",
+    "title": "Ticket shows elapsed timer and under-5-min timer appears in white (Order#123)",
+    "description": "Verifies a specific ticket displays an elapsed timer and the timer uses the non-urgent (white) state for a new order.",
+    "category": "Kitchen Display System (KDS)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /staff/kitchen"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Order#123\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Elapsed timer for Order#123\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"<5 min\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC033",
+    "title": "Start Cooking progresses Order#123 from CONFIRMED to IN_KITCHEN and keeps timer visible",
+    "description": "Verifies the quick action updates the ticket status badge to IN_KITCHEN and the timer continues to display.",
+    "category": "Kitchen Display System (KDS)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /staff/kitchen"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Start Cooking\" on ticket \"Order#123\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"IN_KITCHEN\" is visible within the \"Order#123\" ticket"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Elapsed timer for Order#123\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC034",
+    "title": "Record a successful CARD payment from Billing page",
+    "description": "Verifies staff can proceed to billing for a served order, select CARD, collect payment, and see a success confirmation.",
+    "category": "Billing & Payments",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the staff navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Proceed to Billing\" on a served order"
+      },
+      {
+        "type": "action",
+        "description": "Select payment method \"Card\""
+      },
+      {
+        "type": "action",
+        "description": "Click \"Collect Payment\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Payment recorded\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC035",
+    "title": "Record a successful CASH payment from Billing page",
+    "description": "Verifies staff can collect a CASH payment for a served order and receive a visible success confirmation.",
+    "category": "Billing & Payments",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the staff navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Proceed to Billing\" on a served order"
+      },
+      {
+        "type": "action",
+        "description": "Select payment method \"Cash\""
+      },
+      {
+        "type": "action",
+        "description": "Click \"Collect Payment\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Payment recorded\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC036",
+    "title": "Record a successful UPI payment from Billing page",
+    "description": "Verifies staff can collect a UPI payment for a served order and see a success confirmation.",
+    "category": "Billing & Payments",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the staff navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Proceed to Billing\" on a served order"
+      },
+      {
+        "type": "action",
+        "description": "Select payment method \"UPI\""
+      },
+      {
+        "type": "action",
+        "description": "Click \"Collect Payment\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Payment recorded\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC037",
+    "title": "Payment failure shows error toast and does not confirm success",
+    "description": "Verifies that when collecting payment fails, the UI shows an error message and does not show the success confirmation.",
+    "category": "Billing & Payments",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the staff navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Proceed to Billing\" on a served order"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Collect Payment\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Payment failed\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Payment recorded\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC038",
+    "title": "Generate Invoice is available and produces an invoice view on Billing page",
+    "description": "Verifies staff can generate an invoice from the billing screen and see an invoice view rendered.",
+    "category": "Billing & Payments",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the staff navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Proceed to Billing\" on a served order"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Generate Invoice\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Invoice\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC039",
+    "title": "Billing page shows order summary and totals panel",
+    "description": "Verifies the billing screen loads with visible order summary content and totals section for a served order.",
+    "category": "Billing & Payments",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the staff navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Proceed to Billing\" on a served order"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Order Summary\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Total\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC040",
+    "title": "Cannot collect payment without selecting a payment method (validation)",
+    "description": "Verifies the UI enforces payment method selection before collecting payment.",
+    "category": "Billing & Payments",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the staff navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Proceed to Billing\" on a served order"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Collect Payment\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Select payment method\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC041",
+    "title": "Switching payment method updates the visible selection state",
+    "description": "Verifies staff can toggle between payment methods and the currently selected method is visibly reflected before collection.",
+    "category": "Billing & Payments",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Orders\" in the staff navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click \"Proceed to Billing\" on a served order"
+      },
+      {
+        "type": "action",
+        "description": "Select payment method \"Cash\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Cash\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Select payment method \"Card\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Card\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC042",
+    "title": "Analytics page loads with default Last 30 days view and renders charts + summary stats",
+    "description": "Verifies the manager analytics page loads successfully and displays the default date range, charts, and summary statistics.",
+    "category": "Analytics",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Analytics\" in the main navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/analytics\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Last 30 days\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC043",
+    "title": "Analytics page displays Revenue and Orders charts when data is available",
+    "description": "Verifies that the Revenue area chart and Orders bar chart are visible on the analytics page for the default range.",
+    "category": "Analytics",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Analytics\" in the main navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Revenue\" chart is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Orders\" chart is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC044",
+    "title": "Analytics page shows summary stats: Total Revenue and Avg Order Value",
+    "description": "Verifies that key summary statistic labels are visible on the analytics page.",
+    "category": "Analytics",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Analytics\" in the main navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Total Revenue\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Avg Order Value\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC045",
+    "title": "Re-selecting Last 30 days keeps charts and stats visible",
+    "description": "Verifies that selecting the same predefined range does not break the UI and the analytics content remains visible.",
+    "category": "Analytics",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Analytics\" in the main navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click on the date range picker control"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Last 30 days\" option"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Revenue\" chart is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC046",
+    "title": "Custom date range with no data shows 'No data for selected range' empty state",
+    "description": "Verifies that when a custom date range has no results, the analytics page shows an empty state message.",
+    "category": "Analytics",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Analytics\" in the main navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click on the date range picker control"
+      },
+      {
+        "type": "action",
+        "description": "Select a custom date range that is unlikely to have data (for example, a far past period) using the date range picker"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"No data for selected range\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC047",
+    "title": "Empty-state view still shows chart placeholders for no-data custom range",
+    "description": "Verifies that chart areas remain present as placeholders even when the selected date range has no data.",
+    "category": "Analytics",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Analytics\" in the main navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click on the date range picker control"
+      },
+      {
+        "type": "action",
+        "description": "Select a custom date range that is unlikely to have data (for example, a far past period) using the date range picker"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Revenue\" chart placeholder is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC048",
+    "title": "Analytics page renders Top Items section in data-available range",
+    "description": "Verifies that the Top Items section is visible for a typical date range where data exists.",
+    "category": "Analytics",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Analytics\" in the main navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Top Items\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Top Items\" list or chart is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC049",
+    "title": "Switching from no-data custom range back to Last 30 days restores charts",
+    "description": "Verifies that after viewing an empty state, switching back to a normal range shows charts again.",
+    "category": "Analytics",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Sign in\" or \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Analytics\" in the main navigation"
+      },
+      {
+        "type": "action",
+        "description": "Click on the date range picker control"
+      },
+      {
+        "type": "action",
+        "description": "Select a custom date range that is unlikely to have data (for example, a far past period) using the date range picker"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"No data for selected range\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the date range picker control"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Last 30 days\" option"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Orders\" chart is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC050",
+    "title": "Add a new staff user with WAITER role and verify it appears in the list",
+    "description": "Verifies that an authenticated staff user can add a new staff account and see it listed with the correct role badge.",
+    "category": "Users (Staff) Management",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Users\" in the staff sidebar or navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/users\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Add Staff\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC051",
+    "title": "Complete Add Staff modal flow for WAITER role and verify new row is visible",
+    "description": "Verifies the full add-user flow succeeds end-to-end from opening the modal to seeing the new user in the table.",
+    "category": "Users (Staff) Management",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Users\" in the staff sidebar or navigation menu"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Add Staff\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Add Staff\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Test Waiter\" into the name field"
+      }
+    ]
+  },
+  {
+    "id": "TC052",
+    "title": "Add a WAITER staff user and verify role badge is shown in the table",
+    "description": "Verifies that selecting the WAITER role results in a visible WAITER role badge on the created user row.",
+    "category": "Users (Staff) Management",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Users\" in the staff sidebar or navigation menu"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Add Staff\" button"
+      },
+      {
+        "type": "action",
+        "description": "Select \"WAITER\" from the role dropdown"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"WAITER\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC053",
+    "title": "Prevent adding staff when email is already in use and show inline validation error",
+    "description": "Verifies that submitting an existing email shows the \"Email already taken\" validation message and stays in the modal.",
+    "category": "Users (Staff) Management",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Users\" in the staff sidebar or navigation menu"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Add Staff\" button"
+      },
+      {
+        "type": "action",
+        "description": "Type \"existing.user@example.com\" into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Add\" button"
+      }
+    ]
+  },
+  {
+    "id": "TC054",
+    "title": "Verify inline validation error text appears for duplicate email and modal remains open",
+    "description": "Verifies the duplicate-email error is visible near the email field and the user is not navigated away.",
+    "category": "Users (Staff) Management",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Users\" in the staff sidebar or navigation menu"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Add Staff\" button"
+      },
+      {
+        "type": "action",
+        "description": "Type \"existing.user@example.com\" into the email field"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Email already taken\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC055",
+    "title": "Login required to access Users page: authenticated navigation shows users table content",
+    "description": "Verifies that after successful login, the Users page loads and shows role-badged listing UI elements.",
+    "category": "Users (Staff) Management",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Users\" in the staff sidebar or navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/users\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"users table\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Role\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC056",
+    "title": "Cancel out of Add Staff modal without creating a user",
+    "description": "Verifies that the Add Staff modal can be dismissed and the user stays on the Users page without seeing success messaging.",
+    "category": "Users (Staff) Management",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Users\" in the staff sidebar or navigation menu"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Add Staff\" button"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Cancel\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/users\""
+      }
+    ]
+  },
+  {
+    "id": "TC057",
+    "title": "Generate a QR code for a valid table number and see it appear in the grid",
+    "description": "Verifies a staff user can generate a table-specific QR code and sees a labeled QR card added to the grid.",
+    "category": "QR Codes Generation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"QR Codes\" in the staff navigation/menu"
+      },
+      {
+        "type": "action",
+        "description": "Type \"5\" into the table number input field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Generate\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Table 5\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC058",
+    "title": "Generate QR code should show a visible QR image/card for Table 5",
+    "description": "Verifies the generated QR for a valid table number is displayed as a QR card/image in the grid.",
+    "category": "QR Codes Generation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"QR Codes\" in the staff navigation/menu"
+      },
+      {
+        "type": "action",
+        "description": "Type \"5\" into the table number input field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Generate\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"QR code\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC059",
+    "title": "Blank table number shows inline validation error and blocks generation",
+    "description": "Verifies that submitting an empty table number shows an inline error and does not create a QR card.",
+    "category": "QR Codes Generation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"QR Codes\" in the staff navigation/menu"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Generate\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Enter a table number\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Table\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC060",
+    "title": "Whitespace-only table number is treated as invalid",
+    "description": "Verifies that entering only whitespace for the table number triggers validation and prevents QR generation.",
+    "category": "QR Codes Generation",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"QR Codes\" in the staff navigation/menu"
+      },
+      {
+        "type": "action",
+        "description": "Type \"   \" into the table number input field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Generate\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Enter a table number\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC061",
+    "title": "Generating multiple tables creates multiple labeled QR cards",
+    "description": "Verifies that generating QR codes for two different table numbers results in both QR cards being visible in the grid.",
+    "category": "QR Codes Generation",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"QR Codes\" in the staff navigation/menu"
+      },
+      {
+        "type": "action",
+        "description": "Type \"5\" into the table number input field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Generate\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Table 5\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"6\" into the table number input field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Generate\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Table 6\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC062",
+    "title": "Generated QR codes persist after page reload (local persistence)",
+    "description": "Verifies that previously generated QR cards remain visible after reloading the QR Codes page.",
+    "category": "QR Codes Generation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Login\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"QR Codes\" in the staff navigation/menu"
+      },
+      {
+        "type": "action",
+        "description": "Type \"5\" into the table number input field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Generate\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Table 5\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /staff/qr-codes"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Table 5\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC063",
+    "title": "Super-admin updates Tax Rate and sees success confirmation",
+    "description": "Verifies a SUPER_ADMIN can change the Tax Rate and save settings successfully with visible confirmation.",
+    "category": "Restaurant Settings",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" or \"Log in\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Settings\" in the staff navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Restaurant Settings\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"5\" into the \"Tax Rate\" field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Save Changes\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Settings saved\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC064",
+    "title": "Super-admin sees settings form pre-populated on load",
+    "description": "Verifies the settings page loads and displays existing saved values in the form fields.",
+    "category": "Restaurant Settings",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" or \"Log in\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Settings\" in the staff navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Restaurant Settings\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Restaurant Name\" field is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC065",
+    "title": "Attempt to save invalid Tax Rate shows validation error",
+    "description": "Verifies the UI prevents saving when Tax Rate is invalid and shows a visible validation message.",
+    "category": "Restaurant Settings",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" or \"Log in\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Settings\" in the staff navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Restaurant Settings\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"-1\" into the \"Tax Rate\" field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Save Changes\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Tax\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC066",
+    "title": "Attempt to save empty Tax Rate shows required-field error",
+    "description": "Verifies the UI blocks saving when Tax Rate is cleared and shows a visible required/invalid message.",
+    "category": "Restaurant Settings",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" or \"Log in\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Settings\" in the staff navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Restaurant Settings\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"\" into the \"Tax Rate\" field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Save Changes\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"required\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC067",
+    "title": "Non-super-admin is denied access to Restaurant Settings and redirected to dashboard",
+    "description": "Verifies role guard behavior: access denied messaging appears and user ends up back on the staff dashboard.",
+    "category": "Restaurant Settings",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" or \"Log in\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Settings\" in the staff navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Access denied\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff/dashboard\""
+      }
+    ]
+  },
+  {
+    "id": "TC068",
+    "title": "Super-admin changes timezone and saves successfully",
+    "description": "Verifies a SUPER_ADMIN can change timezone and save, receiving a visible success confirmation.",
+    "category": "Restaurant Settings",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" or \"Log in\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Settings\" in the staff navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Restaurant Settings\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Select \"Asia/Kolkata\" from the \"Timezone\" dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Save Changes\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Settings saved\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC069",
+    "title": "Super-admin changes currency and saves successfully",
+    "description": "Verifies a SUPER_ADMIN can change currency and save, receiving a visible success confirmation.",
+    "category": "Restaurant Settings",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" or \"Log in\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Settings\" in the staff navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Restaurant Settings\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Select \"INR\" from the \"Currency\" dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Save Changes\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Settings saved\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC070",
+    "title": "Super-admin updates restaurant profile name and saves successfully",
+    "description": "Verifies a SUPER_ADMIN can edit restaurant profile information and save with visible confirmation.",
+    "category": "Restaurant Settings",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_USER}}\" into the email/username field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"{{LOGIN_PASSWORD}}\" into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Sign in\" or \"Log in\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/staff\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Settings\" in the staff navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Restaurant Settings\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Fill \"Test Restaurant\" into the \"Restaurant Name\" field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Save Changes\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Settings saved\" is visible"
+      }
+    ]
+  }
+]
