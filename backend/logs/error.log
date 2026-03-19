@@ -1279,3 +1279,867 @@ Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x
     at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
     at async getItems (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/menu.controller.js:77:18) {"method":"GET","url":"/api/menu/items","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
 2026-03-17 14:41:53 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"cbd3c6f1-0fd5-4d2d-b399-afaf577b97e3","order_number":"ORD-6J86IB","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:34:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:34:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:34:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:34:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:37:28 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 15:37:28 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 15:37:28 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 15:37:33 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 17)
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 15:37:34 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 15:41:38 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.users.findUnique()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:8:16)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-17 15:42:12 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 15:42:50 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 15:44:51 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:44:51 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:44:51 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:44:51 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:47:59 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"cbd3c6f1-0fd5-4d2d-b399-afaf577b97e3","status":"CONFIRMED","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:48:03 [error]: Error: Invalid status transition from CONFIRMED to CONFIRMED
+    at Module.updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:84:17)
+    at async updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/cbd3c6f1-0fd5-4d2d-b399-afaf577b97e3/status","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 15:48:10 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"cbd3c6f1-0fd5-4d2d-b399-afaf577b97e3","status":"IN_KITCHEN","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:48:16 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"cbd3c6f1-0fd5-4d2d-b399-afaf577b97e3","status":"READY","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:48:16 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"cbd3c6f1-0fd5-4d2d-b399-afaf577b97e3","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:48:23 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"3b38feb2-3fac-4a0f-9861-0c394220319d","status":"IN_KITCHEN","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:48:25 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"c60a7d1e-461d-40d8-b7c3-a95023cfc994","status":"READY","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:48:25 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"c60a7d1e-461d-40d8-b7c3-a95023cfc994","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:49:35 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"087f3b4e-2435-4ffc-a618-07bd30955e64","status":"CONFIRMED","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:49:38 [error]: Error: Invalid status transition from CONFIRMED to CONFIRMED
+    at Module.updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:84:17)
+    at async updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/087f3b4e-2435-4ffc-a618-07bd30955e64/status","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 15:49:42 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"087f3b4e-2435-4ffc-a618-07bd30955e64","status":"IN_KITCHEN","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:49:47 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"087f3b4e-2435-4ffc-a618-07bd30955e64","status":"READY","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:49:47 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"087f3b4e-2435-4ffc-a618-07bd30955e64","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:49:50 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"c723bb58-a56f-4187-b3f5-cf4285555e04","status":"IN_KITCHEN","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:49:55 [error]: Error: Invalid status transition from IN_KITCHEN to IN_KITCHEN
+    at Module.updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:84:17)
+    at async updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/c723bb58-a56f-4187-b3f5-cf4285555e04/status","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 15:50:05 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"3b38feb2-3fac-4a0f-9861-0c394220319d","status":"READY","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:50:05 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"3b38feb2-3fac-4a0f-9861-0c394220319d","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:50:12 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"c723bb58-a56f-4187-b3f5-cf4285555e04","status":"READY","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:50:12 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"c723bb58-a56f-4187-b3f5-cf4285555e04","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:53:30 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.orders.findMany()` invocation:
+
+
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 17)
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrders (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:36:20) {"method":"GET","url":"/api/orders?","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 15:53:31 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.invoices.aggregate()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getRevenue (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/analytics.controller.js:26:18) {"method":"GET","url":"/api/analytics/revenue?from=2026-03-16T18:30:00.000Z&to=2026-03-17T18:29:59.999Z","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 15:53:31 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.menuItems.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getItems (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/menu.controller.js:77:18) {"method":"GET","url":"/api/menu/items","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 15:53:31 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrderTrends (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/analytics.controller.js:43:18) {"method":"GET","url":"/api/analytics/order-trends?from=2026-03-09T18:30:00.000Z&to=2026-03-17T18:29:59.999Z","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 15:53:46 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 15:54:10 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:54:10 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:54:10 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:54:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:56:20 [error]: PrismaClientKnownRequestError: Transaction API error: Transaction not found. Transaction ID is invalid, refers to an old closed transaction Prisma doesn't have information about anymore, or was obtained before disconnecting.
+    at Qr.transaction (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:111:11521)
+    at async Proxy._transactionWithCallback (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:8154)
+    at async Module.createOrder (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:46:17)
+    at async createOrder (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:25:19) {"method":"POST","url":"/api/orders","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 15:57:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:57:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:57:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:57:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 15:57:56 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"31a91ddb-f08a-4157-bfca-335cbfb76091","order_number":"ORD-CSXPWN","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:58:37 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.menuItems.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.createOrder (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:17:21)
+    at async createOrder (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:25:19) {"method":"POST","url":"/api/orders","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 15:58:51 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"258e3bf6-b1df-43bd-90ae-7677fae73a6d","order_number":"ORD-0E4AUM","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:59:02 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"31a91ddb-f08a-4157-bfca-335cbfb76091","status":"CONFIRMED","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 15:59:07 [error]: Error: Invalid status transition from CONFIRMED to CONFIRMED
+    at Module.updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:86:17)
+    at async updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/31a91ddb-f08a-4157-bfca-335cbfb76091/status","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 15:59:49 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.orders.update()` invocation:
+
+
+Transaction API error: Transaction already closed: A query cannot be executed on an expired transaction. The timeout for this transaction was 5000 ms, however 8192 ms passed since the start of the transaction. Consider increasing the interactive transaction timeout or doing less work in the transaction.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/repositories/order.repository.js:88:19
+    at async Proxy._transactionWithCallback (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:8120)
+    at async Module.updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:91:19)
+    at async updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/258e3bf6-b1df-43bd-90ae-7677fae73a6d/status","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 16:00:14 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 16:00:14 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 16:00:20 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 16:01:01 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 16:01:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 16:01:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 16:01:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 16:01:09 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 16:05:57 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"dc5cbbf3-3451-4a22-9992-e383eee5697e","order_number":"ORD-QJB280","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 16:06:12 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"dc5cbbf3-3451-4a22-9992-e383eee5697e","status":"CONFIRMED","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 16:06:19 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"dc5cbbf3-3451-4a22-9992-e383eee5697e","status":"IN_KITCHEN","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 16:06:40 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"dc5cbbf3-3451-4a22-9992-e383eee5697e","status":"READY","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 16:06:40 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"dc5cbbf3-3451-4a22-9992-e383eee5697e","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 16:07:40 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"258e3bf6-b1df-43bd-90ae-7677fae73a6d","status":"CONFIRMED","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 16:07:44 [error]: Error: Invalid status transition from CONFIRMED to CONFIRMED
+    at Module.updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:86:17)
+    at async updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/258e3bf6-b1df-43bd-90ae-7677fae73a6d/status","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 16:07:49 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"258e3bf6-b1df-43bd-90ae-7677fae73a6d","status":"IN_KITCHEN","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 16:07:53 [error]: Error: Invalid status transition from IN_KITCHEN to IN_KITCHEN
+    at Module.updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:86:17)
+    at async updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/258e3bf6-b1df-43bd-90ae-7677fae73a6d/status","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 16:07:58 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"258e3bf6-b1df-43bd-90ae-7677fae73a6d","status":"READY","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 16:07:58 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"258e3bf6-b1df-43bd-90ae-7677fae73a6d","restaurant_id":"6975f0b8-f7b6-4b5f-b0fe-8c47d626dc05"}}
+2026-03-17 16:08:00 [error]: Error: Invalid status transition from READY to READY
+    at Module.updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:86:17)
+    at async updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/258e3bf6-b1df-43bd-90ae-7677fae73a6d/status","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 16:08:26 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.invoices.aggregate()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getRevenue (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/analytics.controller.js:26:18) {"method":"GET","url":"/api/analytics/revenue?from=2026-03-16T18:30:00.000Z&to=2026-03-17T18:29:59.999Z","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 16:08:31 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 17)
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrderTrends (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/analytics.controller.js:43:18) {"method":"GET","url":"/api/analytics/order-trends?from=2026-03-09T18:30:00.000Z&to=2026-03-17T18:29:59.999Z","user":"6d1926e6-5824-4493-9f3f-381579d4605d"}
+2026-03-17 16:09:53 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 16:50:15 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 16:52:02 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 17:01:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:01:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:01:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:01:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:02:44 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 17:25:10 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:25:10 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:25:10 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:25:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:27:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:27:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:27:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:27:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:27:57 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:27:57 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:27:57 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:27:57 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:04 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:35 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:35 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:35 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:28:35 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:53:44 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 17:53:44 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 17:53:44 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 17:53:44 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 17:53:52 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:53:52 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:53:52 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:53:52 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:59:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:59:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:59:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:59:24 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:59:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:59:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:59:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 17:59:43 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:00:02 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:00:02 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:00:02 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:00:02 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:00:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:00:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:00:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:00:13 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:00:23 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 18:02:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:02:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:02:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:02:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:02:49 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-17 18:02:50 [error]: Error: Session not found or expired.
+    at Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:78:17)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 18:03:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:03:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:03:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:03:05 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 18:03:17 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-17 18:03:17 [error]: Error: Session not found or expired.
+    at Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:78:17)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 19:33:41 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 19:33:41 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 19:33:41 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 19:33:42 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 19:33:56 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 19:35:49 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 19:38:56 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 19:39:18 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 19:40:04 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 19:40:23 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 19:41:10 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 19:43:06 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 19:43:29 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 19:43:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 19:43:40 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 19:43:41 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 19:43:41 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:01:51 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 20:02:20 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-17 20:25:18 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:25:18 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:25:18 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:25:19 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:25:20 [error]: Error: Session not found or expired.
+    at Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:78:17)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 20:25:21 [error]: Error: Session not found or expired.
+    at Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:78:17)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 20:25:34 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-17 20:25:34 [error]: Error: Session not found or expired.
+    at Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:78:17)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 20:25:59 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:25:59 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:25:59 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:25:59 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:26:54 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-17 20:26:55 [error]: Error: Session not found or expired.
+    at Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:78:17)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 20:27:28 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-17 20:27:29 [error]: Error: Session not found or expired.
+    at Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:78:17)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 20:27:43 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-17 20:27:44 [error]: Error: Session not found or expired.
+    at Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:78:17)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 20:28:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:28:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:28:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:28:49 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:29:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:29:32 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:29:33 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:29:33 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 20:29:39 [error]: Error: Invalid email or password.
+    at Module.login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:11:17)
+    at async login (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:26:20) {"method":"POST","url":"/api/auth/login"}
+2026-03-17 20:29:40 [error]: Error: Session not found or expired.
+    at Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:78:17)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 20:34:25 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"002be0ab-5ff1-4f11-8bc9-a64b8e96215f","order_number":"ORD-K1S6YT","restaurant_id":"d777db20-2225-4295-b2d5-8bdcdf7da670"}}
+2026-03-17 20:34:35 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"002be0ab-5ff1-4f11-8bc9-a64b8e96215f","status":"CONFIRMED","restaurant_id":"d777db20-2225-4295-b2d5-8bdcdf7da670"}}
+2026-03-17 20:34:40 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"002be0ab-5ff1-4f11-8bc9-a64b8e96215f","status":"IN_KITCHEN","restaurant_id":"d777db20-2225-4295-b2d5-8bdcdf7da670"}}
+2026-03-17 20:34:44 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"002be0ab-5ff1-4f11-8bc9-a64b8e96215f","status":"READY","restaurant_id":"d777db20-2225-4295-b2d5-8bdcdf7da670"}}
+2026-03-17 20:34:44 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"002be0ab-5ff1-4f11-8bc9-a64b8e96215f","restaurant_id":"d777db20-2225-4295-b2d5-8bdcdf7da670"}}
+2026-03-17 20:35:06 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"002be0ab-5ff1-4f11-8bc9-a64b8e96215f","status":"SERVED","restaurant_id":"d777db20-2225-4295-b2d5-8bdcdf7da670"}}
+2026-03-17 20:36:01 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"002be0ab-5ff1-4f11-8bc9-a64b8e96215f","status":"PAID","restaurant_id":"d777db20-2225-4295-b2d5-8bdcdf7da670"}}
+2026-03-17 23:40:43 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 23:40:44 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 23:40:45 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 23:40:46 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 23:40:46 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 23:40:50 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-17 23:42:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 23:42:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 23:42:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 23:42:22 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 23:58:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 23:58:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 23:58:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-17 23:58:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 00:01:36 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 00:01:36 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 00:01:36 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 00:01:36 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 11:47:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 11:47:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 11:47:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 11:47:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 11:53:33 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"3659b0f0-c166-4d0b-8dfa-1d3ebb3a71e8","order_number":"ORD-VQMVMJ","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:02:41 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"3659b0f0-c166-4d0b-8dfa-1d3ebb3a71e8","status":"CONFIRMED","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:02:49 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"3659b0f0-c166-4d0b-8dfa-1d3ebb3a71e8","status":"IN_KITCHEN","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:03:01 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"3659b0f0-c166-4d0b-8dfa-1d3ebb3a71e8","status":"READY","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:03:01 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"3659b0f0-c166-4d0b-8dfa-1d3ebb3a71e8","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:04:19 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"3659b0f0-c166-4d0b-8dfa-1d3ebb3a71e8","status":"SERVED","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:05:05 [error]: Error: Invalid status transition from SERVED to SERVED
+    at Module.updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:101:17)
+    at async updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/3659b0f0-c166-4d0b-8dfa-1d3ebb3a71e8/status","user":"6179b86a-5e9d-4e20-9e4b-4922298b7f4f"}
+2026-03-18 12:05:56 [error]: Error: Invalid status transition from SERVED to SERVED
+    at Module.updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/order.service.js:101:17)
+    at async updateOrderStatus (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:52:19) {"method":"PUT","url":"/api/orders/3659b0f0-c166-4d0b-8dfa-1d3ebb3a71e8/status","user":"6179b86a-5e9d-4e20-9e4b-4922298b7f4f"}
+2026-03-18 12:08:06 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"3659b0f0-c166-4d0b-8dfa-1d3ebb3a71e8","status":"PAID","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:17:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 12:17:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 12:17:54 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 12:17:55 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 12:18:59 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"d883f17a-2f18-4d34-ab4e-c2ed097951ce","order_number":"ORD-83FP3T","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:19:17 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"d883f17a-2f18-4d34-ab4e-c2ed097951ce","status":"CONFIRMED","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:20:46 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"d883f17a-2f18-4d34-ab4e-c2ed097951ce","status":"IN_KITCHEN","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:21:00 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"d883f17a-2f18-4d34-ab4e-c2ed097951ce","status":"READY","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:21:00 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"d883f17a-2f18-4d34-ab4e-c2ed097951ce","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:21:12 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"d883f17a-2f18-4d34-ab4e-c2ed097951ce","status":"SERVED","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:24:02 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_CREATED","data":{"order_id":"d81f781a-e92a-4cec-8da5-b7fc8e0b3aff","order_number":"ORD-YF2ELL","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:24:11 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"d81f781a-e92a-4cec-8da5-b7fc8e0b3aff","status":"CONFIRMED","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:26:03 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"d81f781a-e92a-4cec-8da5-b7fc8e0b3aff","status":"IN_KITCHEN","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:28:22 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"d81f781a-e92a-4cec-8da5-b7fc8e0b3aff","status":"READY","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:28:22 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_READY","data":{"order_id":"d81f781a-e92a-4cec-8da5-b7fc8e0b3aff","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:28:34 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"d81f781a-e92a-4cec-8da5-b7fc8e0b3aff","status":"SERVED","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:28:52 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.delete()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:100:3)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-18 12:36:47 [error]: Failed to publish order event to Redis {"err":{},"type":"ORDER_UPDATED","data":{"order_id":"d81f781a-e92a-4cec-8da5-b7fc8e0b3aff","status":"PAID","restaurant_id":"b14ed13d-987f-442a-9366-2806b9c7d10e"}}
+2026-03-18 12:37:18 [error]: PrismaClientKnownRequestError: Transaction API error: Transaction already closed: A commit cannot be executed on an expired transaction. The timeout for this transaction was 5000 ms, however 6304 ms passed since the start of the transaction. Consider increasing the interactive transaction timeout or doing less work in the transaction.
+    at Qr.transaction (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:111:11521)
+    at async Proxy._transactionWithCallback (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:8154)
+    at async Module.update (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/user.service.js:31:19)
+    at async update (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/user.controller.js:41:18) {"method":"PATCH","url":"/api/users/d551f820-1786-4454-9260-5971e789b69a","user":"6179b86a-5e9d-4e20-9e4b-4922298b7f4f"}
+2026-03-18 12:44:11 [error]: PrismaClientKnownRequestError: Transaction API error: Unable to start a transaction in the given time.
+    at Qr.transaction (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:111:11521)
+    at async Proxy._transactionWithCallback (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:8044)
+    at async Module.update (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/user.service.js:31:19)
+    at async update (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/user.controller.js:41:18) {"method":"PATCH","url":"/api/users/ac0a2f8d-03cb-41ff-8008-ead1f5f73a73","user":"6179b86a-5e9d-4e20-9e4b-4922298b7f4f"}
+2026-03-18 12:44:27 [error]: PrismaClientKnownRequestError: Transaction API error: Unable to start a transaction in the given time.
+    at Qr.transaction (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:111:11521)
+    at async Proxy._transactionWithCallback (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:8044)
+    at async Module.update (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/user.service.js:31:19)
+    at async update (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/user.controller.js:41:18) {"method":"PATCH","url":"/api/users/ac0a2f8d-03cb-41ff-8008-ead1f5f73a73","user":"6179b86a-5e9d-4e20-9e4b-4922298b7f4f"}
+2026-03-18 12:46:01 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.users.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getAll (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/user.controller.js:16:19) {"method":"GET","url":"/api/users","user":"6179b86a-5e9d-4e20-9e4b-4922298b7f4f"}
+2026-03-18 12:57:06 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.orders.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrders (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:36:20) {"method":"GET","url":"/api/orders?","user":"6179b86a-5e9d-4e20-9e4b-4922298b7f4f"}
+2026-03-18 12:57:12 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.orders.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getOrders (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/order.controller.js:36:20) {"method":"GET","url":"/api/orders?","user":"6179b86a-5e9d-4e20-9e4b-4922298b7f4f"}
+2026-03-18 12:59:31 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-18 12:59:33 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.userSessions.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async Module.refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/auth.service.js:67:20)
+    at async refresh (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/auth.controller.js:53:20) {"method":"POST","url":"/api/auth/refresh"}
+2026-03-18 13:25:32 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-18 14:37:46 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-18 14:40:29 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-18 14:53:14 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 14:53:14 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 14:53:14 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 14:53:14 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 14:53:28 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.users.findMany()` invocation:
+
+
+Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at ei.handleRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async getAll (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/user.controller.js:16:19) {"method":"GET","url":"/api/users","user":"6179b86a-5e9d-4e20-9e4b-4922298b7f4f"}
+2026-03-18 14:53:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 14:53:47 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 14:53:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 14:53:48 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:02:41 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:02:41 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:02:41 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:02:41 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:17:45 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:17:45 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:17:45 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:17:45 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:17:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:17:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:17:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:17:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:18:00 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:18:00 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:18:00 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:18:00 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:18:17 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:18:17 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:18:17 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:18:17 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:19:51 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:19:51 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:19:52 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:19:52 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:20:15 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:20:15 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:20:15 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:20:15 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:24:03 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:24:03 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:24:03 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:24:03 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:32:59 [error]: PrismaClientInitializationError: Can't reach database server at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-wandering-salad-a1w5ho9x-pooler.ap-southeast-1.aws.neon.tech:5432`.
+    at r (C:\Users\alfaz\OneDrive\Desktop\Media-masala projects\Menu-System-main\backend\node_modules\@prisma\client\runtime\library.js:112:2770)
+    at async startServer (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/server.js:12:5) {"clientVersion":"6.19.2","errorCode":"P1001","name":"PrismaClientInitializationError"}
+2026-03-18 16:33:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:33:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:33:11 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:33:12 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:36:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:36:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:36:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:36:27 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:46:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:46:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:46:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:46:46 [error]: Redis [publisher] error {"err":{"code":"ECONNREFUSED"}}
+2026-03-18 16:46:52 [error]: Error: Restaurant not found
+    at Module.getSettings (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/restaurant.service.js:6:17)
+    at async getSettings (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/restaurant.controller.js:18:20) {"method":"GET","url":"/api/restaurant/settings","user":"649edaf4-2f16-4327-ad1a-f6ebb4026d0a"}
+2026-03-18 16:46:53 [error]: Error: Restaurant not found
+    at Module.getSettings (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/services/restaurant.service.js:6:17)
+    at async getSettings (file:///C:/Users/alfaz/OneDrive/Desktop/Media-masala%20projects/Menu-System-main/backend/src/controllers/restaurant.controller.js:18:20) {"method":"GET","url":"/api/restaurant/settings","user":"649edaf4-2f16-4327-ad1a-f6ebb4026d0a"}

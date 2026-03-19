@@ -15,24 +15,39 @@ import StatCard from "@/components/dashboard/StatCard";
 import RevenueChart from "@/components/dashboard/RevenueChart";
 import TopItemsChart from "@/components/dashboard/TopItemsChart";
 import RecentOrdersTable from "@/components/dashboard/RecentOrdersTable";
+import OrderDetailPanel from "@/components/orders/OrderDetailPanel";
 import { formatCurrency } from "@/lib/utils";
 import { useAuthStore } from "@/store/authStore";
 import { Role } from "@/types";
+import { useWebSocket } from "@/lib/websocket";
+import { useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
 
 export default function DashboardPage() {
   const { user } = useAuthStore();
+  const [selectedOrder, setSelectedOrder] = useState<any | null>(null);
   const { data: orders } = useOrders();
   const { data: revenueData } = useRevenueAnalytics();
   const { data: topItems } = useTopItemsAnalytics();
   const { data: trends } = useOrderTrendsAnalytics();
   const { data: restaurant } = useRestaurant();
+  const queryClient = useQueryClient();
+
+  // Listen for real-time updates to refresh stats
+  useWebSocket((message) => {
+    console.log("WS Message received in Dashboard:", message);
+    queryClient.invalidateQueries({ queryKey: ["orders"] });
+    queryClient.invalidateQueries({ queryKey: ["analytics"] });
+  });
 
   const isAdmin = user && [Role.ADMIN, Role.MANAGER, Role.SUPER_ADMIN].includes(user.role as Role);
 
   // Calculate real-time stats
   const todayRevenue = revenueData?.total_revenue || 0;
-  const activeOrdersCount = orders?.filter(o => o.status !== OrderStatus.PAID && o.status !== OrderStatus.CANCELLED).length || 0;
+  const activeOrders = orders?.filter(o => ![OrderStatus.PAID, OrderStatus.CANCELLED].includes(o.status as OrderStatus)) || [];
+  const activeOrdersCount = activeOrders.length;
   const totalOrdersToday = orders?.length || 0;
+  const uniqueTables = new Set(activeOrders.map(o => o.table_number)).size;
 
   return (
     <div className="space-y-6">
@@ -74,7 +89,7 @@ export default function DashboardPage() {
         />
         <StatCard
           label="Tables Occupied"
-          value={`${new Set(orders?.map(o => o.table_number)).size || 0} Tables`}
+          value={`${uniqueTables} Tables`}
           icon={Users2}
           color="warning"
         />
@@ -89,7 +104,14 @@ export default function DashboardPage() {
       )}
 
       {/* Recent Activity */}
-      <RecentOrdersTable />
+      <RecentOrdersTable onSelectOrder={setSelectedOrder} />
+
+      {selectedOrder && (
+        <OrderDetailPanel 
+          order={selectedOrder} 
+          onClose={() => setSelectedOrder(null)} 
+        />
+      )}
     </div>
   );
 }

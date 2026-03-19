@@ -30,6 +30,36 @@ export function useCreateCategory() {
   });
 }
 
+export function useUpdateCategory() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async ({ id, ...data }: Partial<MenuCategory> & { id: string }) => {
+      const response = await api.put<any, ApiResponse<MenuCategory>>(`/api/menu/categories/${id}`, data);
+      return response.data;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["categories"] });
+      toast.success("Category updated");
+    },
+  });
+}
+
+export function useDeleteCategory() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (id: string) => {
+      await api.delete(`/api/menu/categories/${id}`);
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["categories"] });
+      toast.success("Category deleted");
+    },
+    onError: (error: any) => {
+      toast.error(error.response?.data?.message || "Failed to delete category");
+    },
+  });
+}
+
 // Menu Items Hooks
 export function useMenuItems() {
   return useQuery({

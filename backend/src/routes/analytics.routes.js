@@ -13,5 +13,6 @@ router.use(authorize('ADMIN', 'MANAGER'));
 router.get('/revenue', analyticsController.getRevenue);
 router.get('/top-items', analyticsController.getTopItems);
 router.get('/order-trends', analyticsController.getOrderTrends);
+router.get('/export', analyticsController.exportReport);
 
 export default router;

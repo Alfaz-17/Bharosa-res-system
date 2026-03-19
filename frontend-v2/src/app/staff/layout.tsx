@@ -12,10 +12,10 @@ export default function StaffLayout({
   return (
     <AuthGuard>
       <div className="flex h-screen w-full bg-[#F5F6FA] overflow-hidden">
-        <Sidebar />
-        <div className="flex-1 flex flex-col overflow-hidden">
+        <Sidebar aria-label="Main Sidebar" />
+        <div className="flex-1 flex flex-col overflow-hidden relative">
           <Header />
-          <main className="flex-1 overflow-y-auto p-6 md:p-10 scrollbar-hide">
+          <main className="flex-1 overflow-y-auto p-6 md:p-10 pb-10 scrollbar-hide">
             {children}
           </main>
         </div>

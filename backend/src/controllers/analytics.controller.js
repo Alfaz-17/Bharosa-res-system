@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import * as analyticsService from '../services/analytics.service.js';
 import { sendSuccess, sendError } from '../utils/response.js';
+import { toCSV } from '../utils/csv.js';
 
 const dateRangeSchema = z.object({
   from: z.string().datetime(),
@@ -42,5 +43,19 @@ export const getOrderTrends = async (req, res, next) => {
     if (!range) return;
     const data = await analyticsService.getOrderTrends(req.restaurantId, range.from, range.to);
     return sendSuccess(res, data);
+  } catch (err) { next(err); }
+};
+
+export const exportReport = async (req, res, next) => {
+  try {
+    const range = parseRange(req, res);
+    if (!range) return;
+    
+    const trends = await analyticsService.getOrderTrends(req.restaurantId, range.from, range.to);
+    const csv = toCSV(trends, ['date', 'order_count', 'revenue']);
+    
+    res.setHeader('Content-Type', 'text/csv');
+    res.setHeader('Content-Disposition', 'attachment; filename=analytics_report.csv');
+    return res.status(200).send(csv);
   } catch (err) { next(err); }
 };

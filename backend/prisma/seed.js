@@ -6,9 +6,9 @@ import { subDays, startOfDay, addMinutes } from 'date-fns';
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('🚀 Starting comprehensive seeding...');
+  console.log('🚀 Starting sequential seeding...');
 
-  // 1. Clear existing data (Order matters for foreign keys)
+  // 1. Clear existing data
   console.log('🧹 Cleaning database...');
   await prisma.orderEvents.deleteMany();
   await prisma.payments.deleteMany();
@@ -19,6 +19,7 @@ async function main() {
   await prisma.menuItems.deleteMany();
   await prisma.menuCategories.deleteMany();
   await prisma.users.deleteMany();
+  await prisma.tables.deleteMany();
   await prisma.restaurant.deleteMany();
 
   // 2. Create Restaurant
@@ -35,23 +36,37 @@ async function main() {
   });
   console.log(`✅ Created Restaurant: ${restaurant.name}`);
 
-  // 3. Create Users for each Role
+  // 3. Create Users
   const passwordHash = await bcrypt.hash('admin123', 12);
   const roles = ['SUPER_ADMIN', 'ADMIN', 'MANAGER', 'WAITER', 'KITCHEN'];
-  const users = await Promise.all(roles.map(role => 
-    prisma.users.create({
+  const createdUsers = [];
+  for (const role of roles) {
+    const u = await prisma.users.create({
       data: {
         restaurant_id: restaurant.id,
         name: `${role.charAt(0) + role.slice(1).toLowerCase().replace('_', ' ')} Member`,
         email: `${role.toLowerCase()}@restosaas.com`,
         password_hash: passwordHash,
         role: role,
+        is_active: role === 'SUPER_ADMIN' || role === 'ADMIN',
       }
-    })
-  ));
-  console.log(`✅ Created ${users.length} users with distinct roles`);
+    });
+    createdUsers.push(u);
+  }
+  console.log(`✅ Created ${createdUsers.length} users`);
 
-  // 4. Create Menu Categories
+  // 4. Create Tables
+  console.log('🍽️ Creating 20 tables...');
+  for (let i = 1; i <= 20; i++) {
+    await prisma.tables.create({
+      data: {
+        restaurant_id: restaurant.id,
+        table_number: String(i).padStart(2, '0'),
+      }
+    });
+  }
+
+  // 5. Create Menu Categories
   const categoriesData = [
     { name: 'Starters', description: 'Quick bites and appetizers' },
     { name: 'Main Course', description: 'Hearty meals for lunch and dinner' },
@@ -59,107 +74,75 @@ async function main() {
     { name: 'Beverages', description: 'Refreshing drinks and coffees' },
   ];
 
-  const categories = await Promise.all(categoriesData.map((cat, i) => 
-    prisma.menuCategories.create({
+  const createdCategories = [];
+  for (let i = 0; i < categoriesData.length; i++) {
+    const cat = await prisma.menuCategories.create({
       data: {
         restaurant_id: restaurant.id,
-        name: cat.name,
-        description: cat.description,
+        name: categoriesData[i].name,
+        description: categoriesData[i].description,
         position: i + 1,
       }
-    })
-  ));
-  console.log(`✅ Created ${categories.length} menu categories`);
+    });
+    createdCategories.push(cat);
+  }
+  console.log(`✅ Created ${createdCategories.length} categories`);
 
-  // 5. Create Menu Items
+  // 6. Create Menu Items
   const itemsData = [
-    // Starters
-    { cat: 'Starters', name: 'Spring Rolls', price: 180, desc: 'Crispy veg rolls with sweet chilly sauce' },
-    { cat: 'Starters', name: 'Chicken Wings', price: 250, desc: 'Spicy buffalo style wings' },
-    { cat: 'Starters', name: 'Paneer Tikka', price: 220, desc: 'Grilled cottage cheese with mint chutney' },
-    { cat: 'Starters', name: 'French Fries', price: 120, desc: 'Golden salted fries' },
-    { cat: 'Starters', name: 'Garlic Bread', price: 150, desc: 'Cheesy garlic bread with herbs' },
-    
-    // Main Course
-    { cat: 'Main Course', name: 'Butter Chicken', price: 350, desc: 'Rich tomato gravy with grilled chicken' },
-    { cat: 'Main Course', name: 'Paneer Makhani', price: 320, desc: 'Creamy paneer in tomato butter sauce' },
-    { cat: 'Main Course', name: 'Veg Biryani', price: 280, desc: 'Fragrant basmati rice with veg and spices' },
-    { cat: 'Main Course', name: 'Fish Curry', price: 420, desc: 'Goan style coconut fish curry' },
-    { cat: 'Main Course', name: 'Dal Tadka', price: 240, desc: 'Yellow lentils tempered with garlic and cumin' },
-
-    // Desserts
-    { cat: 'Desserts', name: 'Gulab Jamun', price: 90, desc: 'Warm milk dumplings in sugar syrup' },
-    { cat: 'Desserts', name: 'Chocolate Brownie', price: 160, desc: 'Fudgy brownie with vanilla ice cream' },
-    { cat: 'Desserts', name: 'Fruit Salad', price: 130, desc: 'Seasonal fresh fruits with honey' },
-
-    // Beverages
-    { cat: 'Beverages', name: 'Iced Tea', price: 110, desc: 'Lemon flavored chilled tea' },
-    { cat: 'Beverages', name: 'Cold Coffee', price: 150, desc: 'Rich creamy blended coffee' },
-    { cat: 'Beverages', name: 'Fresh Lime Soda', price: 95, desc: 'Sweet and salty lime soda' },
-    { cat: 'Beverages', name: 'Cappuccino', price: 140, desc: 'Hot espresso with frothed milk' },
+    { cat: 'Starters', name: 'Spring Rolls', price: 180, desc: 'Crispy veg rolls' },
+    { cat: 'Starters', name: 'Chicken Wings', price: 250, desc: 'Spicy buffalo wings' },
+    { cat: 'Main Course', name: 'Butter Chicken', price: 350, desc: 'Rich tomato gravy' },
+    { cat: 'Main Course', name: 'Paneer Makhani', price: 320, desc: 'Creamy paneer' },
+    { cat: 'Desserts', name: 'Gulab Jamun', price: 90, desc: 'Warm dumplings' },
+    { cat: 'Beverages', name: 'Iced Tea', price: 110, desc: 'Lemon tea' },
   ];
 
-  const menuItems = await Promise.all(itemsData.map(item => {
-    const catId = categories.find(c => c.name === item.cat).id;
-    return prisma.menuItems.create({
+  const createdItems = [];
+  for (const item of itemsData) {
+    const cat = createdCategories.find(c => c.name === item.cat);
+    const it = await prisma.menuItems.create({
       data: {
         restaurant_id: restaurant.id,
-        category_id: catId,
+        category_id: cat.id,
         name: item.name,
         price: item.price,
         description: item.desc,
       }
     });
-  }));
-  console.log(`✅ Created ${menuItems.length} menu items`);
+    createdItems.push(it);
+  }
+  console.log(`✅ Created ${createdItems.length} menu items`);
 
-  // 6. Create Historical Orders for Analytics (Last 30 Days)
-  console.log('⏳ Generating 100 historical orders...');
-  const orderCount = 100;
-  const waiter = users.find(u => u.role === 'WAITER');
-  
-  for (let i = 0; i < orderCount; i++) {
-    const daysAgo = Math.floor(Math.random() * 30);
+  // 7. Create Historical Orders
+  const waiter = createdUsers.find(u => u.role === 'WAITER');
+  console.log('⏳ Generating 20 historical orders...');
+  for (let i = 0; i < 20; i++) {
+    const daysAgo = Math.floor(Math.random() * 5);
     const date = addMinutes(startOfDay(subDays(new Date(), daysAgo)), Math.random() * 1440);
     const tableNum = Math.floor(Math.random() * 20) + 1;
+    const finalTotal = 500;
     
-    // Pick 2-4 random items
-    const itemCount = Math.floor(Math.random() * 3) + 2;
-    const selectedItems = [];
-    for (let j = 0; j < itemCount; j++) {
-      selectedItems.push(menuItems[Math.floor(Math.random() * menuItems.length)]);
-    }
-
-    const totalAmount = selectedItems.reduce((acc, curr) => acc + Number(curr.price), 0);
-    const tax = totalAmount * 0.05;
-    const finalTotal = totalAmount + tax;
-
-    const order = await prisma.orders.create({
+    await prisma.orders.create({
       data: {
         restaurant_id: restaurant.id,
-        order_number: `ORD-${2026}${String(i + 1).padStart(4, '0')}`,
+        order_number: `ORD-${Date.now()}-${i}`,
         table_number: String(tableNum).padStart(2, '0'),
         status: 'PAID',
         total_amount: finalTotal,
         created_at: date,
         waiter_id: waiter.id,
-        order_items: {
-          create: selectedItems.map(item => ({
-            menu_item_id: item.id,
-            quantity: 1,
-            price_snapshot: item.price,
-          }))
-        },
         invoices: {
           create: {
-            subtotal: totalAmount,
-            tax: tax,
-            total: finalTotal,
+            invoice_number: `INV-${Date.now()}-${i}`,
+            subtotal: 475,
+            tax: 25,
+            total: 500,
             created_at: date,
             payments: {
               create: {
-                method: i % 3 === 0 ? 'CARD' : (i % 3 === 1 ? 'UPI' : 'CASH'),
-                amount: finalTotal,
+                method: 'CASH',
+                amount: 500,
                 paid_at: date,
               }
             }
@@ -169,43 +152,13 @@ async function main() {
     });
   }
 
-  // 7. Create a few Active Orders for Dashboard
-  console.log('⏳ Generating 5 active orders...');
-  for (let i = 0; i < 5; i++) {
-    const tableNum = (Math.floor(Math.random() * 10) + 21); // Tables 21-30
-    const statuses = ['CONFIRMED', 'IN_KITCHEN', 'READY', 'SERVED'];
-    const status = statuses[i % statuses.length];
-    
-    await prisma.orders.create({
-      data: {
-        restaurant_id: restaurant.id,
-        order_number: `ACT-${String(i + 1).padStart(3, '0')}`,
-        table_number: String(tableNum),
-        status: status,
-        total_amount: 500,
-        waiter_id: waiter.id,
-        order_items: {
-          create: [
-            { menu_item_id: menuItems[0].id, quantity: 2, price_snapshot: menuItems[0].price },
-            { menu_item_id: menuItems[5].id, quantity: 1, price_snapshot: menuItems[5].price },
-          ]
-        }
-      }
-    });
-  }
-
-  console.log('\n🎉 COMPLETED: Seeding finished successfully!');
-  console.log('--------------------------------------------------');
-  console.log('Staff Portal Login:');
-  console.log(`Email: admin@restosaas.com`);
-  console.log(`Password: admin123`);
-  console.log('--------------------------------------------------');
-  console.log(`x-tenant-id for testing: ${restaurant.id}`);
+  console.log('\n🎉 SUCCESS: Seeding finished!');
+  console.log('Login: admin@restosaas.com / admin123');
 }
 
 main()
-  .catch((e) => {
-    console.error(e);
+  .catch(async (e) => {
+    console.error('❌ SEED ERROR:', e);
     process.exit(1);
   })
   .finally(async () => {

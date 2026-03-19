@@ -3,7 +3,7 @@ import prisma from '../config/prisma.js';
 export const findById = (restaurantId, id) => {
   return prisma.users.findFirst({
     where: { id, restaurant_id: restaurantId },
-    select: { id: true, name: true, email: true, role: true, restaurant_id: true, created_at: true },
+    select: { id: true, name: true, email: true, role: true, restaurant_id: true, is_active: true, created_at: true, updated_at: true },
   });
 };
 
@@ -16,7 +16,7 @@ export const findByEmail = (restaurantId, email) => {
 export const findAllByRestaurant = (restaurantId) => {
   return prisma.users.findMany({
     where: { restaurant_id: restaurantId },
-    select: { id: true, name: true, email: true, role: true, created_at: true },
+    select: { id: true, name: true, email: true, role: true, is_active: true, created_at: true, updated_at: true },
     orderBy: { created_at: 'desc' },
   });
 };
@@ -24,7 +24,7 @@ export const findAllByRestaurant = (restaurantId) => {
 export const create = (data) => {
   return prisma.users.create({
     data,
-    select: { id: true, name: true, email: true, role: true, restaurant_id: true, created_at: true },
+    select: { id: true, name: true, email: true, role: true, restaurant_id: true, is_active: true, created_at: true, updated_at: true },
   });
 };
 
@@ -36,7 +36,7 @@ export const update = (restaurantId, id, data) => {
     return tx.users.update({
       where: { id },
       data,
-      select: { id: true, name: true, email: true, role: true, created_at: true },
+      select: { id: true, name: true, email: true, role: true, is_active: true, created_at: true, updated_at: true },
     });
   });
 };

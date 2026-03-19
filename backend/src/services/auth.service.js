@@ -20,6 +20,12 @@ export const login = async ({ email, password, ipAddress, deviceInfo }) => {
     throw err;
   }
 
+  if (!user.is_active) {
+    const err = new Error('Account restricted. Please contact an administrator.');
+    err.status = 403;
+    throw err;
+  }
+
   const accessToken = generateAccessToken({
     id: user.id,
     role: user.role,
@@ -84,6 +90,12 @@ export const refresh = async (refreshToken) => {
   if (!user) {
     const err = new Error('User not found.');
     err.status = 401;
+    throw err;
+  }
+
+  if (!user.is_active) {
+    const err = new Error('Account restricted. Please contact an administrator.');
+    err.status = 403;
     throw err;
   }
 

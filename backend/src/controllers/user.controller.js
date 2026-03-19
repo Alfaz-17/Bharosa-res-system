@@ -7,6 +7,7 @@ export const createUserSchema = z.object({
   email: z.string().email(),
   password: z.string().min(6),
   role: z.enum(['SUPER_ADMIN', 'ADMIN', 'MANAGER', 'WAITER', 'KITCHEN']),
+  is_active: z.boolean().optional(),
 });
 
 export const updateUserSchema = createUserSchema.partial();

@@ -9,7 +9,7 @@ import StatusBadge from "../orders/StatusBadge";
 import SkeletonTable from "../shared/SkeletonTable";
 import EmptyState from "../shared/EmptyState";
 
-export default function RecentOrdersTable() {
+export default function RecentOrdersTable({ onSelectOrder }: { onSelectOrder?: (order: any) => void }) {
   const { data: orders, isLoading } = useOrders();
 
   if (isLoading) return <SkeletonTable rows={5} columns={6} />;
@@ -47,7 +47,11 @@ export default function RecentOrdersTable() {
           </thead>
           <tbody className="divide-y divide-border">
             {recentOrders.map((order) => (
-              <tr key={order.id} className="table-row-hover text-xs">
+              <tr 
+                key={order.id} 
+                className="table-row-hover text-xs cursor-pointer"
+                onClick={() => onSelectOrder?.(order)}
+              >
                 <td className="px-6 py-4 font-bold text-gray-900">{order.order_number}</td>
                 <td className="px-6 py-4">
                   <span className="bg-gray-100 px-2 py-0.5 rounded font-bold text-gray-600">
@@ -62,12 +66,7 @@ export default function RecentOrdersTable() {
                   <StatusBadge status={order.status} />
                 </td>
                 <td className="px-6 py-4 text-right">
-                  <Link 
-                    href={`/staff/orders`} 
-                    className="text-brand font-bold hover:text-brand-hover"
-                  >
-                    Manage
-                  </Link>
+                  <span className="text-brand font-black hover:underline">View</span>
                 </td>
               </tr>
             ))}

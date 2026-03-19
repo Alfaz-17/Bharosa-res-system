@@ -12,6 +12,7 @@ import SkeletonTable from "../shared/SkeletonTable";
 
 export default function OrdersTable({ onSelectOrder }: { onSelectOrder: (order: any) => void }) {
   const [filter, setFilter] = useState<string>("ALL");
+  const [searchTerm, setSearchTerm] = useState("");
   const { data: orders, isLoading } = useOrders();
   const queryClient = useQueryClient();
 
@@ -25,11 +26,24 @@ export default function OrdersTable({ onSelectOrder }: { onSelectOrder: (order: 
   if (isLoading) return <SkeletonTable rows={8} columns={7} />;
 
   const filteredOrders = orders?.filter(order => {
-    if (filter === "ALL") return true;
-    if (filter === "ACTIVE") return [OrderStatus.CONFIRMED, OrderStatus.IN_KITCHEN].includes(order.status);
-    if (filter === "READY") return order.status === OrderStatus.READY;
-    if (filter === "COMPLETED") return [OrderStatus.SERVED, OrderStatus.PAID].includes(order.status);
-    if (filter === "CANCELLED") return order.status === OrderStatus.CANCELLED;
+    // Status Filter
+    let statusMatch = true;
+    if (filter === "ACTIVE") statusMatch = [OrderStatus.CONFIRMED, OrderStatus.IN_KITCHEN].includes(order.status);
+    else if (filter === "READY") statusMatch = order.status === OrderStatus.READY;
+    else if (filter === "COMPLETED") statusMatch = [OrderStatus.SERVED, OrderStatus.PAID].includes(order.status);
+    else if (filter === "CANCELLED") statusMatch = order.status === OrderStatus.CANCELLED;
+    
+    if (!statusMatch) return false;
+
+    // Search Filter
+    if (searchTerm) {
+      const search = searchTerm.toLowerCase();
+      return (
+        order.order_number.toLowerCase().includes(search) ||
+        order.table_number.toLowerCase().includes(search)
+      );
+    }
+
     return true;
   }) || [];
 
@@ -58,6 +72,8 @@ export default function OrdersTable({ onSelectOrder }: { onSelectOrder: (order: 
           <input
             type="text"
             placeholder="Search order or table..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
             className="h-9 w-full md:w-64 rounded-md border border-border bg-white pl-10 pr-4 text-xs focus:border-brand focus:ring-1 focus:ring-brand outline-none transition-all"
           />
         </div>

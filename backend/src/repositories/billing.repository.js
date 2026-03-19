@@ -7,9 +7,16 @@ export const getInvoiceByOrderId = (restaurantId, orderId) => {
   });
 };
 
-export const generateInvoice = (orderId, { subtotal, tax, total }) => {
+export const generateInvoice = (orderId, { invoice_number, subtotal, tax, total, discount }) => {
   return prisma.invoices.create({
-    data: { order_id: orderId, subtotal, tax, total },
+    data: { 
+      order_id: orderId, 
+      invoice_number, 
+      subtotal, 
+      tax, 
+      total, 
+      discount: discount || 0 
+    },
   });
 };
 
@@ -48,7 +55,8 @@ export const getOrderTrendsByDay = (restaurantId, from, to) => {
     SELECT
       DATE("created_at") AS date,
       COUNT(*)::int       AS order_count,
-      SUM(CASE WHEN status = 'PAID' THEN 1 ELSE 0 END)::int AS paid_count
+      SUM(CASE WHEN status = 'PAID' THEN 1 ELSE 0 END)::int AS paid_count,
+      SUM(total_amount)::float AS revenue
     FROM "Orders"
     WHERE "restaurant_id" = ${restaurantId}
       AND "created_at" >= ${from}

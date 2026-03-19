@@ -37,3 +37,18 @@ export function truncate(text: string, length: number) {
   if (text.length <= length) return text;
   return text.substring(0, length) + "...";
 }
+
+/**
+ * Triggers a browser download for a given Blob or string.
+ */
+export function downloadFile(data: string | Blob, filename: string, type: string = "text/csv") {
+  const blob = typeof data === "string" ? new Blob([data], { type }) : data;
+  const url = window.URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.setAttribute("download", filename);
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  window.URL.revokeObjectURL(url);
+}

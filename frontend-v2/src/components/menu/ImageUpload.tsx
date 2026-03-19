@@ -34,7 +34,7 @@ export default function ImageUpload({ value, onChange }: ImageUploadProps) {
 
     setIsUploading(true);
     try {
-      const response = await api.post('/media/upload', formData, {
+      const response = await api.post('/api/media/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

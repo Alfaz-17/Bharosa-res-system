@@ -21,12 +21,11 @@ class WebSocketClient {
   }
 
   connect() {
-    if (!this.token) return;
     if (this.socket?.readyState === WebSocket.OPEN || this.socket?.readyState === WebSocket.CONNECTING) return;
 
     try {
-      // Append token to URL
-      const connectionUrl = `${this.url}?token=${this.token}`;
+      // Append token to URL if available
+      const connectionUrl = this.token ? `${this.url}?token=${this.token}` : this.url;
       this.socket = new WebSocket(connectionUrl);
 
       this.socket.onopen = () => {
@@ -89,9 +88,11 @@ export const useWebSocket = (onMessage: MessageHandler) => {
   const { user, accessToken } = useAuthStore();
 
   useEffect(() => {
-    if (!user || !accessToken) return;
-
-    socket.setToken(accessToken);
+    // Connect even if no user/token (guest mode)
+    if (accessToken) {
+      socket.setToken(accessToken);
+    }
+    
     socket.connect();
     const unsubscribe = socket.subscribe(onMessage);
 

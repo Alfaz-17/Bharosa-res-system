@@ -45,3 +45,35 @@
     display: none;
   }
 }
+
+@media print {
+  .print\:hidden {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Hide navigation elements globally during print */
+  header, nav, aside, button, .no-print {
+    display: none !important;
+  }
+
+  /* Ensure the receipt/bill uses full width and is visible */
+  .print\:visible {
+    display: block !important;
+    width: 100% !important;
+    position: static !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}

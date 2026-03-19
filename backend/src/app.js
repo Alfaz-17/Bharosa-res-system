@@ -20,6 +20,7 @@ import analyticsRoutes from './routes/analytics.routes.js';
 import userRoutes from './routes/user.routes.js';
 import mediaRoutes from './routes/media.routes.js';
 import restaurantRoutes from './routes/restaurant.routes.js';
+import tableRoutes from './routes/table.routes.js';
 import path from 'path';
 
 const app = express();
@@ -54,6 +55,7 @@ app.use('/api/billing', billingRoutes);
 app.use('/api/analytics', analyticsRoutes);
 app.use('/api/media', mediaRoutes);
 app.use('/api/restaurant', restaurantRoutes);
+app.use('/api/tables', tableRoutes);
 
 // 404 handler
 app.use((req, res) => {

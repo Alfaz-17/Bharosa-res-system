@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useOrder } from "@/hooks/useOrders";
 import { Loader2, CheckCircle2, Clock, ChefHat, UtensilsCrossed, Home } from "lucide-react";
 import { OrderStatus } from "@/types";
+import { useWebSocket } from "@/lib/websocket";
+import { useQueryClient } from "@tanstack/react-query";
 
 const steps = [
   { status: OrderStatus.CREATED, label: "Order Placed", icon: CheckCircle2, message: "Your order has been received!" },
@@ -11,6 +13,7 @@ const steps = [
   { status: OrderStatus.IN_KITCHEN, label: "Cooking", icon: ChefHat, message: "Hang tight! Your order is being prepared 🍳" },
   { status: OrderStatus.READY, label: "Ready", icon: UtensilsCrossed, message: "Your food is ready! The waiter is on their way 🎉" },
   { status: OrderStatus.SERVED, label: "Served", icon: CheckCircle2, message: "Enjoy your meal! Bon appétit! 😊" },
+  { status: OrderStatus.PAID, label: "Paid", icon: CheckCircle2, message: "Thank you for visiting! See you again soon! ❤️" },
 ];
 
 const funMessages: Record<string, string> = {
@@ -19,10 +22,19 @@ const funMessages: Record<string, string> = {
   [OrderStatus.IN_KITCHEN]: "Hang tight! Your order is being prepared 🍳",
   [OrderStatus.READY]: "Your food is ready! Waiter is coming 🚀",
   [OrderStatus.SERVED]: "Enjoy your meal! Bon Appétit! 😊",
+  [OrderStatus.PAID]: "Payment received! Thank you! ❤️",
 };
 
 export default function OrderStatusPage({ params }: { params: { orderId: string } }) {
   const { data: order, isLoading } = useOrder(params.orderId);
+  const queryClient = useQueryClient();
+
+  useWebSocket((message) => {
+    console.log("WS Message received in Order Status:", message);
+    if (message.type === 'ORDER_UPDATED' && message.data.order_id === params.orderId) {
+       queryClient.invalidateQueries({ queryKey: ["order", params.orderId] });
+    }
+  });
 
   if (isLoading) {
     return (

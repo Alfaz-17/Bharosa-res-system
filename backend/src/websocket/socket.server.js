@@ -11,25 +11,24 @@ export const attachWebSocket = (server) => {
     const url = new URL(req.url, `ws://${req.headers.host}`);
     const token = url.searchParams.get('token');
 
-    if (!token) {
-      ws.close(1008, 'Token required');
-      return;
-    }
-
-    try {
-      const user = verifyAccessToken(token);
-      ws.user = user; // Attach user payload for potential targeted broadcasting later
-    } catch {
-      ws.close(1008, 'Invalid token');
-      return;
+    if (token) {
+      try {
+        const user = verifyAccessToken(token);
+        ws.user = user; // Staff authentication
+      } catch {
+        logger.warn('WS: Invalid token provided, connecting as guest');
+      }
+    } else {
+      logger.info('WS: No token provided, connecting as guest');
     }
   });
 
-  // Subscribe to Redis 'orders' channel and broadcast to all authenticated clients
+  // Subscribe to Redis 'orders' channel and broadcast to all authenticated and guest clients
   subscriber.subscribe('orders', (message) => {
     wss.clients.forEach((client) => {
-      if (client.readyState === 1 && client.user) {
-        client.send(message); // message is already JSON
+      // Broadcast to all active connections
+      if (client.readyState === 1) {
+        client.send(message); 
       }
     });
   }).catch(err => logger.error('Redis subscription failed', { err }));

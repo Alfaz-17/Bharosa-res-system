@@ -20,6 +20,7 @@ router.delete('/categories/:id', authorize('ADMIN', 'MANAGER'), menuController.d
 // ─── Items ────────────────────────────────────────────────────────────────────
 
 router.get('/items', menuController.getItems);
+router.get('/export', authorize('ADMIN', 'MANAGER'), menuController.exportItems);
 router.get('/items/:id', menuController.getItem);
 router.post('/items', authorize('ADMIN', 'MANAGER'), validate(menuController.itemSchema), menuController.createItem);
 router.put('/items/:id', authorize('ADMIN', 'MANAGER'), menuController.updateItem);

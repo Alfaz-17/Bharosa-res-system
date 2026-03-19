@@ -12,6 +12,21 @@ const TRANSITIONS = {
 };
 
 export const createOrder = async (restaurantId, waiterId, body) => {
+  // Validate Table
+  const table = await prisma.tables.findFirst({
+    where: { 
+      restaurant_id: restaurantId, 
+      table_number: body.table_number.toString(), 
+      is_active: true 
+    }
+  });
+
+  if (!table) {
+    const err = new Error(`Table ${body.table_number} is not valid or active.`);
+    err.status = 422;
+    throw err;
+  }
+
   // Fetch menu items + snapshot prices
   const menuItemIds = body.items.map((i) => i.menu_item_id);
   const menuItems = await prisma.menuItems.findMany({
@@ -43,6 +58,8 @@ export const createOrder = async (restaurantId, waiterId, body) => {
   // Generate a random 6 character order number (e.g. ORD-A1B2C3)
   const orderNumber = `ORD-${Math.random().toString(36).substring(2, 8).toUpperCase()}`;
 
+  console.log('DEBUG: Creating order in repository', { restaurantId, waiterId, orderNumber, totalAmount });
+  
   const order = await orderRepo.createOrder(restaurantId, waiterId, {
     ...body,
     order_number: orderNumber,
@@ -77,6 +94,10 @@ export const updateOrderStatus = async (restaurantId, id, newStatus, userId) => 
     const err = new Error('Order not found.');
     err.status = 404;
     throw err;
+  }
+
+  if (order.status === newStatus) {
+    return order;
   }
 
   const allowed = TRANSITIONS[order.status] ?? [];

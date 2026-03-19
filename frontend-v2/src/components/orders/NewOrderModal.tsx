@@ -9,6 +9,7 @@ import api from "@/lib/api";
 
 import { useMenuItems } from "@/hooks/useMenu";
 import { useCreateOrder } from "@/hooks/useOrders";
+import { useTables } from "@/hooks/useTables";
 
 interface NewOrderModalProps {
   isOpen: boolean;
@@ -20,7 +21,8 @@ export default function NewOrderModal({ isOpen, onClose }: NewOrderModalProps) {
   const [tableNumber, setTableNumber] = useState("");
   const [cart, setCart] = useState<{ item: MenuItem; quantity: number; notes: string }[]>([]);
   
-  const { data: menuItems, isLoading } = useMenuItems();
+  const { data: menuItems, isLoading: itemsLoading } = useMenuItems();
+  const { data: tables, isLoading: tablesLoading } = useTables();
   const createOrder = useCreateOrder();
 
   if (!isOpen) return null;
@@ -97,7 +99,7 @@ export default function NewOrderModal({ isOpen, onClose }: NewOrderModalProps) {
           </div>
 
           <div className="flex-1 overflow-y-auto p-6 scrollbar-hide">
-            {isLoading ? (
+            {itemsLoading ? (
               <div className="flex items-center justify-center h-full">
                 <Loader2 className="h-8 w-8 text-brand animate-spin" />
               </div>
@@ -135,14 +137,21 @@ export default function NewOrderModal({ isOpen, onClose }: NewOrderModalProps) {
 
           <div className="p-6 space-y-4 bg-white border-b border-border">
             <div>
-              <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">Table Number</label>
-              <input
-                type="text"
-                placeholder="Ex: 05"
-                className="mt-1 h-10 w-full rounded-lg border border-border bg-surface px-4 text-sm font-bold focus:border-brand focus:ring-1 focus:ring-brand outline-none transition-all"
+              <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">Select Table</label>
+              <select
+                className="mt-1 h-10 w-full rounded-lg border border-border bg-surface px-4 text-sm font-bold focus:border-brand focus:ring-1 focus:ring-brand outline-none transition-all appearance-none cursor-pointer"
                 value={tableNumber}
                 onChange={(e) => setTableNumber(e.target.value)}
-              />
+              >
+                <option value="">Choose a table...</option>
+                {tablesLoading ? (
+                  <option disabled>Loading tables...</option>
+                ) : (
+                  (tables || []).map(t => (
+                    <option key={t.id} value={t.table_number}>Table {t.table_number}</option>
+                  ))
+                )}
+              </select>
             </div>
           </div>
 

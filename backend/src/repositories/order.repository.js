@@ -11,6 +11,7 @@ const ORDER_INCLUDE = {
 
 export const createOrder = (restaurantId, waiterId, data) => {
   return prisma.$transaction(async (tx) => {
+    console.log('DEBUG: Started Prisma Transaction for order creation');
     const order = await tx.orders.create({
       data: {
         restaurant_id: restaurantId,
@@ -30,6 +31,8 @@ export const createOrder = (restaurantId, waiterId, data) => {
       include: ORDER_INCLUDE,
     });
 
+    console.log('DEBUG: Order created, now creating events');
+
     await tx.orderEvents.create({
       data: {
         order_id: order.id,
@@ -38,7 +41,11 @@ export const createOrder = (restaurantId, waiterId, data) => {
       },
     });
 
+    console.log('DEBUG: Transaction successfully completed');
     return order;
+  }, {
+    maxWait: 5000, // 5s max wait to get a connection from the pool
+    timeout: 10000 // 10s max execution time for the transaction
   });
 };
 

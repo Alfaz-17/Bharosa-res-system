@@ -1,9 +1,23 @@
 import prisma from '../config/prisma.js';
 import * as billingRepo from '../repositories/billing.repository.js';
+import { publishOrderEvent } from '../events/order.events.js';
 
-export const generateInvoice = async (restaurantId, orderId) => {
+const mapInvoiceResponse = (invoice) => {
+  if (!invoice) return null;
+  return {
+    ...invoice,
+    tax_amount: Number(invoice.tax),
+    discount_amount: Number(invoice.discount),
+    total_amount: Number(invoice.total),
+    subtotal: Number(invoice.subtotal),
+    status: invoice.payments?.reduce((sum, p) => sum + Number(p.amount), 0) >= Number(invoice.total) ? 'PAID' : 'PENDING'
+  };
+};
+
+export const generateInvoice = async (restaurantId, orderId, options = {}) => {
+  const { discount = 0 } = options;
   const existing = await billingRepo.getInvoiceByOrderId(restaurantId, orderId);
-  if (existing) return existing;
+  if (existing) return mapInvoiceResponse(existing);
 
   const order = await prisma.orders.findFirst({
     where: { id: orderId, restaurant_id: restaurantId },
@@ -28,11 +42,22 @@ export const generateInvoice = async (restaurantId, orderId) => {
     (sum, item) => sum + Number(item.price_snapshot) * item.quantity,
     0
   );
-  const taxRate = Number(order.restaurant.tax_rate) / 100; // Assuming tax_rate is a percentage like 10.00
+  const taxRate = Number(order.restaurant.tax_rate) / 100;
   const tax = parseFloat((subtotal * taxRate).toFixed(2));
-  const total = parseFloat((subtotal + tax).toFixed(2));
+  const total = parseFloat((subtotal + tax - Number(discount)).toFixed(2));
 
-  return billingRepo.generateInvoice(orderId, { subtotal, tax, total });
+  // Generate unique invoice number: INV-ORDNUMBER-RANDOM (PetPooja style)
+  const invoice_number = `INV-${order.order_number}-${Math.random().toString(36).substring(2, 5).toUpperCase()}`;
+
+  const invoice = await billingRepo.generateInvoice(orderId, { 
+    invoice_number, 
+    subtotal, 
+    tax, 
+    total,
+    discount: Number(discount)
+  });
+
+  return mapInvoiceResponse(invoice);
 };
 
 export const createPayment = async (restaurantId, orderId, paymentData) => {
@@ -45,13 +70,24 @@ export const createPayment = async (restaurantId, orderId, paymentData) => {
 
   const payment = await billingRepo.createPayment(invoice.id, paymentData);
 
-  // Mark order as PAID if fully settled
-  const totalPaid = invoice.payments.reduce((s, p) => s + Number(p.amount), 0) + Number(paymentData.amount);
-  if (totalPaid >= Number(invoice.total)) {
+  // Re-fetch invoice with payments to check status
+  const updatedInvoice = await billingRepo.getInvoiceByOrderId(restaurantId, orderId);
+  const totalPaid = updatedInvoice.payments.reduce((s, p) => s + Number(p.amount), 0);
+  
+  if (totalPaid >= Number(updatedInvoice.total)) {
     await prisma.orders.update({ where: { id: orderId }, data: { status: 'PAID' } });
+    
+    await publishOrderEvent('ORDER_UPDATED', {
+      order_id: orderId,
+      status: 'PAID',
+      restaurant_id: restaurantId,
+    });
   }
 
   return payment;
 };
 
-export const getInvoice = (restaurantId, orderId) => billingRepo.getInvoiceByOrderId(restaurantId, orderId);
+export const getInvoice = async (restaurantId, orderId) => {
+  const invoice = await billingRepo.getInvoiceByOrderId(restaurantId, orderId);
+  return mapInvoiceResponse(invoice);
+};

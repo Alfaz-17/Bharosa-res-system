@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { Save, Loader2, Building2, Phone, Mail, Globe, DollarSign, Percent } from "lucide-react";
 import { toast } from "sonner";
 import { useRestaurant, useUpdateRestaurant } from "@/hooks/useRestaurant";
+import AuthGuard from "@/components/auth/AuthGuard";
+import { Role } from "@/types";
 
 export default function SettingsPage() {
   const { data: restaurant, isLoading } = useRestaurant();
@@ -54,7 +56,8 @@ export default function SettingsPage() {
   const labelClass = "block text-[10px] font-black uppercase tracking-[0.2em] text-gray-400";
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <AuthGuard allowedRoles={[Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER]}>
+      <div className="max-w-3xl space-y-8">
       <div>
         <h1 className="text-2xl font-black text-gray-900 tracking-tight uppercase">Restaurant Settings</h1>
         <p className="text-sm text-gray-500 font-medium mt-1">Manage your restaurant profile, tax rates, and regional preferences.</p>
@@ -165,5 +168,6 @@ export default function SettingsPage() {
         </div>
       </form>
     </div>
+    </AuthGuard>
   );
 }

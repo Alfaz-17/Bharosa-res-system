@@ -19,8 +19,17 @@ import {
 } from "lucide-react";
 import { cn } from "../../lib/utils";
 import { useAuth } from "@/hooks/useAuth";
+import { Role } from "@/types";
 
-const navItems = [
+interface NavItem {
+  label: string;
+  icon?: any;
+  href?: string;
+  type?: "header" | "link";
+  roles?: Role[];
+}
+
+const navItems: NavItem[] = [
   {
     label: "OVERVIEW",
     type: "header",
@@ -29,6 +38,7 @@ const navItems = [
     label: "Dashboard",
     icon: LayoutDashboard,
     href: "/staff/dashboard",
+    roles: [Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER, Role.WAITER, Role.KITCHEN],
   },
   {
     label: "OPERATIONS",
@@ -38,16 +48,19 @@ const navItems = [
     label: "Orders",
     icon: UtensilsCrossed,
     href: "/staff/orders",
+    roles: [Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER, Role.WAITER],
   },
   {
     label: "Kitchen Display",
     icon: ChefHat,
     href: "/staff/kitchen",
+    roles: [Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER, Role.KITCHEN],
   },
   {
     label: "Tables (QR)",
     icon: QrCode,
     href: "/staff/qr-codes",
+    roles: [Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER],
   },
   {
     label: "MENU",
@@ -57,11 +70,13 @@ const navItems = [
     label: "Menu Items",
     icon: FolderOpen,
     href: "/staff/menu",
+    roles: [Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER],
   },
   {
     label: "Categories",
     icon: FolderOpen,
     href: "/staff/menu/categories",
+    roles: [Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER],
   },
   {
     label: "BILLING",
@@ -71,6 +86,7 @@ const navItems = [
     label: "Invoices",
     icon: FileText,
     href: "/staff/billing",
+    roles: [Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER, Role.WAITER],
   },
   {
     label: "REPORTS",
@@ -80,6 +96,7 @@ const navItems = [
     label: "Analytics",
     icon: BarChart3,
     href: "/staff/analytics",
+    roles: [Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER],
   },
   {
     label: "SETTINGS",
@@ -89,11 +106,13 @@ const navItems = [
     label: "Users",
     icon: Users,
     href: "/staff/users",
+    roles: [Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER],
   },
   {
     label: "Settings",
     icon: Settings,
     href: "/staff/settings",
+    roles: [Role.SUPER_ADMIN, Role.ADMIN, Role.MANAGER],
   },
 ];
 
@@ -136,8 +155,17 @@ export default function Sidebar() {
       {/* Navigation */}
       <nav className="flex-1 overflow-y-auto px-2 py-4 scrollbar-hide">
         <div className="space-y-1">
-          {navItems.map((item, index) => {
+          {navItems.filter(item => {
+            if (item.type === "header") return true; 
+            return item.roles?.includes(user?.role as Role);
+          }).map((item, index, filteredItems) => {
             if (item.type === "header") {
+              // Only show header if there are items below it before the next header
+              const nextItems = filteredItems.slice(index + 1);
+              const hasVisibleChildren = nextItems.length > 0 && nextItems[0].type !== "header";
+              
+              if (!hasVisibleChildren) return null;
+
               return !isCollapsed ? (
                 <div
                   key={index}

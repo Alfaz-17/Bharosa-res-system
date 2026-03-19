@@ -28,8 +28,11 @@ export interface User {
   email: string;
   role: Role;
   restaurant_id: string;
+  is_active: boolean;
   last_active?: string;
   avatar_url?: string;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface Restaurant {
@@ -41,6 +44,15 @@ export interface Restaurant {
   currency: string;
   timezone: string;
   tax_rate: number;
+}
+
+export interface Table {
+  id: string;
+  restaurant_id: string;
+  table_number: string;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface MenuCategory {

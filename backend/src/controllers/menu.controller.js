@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import * as menuService from '../services/menu.service.js';
 import { sendSuccess, sendError } from '../utils/response.js';
+import { toCSV } from '../utils/csv.js';
 
 export const categorySchema = z.object({
   name: z.string().min(1).max(100),
@@ -102,5 +103,16 @@ export const deleteItem = async (req, res, next) => {
     const data = await menuService.deleteItem(req.restaurantId, req.params.id);
     if (!data) return sendError(res, 'Item not found.', 404);
     return sendSuccess(res, null, 'Item deleted.');
+  } catch (err) { next(err); }
+};
+
+export const exportItems = async (req, res, next) => {
+  try {
+    const data = await menuService.getAllItems(req.restaurantId);
+    const csv = toCSV(data, ['name', 'category.name', 'price', 'is_available']);
+    
+    res.setHeader('Content-Type', 'text/csv');
+    res.setHeader('Content-Disposition', 'attachment; filename=menu_items.csv');
+    return res.status(200).send(csv);
   } catch (err) { next(err); }
 };

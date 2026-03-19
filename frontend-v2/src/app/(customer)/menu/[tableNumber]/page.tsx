@@ -7,6 +7,7 @@ import { formatCurrency } from "@/lib/utils";
 import Link from "next/link";
 import { useCategories, useMenuItems } from "@/hooks/useMenu";
 import { useCartStore } from "@/store/cartStore";
+import CategoryTabs from "@/components/shared/CategoryTabs";
 
 export default function CustomerMenuPage({ params }: { params: { tableNumber: string } }) {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -16,6 +17,8 @@ export default function CustomerMenuPage({ params }: { params: { tableNumber: st
   const { data: menuItems, isLoading: isItemsLoading } = useMenuItems();
 
   const isLoading = isCatsLoading || isItemsLoading;
+
+  const allCategories = [{ id: "all", name: "All Items" }, ...(categories || [])];
 
   const filteredItems = activeCategory === "all"
     ? menuItems?.filter(item => item.is_available)
@@ -49,32 +52,11 @@ export default function CustomerMenuPage({ params }: { params: { tableNumber: st
             </span>
           </div>
 
-          {/* Category Pills */}
-          <div className="mt-4 flex space-x-2 overflow-x-auto pb-1 scrollbar-hide">
-            <button
-              onClick={() => setActiveCategory("all")}
-              className={`shrink-0 rounded-full px-4 py-1.5 text-xs font-bold transition-all ${
-                activeCategory === "all"
-                  ? "bg-brand text-white shadow-sm shadow-brand/30"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-              }`}
-            >
-              All Items
-            </button>
-            {categories?.map(cat => (
-              <button
-                key={cat.id}
-                onClick={() => setActiveCategory(cat.id)}
-                className={`shrink-0 rounded-full px-4 py-1.5 text-xs font-bold transition-all ${
-                  activeCategory === cat.id
-                    ? "bg-brand text-white shadow-sm shadow-brand/30"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                }`}
-              >
-                {cat.name}
-              </button>
-            ))}
-          </div>
+          <CategoryTabs 
+            categories={allCategories as any} 
+            activeCategoryId={activeCategory} 
+            onCategoryChange={setActiveCategory} 
+          />
         </div>
       </div>
 

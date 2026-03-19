@@ -10,7 +10,8 @@ export const paymentSchema = z.object({
 
 export const generateInvoice = async (req, res, next) => {
   try {
-    const invoice = await billingService.generateInvoice(req.restaurantId, req.params.orderId);
+    const { discount } = req.body || {};
+    const invoice = await billingService.generateInvoice(req.restaurantId, req.params.orderId, { discount });
     return sendSuccess(res, invoice, 'Invoice generated.', 201);
   } catch (err) { next(err); }
 };

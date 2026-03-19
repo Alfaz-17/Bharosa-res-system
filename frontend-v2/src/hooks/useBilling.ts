@@ -20,13 +20,13 @@ export function useGenerateInvoice() {
   const queryClient = useQueryClient();
   
   return useMutation({
-    mutationFn: async (orderId: string) => {
-      const response = await api.post<any, ApiResponse<Invoice>>(`/api/billing/${orderId}/invoice`);
+    mutationFn: async ({ orderId, discount }: { orderId: string; discount?: number }) => {
+      const response = await api.post<any, ApiResponse<Invoice>>(`/api/billing/${orderId}/invoice`, { discount });
       return response.data;
     },
-    onSuccess: (_, orderId) => {
-      queryClient.invalidateQueries({ queryKey: ["invoice", orderId] });
-      queryClient.invalidateQueries({ queryKey: ["order", orderId] });
+    onSuccess: (_, variables) => {
+      queryClient.invalidateQueries({ queryKey: ["invoice", variables.orderId] });
+      queryClient.invalidateQueries({ queryKey: ["order", variables.orderId] });
       toast.success("Invoice generated successfully");
     },
     onError: (error: any) => {
