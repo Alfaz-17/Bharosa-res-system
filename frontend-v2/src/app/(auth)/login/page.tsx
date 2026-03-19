@@ -9,7 +9,7 @@ import { Eye, EyeOff, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { useAuthStore } from "@/store/authStore";
 import api from "@/lib/api";
-import { Role, User } from "@/types";
+import { Role } from "@/types";
 
 const loginSchema = z.object({
   email: z.string().email("Invalid email address"),
@@ -35,7 +35,7 @@ export default function LoginPage() {
   const onSubmit = async (values: LoginFormValues) => {
     setIsLoading(true);
     try {
-      const response: any = await api.post("/api/auth/login", values);
+      const response = await api.post<any, any>("/api/auth/login", values);
       const { user, accessToken } = response.data;
       
       setAuth(user, accessToken);
@@ -52,8 +52,9 @@ export default function LoginPage() {
         default:
           router.push("/staff/dashboard");
       }
-    } catch (error: any) {
-      toast.error(error.response?.data?.message || "Invalid credentials");
+    } catch (error: unknown) {
+      const err = error as any;
+      toast.error(err.response?.data?.message || "Invalid credentials");
     } finally {
       setIsLoading(false);
     }

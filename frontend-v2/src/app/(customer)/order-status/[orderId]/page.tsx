@@ -6,6 +6,7 @@ import { Loader2, CheckCircle2, Clock, ChefHat, UtensilsCrossed, Home } from "lu
 import { OrderStatus } from "@/types";
 import { useWebSocket } from "@/lib/websocket";
 import { useQueryClient } from "@tanstack/react-query";
+import { Suspense } from "react";
 
 const steps = [
   { status: OrderStatus.CREATED, label: "Order Placed", icon: CheckCircle2, message: "Your order has been received!" },
@@ -25,12 +26,11 @@ const funMessages: Record<string, string> = {
   [OrderStatus.PAID]: "Payment received! Thank you! ❤️",
 };
 
-export default function OrderStatusPage({ params }: { params: { orderId: string } }) {
+function OrderStatusContent({ params }: { params: { orderId: string } }) {
   const { data: order, isLoading } = useOrder(params.orderId);
   const queryClient = useQueryClient();
 
   useWebSocket((message) => {
-    console.log("WS Message received in Order Status:", message);
     if (message.type === 'ORDER_UPDATED' && message.data.order_id === params.orderId) {
        queryClient.invalidateQueries({ queryKey: ["order", params.orderId] });
     }
@@ -107,7 +107,6 @@ export default function OrderStatusPage({ params }: { params: { orderId: string 
             {steps.map((step, idx) => {
               const isCompleted = idx < currentStepIndex;
               const isCurrent = idx === currentStepIndex;
-              const isPending = idx > currentStepIndex;
               const Icon = step.icon;
 
               return (
@@ -139,7 +138,7 @@ export default function OrderStatusPage({ params }: { params: { orderId: string 
         {/* Home Link */}
         <div className="pt-4 text-center">
           <Link
-            href={`/menu/${order.table_number}`}
+            href={`/menu/${order.table_number.replace(/^0+/, '')}`}
             className="inline-flex items-center text-sm font-black text-brand underline underline-offset-4"
           >
             <Home className="mr-2 h-4 w-4" /> Order more items
@@ -147,5 +146,17 @@ export default function OrderStatusPage({ params }: { params: { orderId: string 
         </div>
       </div>
     </div>
+  );
+}
+
+export default function OrderStatusPage({ params }: { params: { orderId: string } }) {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <Loader2 className="h-8 w-8 text-brand animate-spin" />
+      </div>
+    }>
+      <OrderStatusContent params={params} />
+    </Suspense>
   );
 }

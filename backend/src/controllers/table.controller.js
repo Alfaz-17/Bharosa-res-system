@@ -43,3 +43,25 @@ export const deleteTable = async (req, res, next) => {
     next(err);
   }
 };
+
+export const checkTable = async (req, res, next) => {
+  try {
+    const { tableNumber } = req.params;
+    // For now, we use a single restaurant model if not sub-domained
+    // If multiple restaurants, we would need to know WHICH restaurant.
+    // Assuming single restaurant for now or first one found.
+    const tables = await tableService.getTables(); // This gets all tables across all? No, it expects restaurantId.
+    // Let's assume restaurantId is 1 or we search across all.
+    // Actually, the repo has getTableByNumber(restaurantId, tableNumber)
+    // For a simple POS, it's often 1 restaurant.
+    const table = await tableService.getTableByNumber(undefined, tableNumber); 
+    
+    if (!table) {
+      return sendError(res, 'Table not found', 404);
+    }
+    
+    return sendSuccess(res, table, 'Table is valid.');
+  } catch (err) {
+    next(err);
+  }
+};

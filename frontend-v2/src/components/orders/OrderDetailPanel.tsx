@@ -52,6 +52,10 @@ export default function OrderDetailPanel({ order: initialOrder, onClose }: Order
         return null;
       case OrderStatus.SERVED:
         return null;
+      case OrderStatus.CANCELLED:
+        return null;
+      case OrderStatus.PAID:
+        return null;
       default:
         return null;
     }

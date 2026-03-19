@@ -12,6 +12,23 @@ export function useTables() {
       const response = await api.get<any, ApiResponse<Table[]>>("/api/tables");
       return response.data;
     },
+    meta: {
+      onError: (error: any) => {
+        toast.error(error.response?.data?.message || "Failed to load tables");
+      }
+    }
+  });
+}
+
+export function useCheckTable(tableNumber: string) {
+  return useQuery({
+    queryKey: ["check-table", tableNumber],
+    queryFn: async () => {
+      const response = await api.get<any, ApiResponse<Table>>(`/api/tables/check/${tableNumber}`);
+      return response.data;
+    },
+    enabled: !!tableNumber,
+    retry: false, // Don't retry on 404
   });
 }
 

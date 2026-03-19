@@ -6,6 +6,8 @@ import { authorize } from '../middleware/auth.middleware.js';
 
 const router = Router();
 
+router.get('/check/:tableNumber', tableController.checkTable);
+
 router.use(authenticate, tenantGuard);
 
 router.get('/', tableController.getTables);

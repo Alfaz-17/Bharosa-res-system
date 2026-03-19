@@ -1,24 +1,17 @@
 import multer from 'multer';
-import path from 'path';
-import fs from 'fs';
+import { v2 as cloudinary } from 'cloudinary';
+import { env } from '../config/env.js';
 import { sendSuccess, sendError } from '../utils/response.js';
 
-// Ensure the local uploads directory exists
-const uploadDir = path.join(process.cwd(), 'public', 'uploads');
-if (!fs.existsSync(uploadDir)) {
-  fs.mkdirSync(uploadDir, { recursive: true });
-}
-
-// Set up storage
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, uploadDir);
-  },
-  filename: (req, file, cb) => {
-    const ext = path.extname(file.originalname);
-    cb(null, `${req.restaurantId}-${Date.now()}-${Math.round(Math.random() * 1e9)}${ext}`);
-  },
+// Configure Cloudinary
+cloudinary.config({
+  cloud_name: env.CLOUDINARY_CLOUD_NAME,
+  api_key: env.CLOUDINARY_API_KEY,
+  api_secret: env.CLOUDINARY_API_SECRET,
 });
+
+// Use memory storage to avoid writing to disk
+const storage = multer.memoryStorage();
 
 // File filter
 const fileFilter = (req, file, cb) => {
@@ -45,13 +38,26 @@ export const uploadMedia = (req, res, next) => {
     }
 
     try {
-      // Return absolute local URL assuming the app hosts 'public' statically
-      const host = req.get('host');
-      const protocol = req.protocol;
-      const url = `${protocol}://${host}/uploads/${req.file.filename}`;
-      
-      return sendSuccess(res, { url }, 'File uploaded successfully.', 201);
+      // Upload directly to Cloudinary using a stream
+      const uploadStream = cloudinary.uploader.upload_stream(
+        {
+          folder: 'restaurant-pos',
+          public_id: `${Date.now()}-${Math.round(Math.random() * 1e9)}`,
+          resource_type: 'auto',
+        },
+        (error, result) => {
+          if (error) {
+            console.error('Cloudinary Upload Error:', error);
+            return sendError(res, 'Failed to upload to Cloudinary.', 500);
+          }
+          
+          return sendSuccess(res, { url: result.secure_url }, 'File uploaded to Cloudinary successfully.', 201);
+        }
+      );
+
+      uploadStream.end(req.file.buffer);
     } catch (e) {
+      console.error('Upload Process Error:', e);
       next(e);
     }
   });

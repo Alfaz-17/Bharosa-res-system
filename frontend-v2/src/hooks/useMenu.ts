@@ -13,6 +13,11 @@ export function useCategories() {
       const response = await api.get<any, ApiResponse<MenuCategory[]>>("/api/menu/categories");
       return response.data;
     },
+    meta: {
+      onError: (error: any) => {
+        toast.error(error.response?.data?.message || "Failed to load categories");
+      }
+    }
   });
 }
 
@@ -68,6 +73,11 @@ export function useMenuItems() {
       const response = await api.get<any, ApiResponse<MenuItem[]>>("/api/menu/items");
       return response.data;
     },
+    meta: {
+      onError: (error: any) => {
+        toast.error(error.response?.data?.message || "Failed to load menu items");
+      }
+    }
   });
 }
 

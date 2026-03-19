@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams, useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { ArrowLeft, Minus, Plus, Trash2, FileText, Loader2 } from "lucide-react";
 import { formatCurrency } from "@/lib/utils";
 import { toast } from "sonner";
@@ -9,7 +9,7 @@ import { toast } from "sonner";
 import { useCartStore } from "@/store/cartStore";
 import { useCreateOrder } from "@/hooks/useOrders";
 
-export default function CartPage() {
+function CartContent() {
   const params = useSearchParams();
   const router = useRouter();
   const tableNumber = params.get("table") || "1";
@@ -144,5 +144,17 @@ export default function CartPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function CartPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <Loader2 className="h-8 w-8 text-brand animate-spin" />
+      </div>
+    }>
+      <CartContent />
+    </Suspense>
   );
 }

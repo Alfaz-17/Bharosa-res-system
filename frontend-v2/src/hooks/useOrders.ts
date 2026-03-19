@@ -16,6 +16,11 @@ export function useOrders(filters?: { status?: OrderStatus; waiter_id?: string }
       const response = await api.get<any, ApiResponse<Order[]>>(`/api/orders?${params.toString()}`);
       return response.data;
     },
+    meta: {
+      onError: (error: any) => {
+        toast.error(error.response?.data?.message || "Failed to load orders");
+      }
+    }
   });
 }
 
@@ -27,6 +32,11 @@ export function useOrder(id: string) {
       return response.data;
     },
     enabled: !!id,
+    meta: {
+      onError: (error: any) => {
+        toast.error(error.response?.data?.message || "Failed to load order details");
+      }
+    }
   });
 }
 

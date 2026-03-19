@@ -22,3 +22,7 @@ export const createTable = async (restaurantId, tableData) => {
 export const deleteTable = async (restaurantId, id) => {
   return tableRepo.deleteTable(restaurantId, id);
 };
+
+export const getTableByNumber = async (restaurantId, tableNumber) => {
+  return tableRepo.getTableByNumber(restaurantId, tableNumber);
+};

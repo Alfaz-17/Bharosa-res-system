@@ -11,6 +11,7 @@ import { useOrders } from "@/hooks/useOrders";
 import { useRevenueAnalytics, useTopItemsAnalytics, useOrderTrendsAnalytics } from "@/hooks/useAnalytics";
 import { useRestaurant } from "@/hooks/useRestaurant";
 import { OrderStatus } from "@/types";
+import { startOfDay, endOfDay } from "date-fns";
 import StatCard from "@/components/dashboard/StatCard";
 import RevenueChart from "@/components/dashboard/RevenueChart";
 import TopItemsChart from "@/components/dashboard/TopItemsChart";
@@ -26,10 +27,14 @@ import { useState } from "react";
 export default function DashboardPage() {
   const { user } = useAuthStore();
   const [selectedOrder, setSelectedOrder] = useState<any | null>(null);
+  const today = new Date();
+  const isoFrom = startOfDay(today).toISOString();
+  const isoTo = endOfDay(today).toISOString();
+
   const { data: orders } = useOrders();
-  const { data: revenueData } = useRevenueAnalytics();
-  const { data: topItems } = useTopItemsAnalytics();
-  const { data: trends } = useOrderTrendsAnalytics();
+  const { data: revenueData } = useRevenueAnalytics(isoFrom, isoTo);
+  const { data: topItems } = useTopItemsAnalytics(isoFrom, isoTo);
+  const { data: trends } = useOrderTrendsAnalytics(isoFrom, isoTo);
   const { data: restaurant } = useRestaurant();
   const queryClient = useQueryClient();
 
